@@ -1,0 +1,81 @@
+// Mobile (up to 567px) ---------------------------------
+// ------------------------------------------------------
+#block-headernav {
+  ul.menu {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+
+    li.menu-item {
+      margin: 0 0.25em;
+      padding: 0;
+
+      a {
+        display: block;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        width: 38px;
+        height: 38px;
+        text-indent: 44px;
+        overflow: hidden;
+        position: relative;
+
+        &[href='/map'] {
+          &:before {
+            content: '';
+            background: url(/themes/custom/utawesome/assets/icons/utah_map_icon.svg) no-repeat
+              center center;
+            background-size: 20px;
+            width: 38px;
+            height: 38px;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+
+        &[href='/search'] {
+          &:before {
+            content: '\f002';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            width: 38px;
+            height: 38px;
+            display: block;
+            position: absolute;
+            left: -38px;
+            top: 0;
+            color: $color-blue-dark;
+            font-size: 22px;
+            line-height: 38px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Phablet (568px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+}

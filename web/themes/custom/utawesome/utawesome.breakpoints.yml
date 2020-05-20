@@ -1,0 +1,52 @@
+utawesome.layout.mobile:
+  group: utawesome.layout
+  label: mobile
+  mediaQuery: ''
+  weight: 4
+  multipliers:
+    - 1x
+utawesome.layout.phablet:
+  group: utawesome.layout
+  label: phablet
+  mediaQuery: '(min-width: 568px) and (max-width: 767px)'
+  weight: 3
+  multipliers:
+    - 1x
+utawesome.layout.tablet:
+  group: utawesome.layout
+  label: tablet
+  mediaQuery: '(min-width: 768px) and (max-width: 1023px)'
+  weight: 2
+  multipliers:
+    - 1x
+utawesome.layout.desktop:
+  group: utawesome.layout
+  label: dekstop
+  mediaQuery: '(min-width: 1024px) and (max-width: 1364px)'
+  weight: 1
+  multipliers:
+    - 1x
+utawesome.layout.wide:
+  group: utawesome.layout
+  label: wide
+  mediaQuery: '(min-width: 1365px)'
+  weight: 0
+  multipliers:
+    - 1x
+
+utawesome.images.mobile:
+  group: utawesome.images
+  label: mobile
+  mediaQuery: ''
+  weight: 3
+  multipliers:
+    - 1x
+    - 2x
+utawesome.images.desktop:
+  group: utawesome.images
+  label: desktop
+  mediaQuery: '(min-width: 1024px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x

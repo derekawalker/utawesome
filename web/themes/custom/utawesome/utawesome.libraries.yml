@@ -1,0 +1,16 @@
+base:
+  css:
+    base:
+      dist/css/styles.css: {}
+      '//use.fontawesome.com/releases/v5.7.2/css/all.css': { type: external, minified: true }
+      '//fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap' : { type: external, minified: true }
+owl-carousel:
+  version: 2.x
+  css:
+    component:
+      '../../../libraries/owl-carousel/dist/assets/owl.carousel.min.css': {}
+  js:
+    '../../../libraries/owl-carousel/dist/owl.carousel.min.js': {}
+    js/homepage-carousels.js: {}
+  dependencies:
+    - core/jquery

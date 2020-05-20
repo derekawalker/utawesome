@@ -1,10 +1,10 @@
-name: utg
+name: utawesome
 recipe: drupal8
 services:
   node:
     type: node
   database:
-    portforward: 3020
+    portforward: 3021
 config:
   webroot: web
   php: "7.2"

@@ -1,0 +1,167 @@
+// Mobile (up to 567px) ---------------------------------
+// ------------------------------------------------------
+.views-card {
+  > a {
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0 1rem 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $color-black-15;
+    color: $color-blue-dark;
+
+    &:after {
+      content: '\f105';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      display: block;
+      padding-left: 1rem;
+      margin-left: auto;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-blue-light;
+    }
+
+    .card-image {
+      border-radius: $rad;
+      overflow: hidden;
+      margin-right: 1rem;
+      min-width: 30%;
+      max-width: 30%;
+
+      img {
+        display: block;
+        border-radius: $rad;
+        width: 100%;
+      }
+    }
+
+    .card-title {
+      font-size: 1.2em;
+      margin: 0;
+      line-height: 1;
+    }
+
+    .card-location {
+      color: $color-blue-dark;
+      font-size: 0.875em;
+    }
+  }
+
+  .card-flag {
+    position: absolute;
+    top: -5px;
+    left: 11px;
+
+    a {
+      background: $color-coral-med;
+      border-radius: 20px;
+      height: 30px;
+      width: 30px;
+      display: block;
+      text-align: center;
+      overflow: hidden;
+      text-decoration: none;
+      box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.75);
+      border: 1px solid $color-coral-light;
+
+      &:before {
+        content: '\f005';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 400;
+        display: flex;
+        color: $color-coral-light;
+        width: 28px;
+        height: 28px;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .action-unflag {
+      a {
+        background: $color-green-med;
+        border-color: $color-green-light;
+
+        &:before {
+          color: $color-green-light;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+
+// Phablet (568px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+  .views-card {
+    > a {
+      .card-image {
+        min-width: 25%;
+        max-width: 25%;
+      }
+
+      .card-title {
+        font-size: 1.35em;
+      }
+
+      .card-location {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+  .views-card {
+    > a {
+      .card-image {
+        min-width: 20%;
+        max-width: 20%;
+      }
+
+      .card-title {
+        font-size: 1.5em;
+      }
+
+      .card-location {
+        font-size: 1.15em;
+      }
+    }
+  }
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+  .views-card {
+    > a {
+      .card-image {
+        min-width: 15%;
+        max-width: 15%;
+      }
+
+      .card-title {
+        font-size: 1.75em;
+      }
+
+      .card-location {
+        font-size: 1.25em;
+      }
+    }
+  }
+}

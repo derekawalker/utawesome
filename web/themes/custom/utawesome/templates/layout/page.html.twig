@@ -1,0 +1,54 @@
+{% block libraries %}
+
+{% endblock %}
+
+<div class="layout-container">
+  <div class="utawesome-section-header">
+    {{ page.userbar }}
+
+    <header role="banner">
+      {{ page.header }}
+    </header>
+
+    {% if page.banner %}
+      {{ page.banner }}
+    {% endif %}
+
+    {% if page.subbanner %}
+      {{ page.subbanner }}
+    {% endif %}
+  </div>
+
+  <main role="main"  class="utawesome-section-main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    <div class="layout-columns">
+      <div class="layout-content">
+        {{ page.content_top }}
+        {{ page.content }}
+        {{ page.content_bottom }}
+      </div>{# /.layout-content #}
+
+      {% if page.sidebar_first %}
+        <aside class="layout-sidebar-first" role="complementary">
+          {{ page.sidebar_first }}
+        </aside>
+      {% endif %}
+
+      {% if page.sidebar_second %}
+        <aside class="layout-sidebar-second" role="complementary">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+    </div>{# /.layout-columns #}
+
+  </main>
+
+  {% if page.footer or page.footer_banner %}
+    <footer role="contentinfo"  class="utawesome-section-footer">
+      {{ page.footer_banner }}
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
+</div>{# /.layout-container #}

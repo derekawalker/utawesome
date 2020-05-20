@@ -1,0 +1,39 @@
+// Mobile (up to 567px) ---------------------------------
+// ------------------------------------------------------
+$region-height: 70px;
+
+.region-header {
+  background: $color-white;
+  height: $region-height;
+  padding: 1rem;
+  box-shadow: 0 0 20px $color-black-15;
+  position: relative;
+
+  .region-inner {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+}
+
+// Phablet (568px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+}

@@ -1,0 +1,106 @@
+// Mobile (up to 567px) ---------------------------------
+// ------------------------------------------------------
+#block-utawesome-horizontalmenu {
+  display: none;
+  margin-right: 1rem;
+
+  ul.sf-menu {
+    padding: 0;
+    margin: 0;
+    font-family: $font-header;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 1.35rem;
+
+    li.menu-item {
+      padding: 0;
+      margin: 0;
+
+      &.menu-item--expanded {
+        > a {
+          &:after {
+            content: '\f0d7';
+            margin-left: 0.25em;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+          }
+        }
+      }
+
+      a {
+        padding: 0 0.5em;
+        line-height: 38px;
+        text-decoration: none;
+        color: $color-blue-dark;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+
+        &.is-active {
+          border-bottom: 3px solid $color-blue-dark;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $color-blue-light;
+          border-bottom: 3px solid $color-blue-light;
+        }
+      }
+    }
+  }
+
+  ul.sub-nav {
+    background: $color-blue-light;
+    font-family: $font-main;
+    text-transform: none;
+    font-size: 1rem;
+    border-radius: $rad;
+    letter-spacing: 0;
+    font-weight: 400;
+
+    li.menu-item {
+      border-bottom: 1px solid $color-white-50;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      a {
+        color: $color-white;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background: $color-white-50;
+          color: $color-blue-dark;
+        }
+      }
+    }
+  }
+}
+
+// Phablet (568px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+  #block-utawesome-horizontalmenu,
+  .responsive-menu-block-wrapper,
+  .block-responsive-menu-horizontal-menu {
+    display: block;
+  }
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+}
