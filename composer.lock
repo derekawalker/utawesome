@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b402e72b9f7f7e6850efa8e2d466236",
+    "content-hash": "8bcaba683943bf2a0a681d833bda7748",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2245,6 +2245,70 @@
             }
         },
         {
+            "name": "drupal/blazy",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/blazy.git",
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/blazy-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "bbdc3d9b5a49dca8e59373fd80739db84f8fa64a"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.1",
+                    "datestamp": "1589120601",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Gaus Surahman",
+                    "homepage": "https://www.drupal.org/u/gausarts",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/2663268/committers",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                }
+            ],
+            "description": "Provides basic bLazy integration for lazy loading and multi-serving images.",
+            "homepage": "https://drupal.org/project/blazy",
+            "keywords": [
+                "Drupal",
+                "bLazy",
+                "lazyload"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/blazy",
+                "issues": "https://drupal.org/project/issues/blazy"
+            }
+        },
+        {
             "name": "drupal/captcha",
             "version": "1.0.0",
             "source": {
@@ -2470,69 +2534,6 @@
             "homepage": "https://www.drupal.org/project/chosen",
             "support": {
                 "source": "https://git.drupalcode.org/project/chosen"
-            }
-        },
-        {
-            "name": "drupal/colorbox",
-            "version": "1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/colorbox.git",
-                "reference": "8.x-1.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/colorbox-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "73bfc74e9afd294e3d3aded3622ad9cb9de6b75c"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9"
-            },
-            "suggest": {
-                "jackmoore/colorbox": "The Colorbox library is required to use the drupal/colorbox module."
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1587016344",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Neslee Canil Pinto",
-                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Fredrik Jonsson",
-                    "homepage": "https://www.drupal.org/u/frjo",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "jdwfly",
-                    "homepage": "https://www.drupal.org/user/298179"
-                }
-            ],
-            "description": "A light-weight, customizable lightbox plugin for jQuery.",
-            "homepage": "https://www.drupal.org/project/colorbox",
-            "support": {
-                "source": "https://git.drupalcode.org/project/colorbox",
-                "issues": "https://www.drupal.org/project/issues/colorbox"
             }
         },
         {
@@ -3987,55 +3988,6 @@
             "homepage": "https://www.drupal.org/project/field_group",
             "support": {
                 "source": "https://git.drupalcode.org/project/field_group"
-            }
-        },
-        {
-            "name": "drupal/field_slideshow",
-            "version": "3.0.0-beta2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/field_slideshow.git",
-                "reference": "8.x-3.0-beta2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_slideshow-8.x-3.0-beta2.zip",
-                "reference": "8.x-3.0-beta2",
-                "shasum": "dd8374c54e916741181bc7c26ea6bbce09bd43cd"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-3.0-beta2",
-                    "datestamp": "1587556179",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "lamp5",
-                    "homepage": "https://www.drupal.org/u/lamp5",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Provides a Slideshow formatter for Image fields, using JQuery Cycle plugin.",
-            "homepage": "https://www.drupal.org/project/field_slideshow",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/field_slideshow",
-                "issues": "https://www.drupal.org/project/issues/field_slideshow"
             }
         },
         {
@@ -5566,6 +5518,66 @@
             "homepage": "https://www.drupal.org/project/simplesamlphp_auth",
             "support": {
                 "source": "https://git.drupalcode.org/project/simplesamlphp_auth"
+            }
+        },
+        {
+            "name": "drupal/slick",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/slick.git",
+                "reference": "8.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/slick-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "789395b52697b6cee27648e478c4e579eee9540b"
+            },
+            "require": {
+                "drupal/blazy": "~2.0",
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.2",
+                    "datestamp": "1588861104",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/2232779/committers",
+                    "role": "Contributors"
+                },
+                {
+                    "name": "gausarts",
+                    "homepage": "https://www.drupal.org/user/159062"
+                },
+                {
+                    "name": "thalles",
+                    "homepage": "https://www.drupal.org/user/3589086"
+                }
+            ],
+            "description": "Slick carousel, the last carousel you'll ever need.",
+            "homepage": "https://drupal.org/project/slick",
+            "keywords": [
+                "Drupal",
+                "carousel",
+                "slideshow"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/slick",
+                "issues": "https://drupal.org/project/issues/slick"
             }
         },
         {
@@ -12931,6 +12943,186 @@
             "time": "2020-03-08T19:03:35+00:00"
         },
         {
+            "name": "drupal/colorbox",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/colorbox.git",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/colorbox-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "73bfc74e9afd294e3d3aded3622ad9cb9de6b75c"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "suggest": {
+                "jackmoore/colorbox": "The Colorbox library is required to use the drupal/colorbox module."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1587016344",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Fredrik Jonsson",
+                    "homepage": "https://www.drupal.org/u/frjo",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "jdwfly",
+                    "homepage": "https://www.drupal.org/user/298179"
+                }
+            ],
+            "description": "A light-weight, customizable lightbox plugin for jQuery.",
+            "homepage": "https://www.drupal.org/project/colorbox",
+            "support": {
+                "source": "https://git.drupalcode.org/project/colorbox",
+                "issues": "https://www.drupal.org/project/issues/colorbox"
+            }
+        },
+        {
+            "name": "drupal/field_slideshow",
+            "version": "3.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_slideshow.git",
+                "reference": "8.x-3.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_slideshow-8.x-3.0-beta2.zip",
+                "reference": "8.x-3.0-beta2",
+                "shasum": "dd8374c54e916741181bc7c26ea6bbce09bd43cd"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.0-beta2",
+                    "datestamp": "1587556179",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "lamp5",
+                    "homepage": "https://www.drupal.org/u/lamp5",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides a Slideshow formatter for Image fields, using JQuery Cycle plugin.",
+            "homepage": "https://www.drupal.org/project/field_slideshow",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/field_slideshow",
+                "issues": "https://www.drupal.org/project/issues/field_slideshow"
+            }
+        },
+        {
+            "name": "drupal/owlcarousel",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/owl-carousel.git",
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/owlcarousel-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "38a5bdb64e67a42cc0429e4f005949cfd65dfafa"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1548504780",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
+                {
+                    "name": "Sebastien @Actualys",
+                    "homepage": "https://www.drupal.org/user/380104"
+                },
+                {
+                    "name": "aburrows",
+                    "homepage": "https://www.drupal.org/user/577844"
+                },
+                {
+                    "name": "ipwa",
+                    "homepage": "https://www.drupal.org/user/130909"
+                },
+                {
+                    "name": "swim",
+                    "homepage": "https://www.drupal.org/user/1968266"
+                },
+                {
+                    "name": "thomas.frobieter",
+                    "homepage": "https://www.drupal.org/user/409335"
+                }
+            ],
+            "description": "Drupal integration for Owl Carousel",
+            "homepage": "https://www.drupal.org/project/owlcarousel",
+            "support": {
+                "source": "https://git.drupalcode.org/project/owlcarousel",
+                "issues": "https://www.drupal.org/project/owlcarousel"
+            }
+        },
+        {
             "name": "fabpot/goutte",
             "version": "v3.2.3",
             "source": {
@@ -14952,7 +15144,6 @@
     "stability-flags": {
         "drupal/feeds": 15,
         "drupal/feeds_tamper": 10,
-        "drupal/field_slideshow": 10,
         "drupal/fivestar": 15,
         "drupal/flag": 10,
         "drupal/material_admin": 15,

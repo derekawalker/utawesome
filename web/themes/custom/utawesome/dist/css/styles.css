@@ -40,7 +40,7 @@ h4,
 h5,
 h6 {
   font-family: ironbrine, Lato, Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.2; }
 
 .background-yellow {
@@ -180,6 +180,15 @@ h6 {
     top: 0;
     z-index: 1; }
 
+.slick--optionset--nodes .slick-arrow:before, .slick--optionset--nodes .slick-arrow:after {
+  color: rgba(255, 255, 255, 0.85); }
+
+.slick--optionset--nodes .slick-arrow:hover, .slick--optionset--nodes .slick-arrow:active, .slick--optionset--nodes .slick-arrow:focus {
+  color: #fff; }
+
+.slick--optionset--nodes .slide__caption {
+  display: none; }
+
 .region-content-top ul.tabs {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -254,19 +263,6 @@ h6 {
   #block-views-block-posts-block-1 {
     padding: 8% 0; } }
 
-.page-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  color: #003d51; }
-
-.node__content {
-  padding: 1rem; }
-
-@media (min-width: 768px) {
-  .node__content {
-    padding: 1rem 10%; } }
-
 #block-utawesome-views-block-popular-block-1 {
   background: #004a61;
   color: #fff;
@@ -281,22 +277,6 @@ h6 {
 @media (min-width: 768px) {
   #block-utawesome-views-block-popular-block-1 {
     padding: 8% 0; } }
-
-@media (min-width: 768px) {
-  .path-frontpage .region-subbanner {
-    background: #fbc834;
-    padding-bottom: 1rem; }
-    .path-frontpage .region-subbanner .region-inner {
-      width: 90%;
-      margin: 0 auto;
-      margin-top: -3rem;
-      background: #fff;
-      z-index: 1;
-      position: relative;
-      border-radius: 8px;
-      padding: 3rem 3rem 1rem; }
-  .path-frontpage .node__content {
-    padding: 1rem 10%; } }
 
 #block-utawesome-branding {
   margin-right: auto; }
@@ -530,6 +510,34 @@ h6 {
         #block-utawesome-subnav ul.menu li.menu-item a:after {
           content: '';
           display: none; } }
+
+.page-node-type-attraction .node__content {
+  padding: 0; }
+
+.page-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #003d51; }
+
+.node__content {
+  padding: 1rem; }
+
+@media (min-width: 768px) {
+  .path-frontpage .region-subbanner {
+    background: #fbc834;
+    padding-bottom: 1rem; }
+    .path-frontpage .region-subbanner .region-inner {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: -3rem;
+      background: #fff;
+      z-index: 1;
+      position: relative;
+      border-radius: 8px;
+      padding: 3rem 3rem 1rem; }
+  .path-frontpage .node__content {
+    padding: 1rem 10%; } }
 
 .view-places-search .views-exposed-form {
   padding: 0.5rem;
