@@ -1,9 +1,17 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
-.utawesome-section-main {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  position: relative;
-  z-index: 99;
+$region-height: 70px;
+
+.region-footer {
+  background: $color-blue-dark;
+  color: $color-white;
+
+  .region-inner {
+    .block {
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+  }
 }
 
 // Phablet (568px to 767px) -----------------------------

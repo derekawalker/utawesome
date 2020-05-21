@@ -113,31 +113,36 @@
 
       {{ content.flag_add_to_trip }}
 
-      <h2{{ title_attributes }}>
+      <h2 class="node-attraction-title">
         {{ label }}
       </h2>
 
-      {{ content.field_location.0 }}
-      {{ content.field_category.0 }}
+      <div class="node-attraction-location">
+        {{ content.field_location.0 }}
+      </div>
+
+      <div class="node-attraction-category">
+        {{ content.field_category.0 }}
+      </div>
     </div>
 
     <div id="node-attraction-tabs" class="node-attraction-tabs">
-      <div>
+      <div class="node-attraction-tab active">
         <i class="fas fa-info-circle"></i>
         <div>About</div>
       </div>
 
-      <div>
+      <div class="node-attraction-tab">
         <i class="fas fa-comments"></i>
         <div>Reviews</div>
       </div>
 
-      <div>
+      <div class="node-attraction-tab">
         <i class="fas fa-tags"></i>
         <div>Coupons</div>
       </div>
 
-      <div>
+      <div class="node-attraction-tab">
         <i class="fas fa-hiking"></i>
         <div>Gear</div>
       </div>
@@ -184,8 +189,8 @@
           {{ content.field_address }}
           {{ content.field_map }}
 
-          {{ content.field_phone }}
-          {{ content.field_website }}
+          <i class="fas fa-phone"></i> {{ content.field_phone }}
+          <i class="fas fa-external-link-alt"></i>{{ content.field_website }}
         </div>
 
         <div id="node--reviews" class="node-attraction-section node-attraction-section-reviews">

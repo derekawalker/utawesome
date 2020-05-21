@@ -12,6 +12,7 @@ $font-header: ironbrine, Lato, Arial, Helvetica, sans-serif;
 /* Colors */
 $color-black: #000;
 $color-black-15: rgba(0, 0, 0, 0.15);
+$color-black-25: rgba(0, 0, 0, 0.25);
 $color-black-50: rgba(0, 0, 0, 0.5);
 $color-black-85: rgba(0, 0, 0, 0.85);
 $color-white: #fff;
@@ -22,6 +23,7 @@ $color-gray-e6: #e6e6e6;
 $color-gray-d: #ddd;
 $color-gray-c: #ccc;
 $color-gray-b: #bbb;
+$color-gray-bd: #bdbdbd;
 $color-gray-3: #333;
 $color-gray-6: #666;
 $color-gray-9: #999;
@@ -40,6 +42,9 @@ $color-coral-light: #ffa693;
 $color-coral-med: #ea7359;
 $color-green-light: #b1ee03;
 $color-green-med: #82ab0d;
+$color-orange-dark: #fe7000;
+
+$gradient-blue: linear-gradient(to bottom, $color-blue-lighter, $color-blue-light);
 
 /* Decorations */
 $rad-inner: 3px;
