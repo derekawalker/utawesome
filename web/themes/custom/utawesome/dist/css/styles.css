@@ -767,6 +767,10 @@ select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1288,6 +1292,10 @@ select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1840,6 +1848,10 @@ select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2413,6 +2425,10 @@ select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -3250,25 +3266,13 @@ select {
       .view-places-search .views-exposed-form .form--inline .form-item.form-item-field-location-target-id {
         width: calc(100% - 1rem);
         position: relative; }
-        .view-places-search .views-exposed-form .form--inline .form-item.form-item-field-location-target-id:after {
-          content: '\f002';
-          margin-left: 0.25em;
-          font-family: 'Font Awesome 5 Free';
-          font-weight: 900;
-          position: absolute;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          top: 45%;
-          right: 0.5em;
-          height: 100%;
-          width: 20px; }
         .view-places-search .views-exposed-form .form--inline .form-item.form-item-field-location-target-id input {
           font-family: ironbrine, Lato, Arial, Helvetica, sans-serif;
           font-size: 1.35rem;
-          padding: 0.5em 0.75em;
+          padding: 0.5em 15% 0.5em 0.75em;
           text-align: center;
-          height: auto; }
+          height: auto;
+          background-position: 96% center; }
       .view-places-search .views-exposed-form .form--inline .form-item.form-item-type {
         width: calc(50% - 1rem); }
     .view-places-search .views-exposed-form .form--inline .form-actions {
@@ -3301,7 +3305,7 @@ select {
     .view-places-search .views-exposed-form .form--inline .form-item.form-item-field-location-target-id {
       width: calc(20% - 1rem); }
       .view-places-search .views-exposed-form .form--inline .form-item.form-item-field-location-target-id input {
-        font-family: ironbrine, Lato, Arial, Helvetica, sans-serif;
+        font-family: Lato, Arial, Helvetica, sans-serif;
         font-size: 1rem;
         text-align: left;
         height: 30px; } }
@@ -3672,3 +3676,87 @@ select {
       line-height: 1.2;
       font-size: 1.35rem;
       margin: 0; }
+
+.view .feed-icons {
+  padding: 1rem; }
+
+.view .pager .pager__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0; }
+
+.view .pager .pager__item {
+  margin: 0.25em;
+  padding: 0; }
+  .view .pager .pager__item a {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    width: 35px;
+    height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 35px;
+    text-decoration: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .view .pager .pager__item a:hover, .view .pager .pager__item a:focus, .view .pager .pager__item a:active {
+      background: #3aa1aa;
+      color: #fff; }
+  .view .pager .pager__item.is-active a {
+    background: #3aa1aa;
+    color: #fff; }
+  .view .pager .pager__item.pager__item--ellipsis {
+    display: none; }
+  .view .pager .pager__item.pager__item--next a, .view .pager .pager__item.pager__item--last a, .view .pager .pager__item.pager__item--previous a, .view .pager .pager__item.pager__item--first a {
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.75em;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap; }
+    .view .pager .pager__item.pager__item--next a span, .view .pager .pager__item.pager__item--last a span, .view .pager .pager__item.pager__item--previous a span, .view .pager .pager__item.pager__item--first a span {
+      display: none; }
+    .view .pager .pager__item.pager__item--next a:before, .view .pager .pager__item.pager__item--last a:before, .view .pager .pager__item.pager__item--previous a:before, .view .pager .pager__item.pager__item--first a:before {
+      content: '\f005';
+      font-family: 'Font Awesome 5 Free';
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 20px;
+      height: 20px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-weight: 900; }
+    .view .pager .pager__item.pager__item--next a:hover, .view .pager .pager__item.pager__item--next a:focus, .view .pager .pager__item.pager__item--next a:active, .view .pager .pager__item.pager__item--last a:hover, .view .pager .pager__item.pager__item--last a:focus, .view .pager .pager__item.pager__item--last a:active, .view .pager .pager__item.pager__item--previous a:hover, .view .pager .pager__item.pager__item--previous a:focus, .view .pager .pager__item.pager__item--previous a:active, .view .pager .pager__item.pager__item--first a:hover, .view .pager .pager__item.pager__item--first a:focus, .view .pager .pager__item.pager__item--first a:active {
+      background: none;
+      color: #003d51;
+      text-decoration: underline; }
+  .view .pager .pager__item.pager__item--next a:before {
+    content: '\f105'; }
+  .view .pager .pager__item.pager__item--last a:before {
+    content: '\f101'; }
+  .view .pager .pager__item.pager__item--previous a:before {
+    content: '\f104'; }
+  .view .pager .pager__item.pager__item--first a:before {
+    content: '\f100'; }

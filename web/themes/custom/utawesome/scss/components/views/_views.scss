@@ -1,0 +1,142 @@
+// Mobile (up to 567px) ---------------------------------
+// ------------------------------------------------------
+.view {
+  .feed-icons {
+    padding: 1rem;
+  }
+
+  .pager {
+    .pager__items {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .pager__item {
+      margin: 0.25em;
+      padding: 0;
+
+      a {
+        border: 1px solid $color-black-15;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        border-radius: 35px;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background: $color-blue-light;
+          color: $color-white;
+        }
+      }
+
+      &.is-active {
+        a {
+          background: $color-blue-light;
+          color: $color-white;
+        }
+      }
+
+      &.pager__item--ellipsis {
+        display: none;
+      }
+
+      &.pager__item--next,
+      &.pager__item--last,
+      &.pager__item--previous,
+      &.pager__item--first {
+        a {
+          border: 0;
+          text-transform: uppercase;
+          font-weight: 400;
+          font-size: 0.75em;
+          width: 20px;
+          height: 20px;
+          overflow: hidden;
+          white-space: nowrap;
+
+          span {
+            display: none;
+          }
+
+          &:before {
+            content: '\f005';
+            font-family: 'Font Awesome 5 Free';
+            display: flex;
+            width: 20px;
+            height: 20px;
+            justify-content: center;
+            align-items: center;
+            font-weight: 900;
+          }
+
+          &:hover,
+          &:focus,
+          &:active {
+            background: none;
+            color: $color-blue-dark;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      &.pager__item--next {
+        a {
+          &:before {
+            content: '\f105';
+          }
+        }
+      }
+
+      &.pager__item--last {
+        a {
+          &:before {
+            content: '\f101';
+          }
+        }
+      }
+
+      &.pager__item--previous {
+        a {
+          &:before {
+            content: '\f104';
+          }
+        }
+      }
+
+      &.pager__item--first {
+        a {
+          &:before {
+            content: '\f100';
+          }
+        }
+      }
+    }
+  }
+}
+
+// Phablet (568px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+}

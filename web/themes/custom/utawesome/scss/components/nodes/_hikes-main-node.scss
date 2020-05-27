@@ -34,6 +34,7 @@
     summary {
       padding: 0.5em 1em;
       display: flex;
+      flex-flow: row nowrap;
       justify-content: space-between;
       font-family: $font-header;
       font-size: 1.2rem;

@@ -20,3 +20,9 @@ places:
     js/places.js: {}
   dependencies:
     - core/jquery
+views:
+  version: 1.x
+  js:
+    js/views.js: {}
+  dependencies:
+    - core/jquery
