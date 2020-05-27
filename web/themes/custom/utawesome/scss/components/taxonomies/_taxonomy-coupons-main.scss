@@ -1,0 +1,149 @@
+// Mobile (up to 567px) ---------------------------------
+// ------------------------------------------------------
+.vocabulary-coupons {
+  margin-bottom: 1rem;
+
+  .content {
+    position: relative;
+  }
+
+  .field--name-field-expiration-date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $color-coral-med;
+    color: $color-white;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.25em 0.75em;
+    border-radius: 0 $rad 0 $rad;
+    z-index: 1;
+
+    &:before {
+      content: 'Expires: ';
+      font-weight: 300;
+    }
+  }
+
+  .coupons-wrapper {
+    position: relative;
+    background: $color-white;
+    border-radius: $rad;
+    padding: 1rem;
+    border: 1px solid $color-gray-bd;
+    display: flex;
+    flex-flow: column;
+    text-decoration: none;
+
+    .field--name-field-main-photo {
+      border-radius: $rad-inner;
+      border: 1px solid $color-black-10;
+
+      img {
+        display: block;
+        border-radius: $rad-inner;
+        width: 100%;
+      }
+    }
+
+    .field--name-name {
+      font-family: $font-header;
+      font-size: 1.35rem;
+      color: $color-blue-light;
+      line-height: 1.2em;
+      margin: 1em 0 0.5em;
+    }
+
+    .field--name-description {
+      font-size: 0.875em;
+      color: $color-blue-dark;
+
+      ul,
+      ol {
+        text-align: left;
+      }
+    }
+
+    .coupons-title {
+      display: block;
+      border-radius: $rad-inner;
+      background: $gradient-blue;
+      color: $color-white;
+      text-transform: uppercase;
+      font-family: $font-header;
+      text-align: center;
+      padding: 0.25em 1em;
+      line-height: 1.2;
+      font-size: 1.25rem;
+      text-decoration: none;
+    }
+  }
+}
+// Phablet (568px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+  .vocabulary-coupons {
+    margin-bottom: 1rem;
+
+    .field--name-field-expiration-date {
+      right: auto;
+      left: 0;
+      border-radius: $rad 0 $rad 0;
+    }
+
+    .coupons-wrapper {
+      flex-flow: row nowrap;
+
+      .field--name-name {
+        margin-top: 0;
+      }
+
+      .coupons-image {
+        min-width: 40%;
+        max-width: 40%;
+      }
+
+      .coupons-text {
+        width: 100%;
+        padding-left: 1.5rem;
+        text-align: left;
+      }
+    }
+  }
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+  .vocabulary-coupons {
+    .field--name-field-expiration-date {
+      right: 0;
+      left: auto;
+      border-radius: 0 $rad 0 $rad;
+    }
+
+    .coupons-wrapper {
+      align-items: center;
+
+      .coupons-image {
+        min-width: 25%;
+        max-width: 25%;
+      }
+
+      .coupons-title {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+}

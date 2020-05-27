@@ -1,0 +1,56 @@
+// Mobile (up to 567px) ---------------------------------
+// ------------------------------------------------------
+.flex-inline-view-place {
+  margin-bottom: 0.5rem;
+
+  a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: $rad;
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  .image-wrapper {
+    min-width: 80px;
+    max-width: 80px;
+
+    img {
+      border-radius: $rad 0 0 $rad;
+      display: block;
+    }
+  }
+
+  .text-wrapper {
+    width: calc(100% - 80px);
+    padding: 1em;
+
+    h4,
+    p {
+      margin: 0;
+    }
+  }
+}
+
+// Phablet (568px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+}

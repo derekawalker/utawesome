@@ -11,6 +11,8 @@ $font-header: ironbrine, Lato, Arial, Helvetica, sans-serif;
 
 /* Colors */
 $color-black: #000;
+$color-black-05: rgba(0, 0, 0, 0.05);
+$color-black-10: rgba(0, 0, 0, 0.1);
 $color-black-15: rgba(0, 0, 0, 0.15);
 $color-black-25: rgba(0, 0, 0, 0.25);
 $color-black-50: rgba(0, 0, 0, 0.5);
@@ -37,14 +39,23 @@ $color-blue-lighter: #5cd1db;
 $color-blue-light: #3aa1aa;
 $color-blue-med: #004a61;
 $color-blue-dark: #003d51;
+$color-yellow-light: #ffdb70;
 $color-yellow-med: #fbc834;
+$color-yellow-dark: #e7ad00;
 $color-coral-light: #ffa693;
 $color-coral-med: #ea7359;
+$color-red-med: #9b4741;
 $color-green-light: #b1ee03;
 $color-green-med: #82ab0d;
+$color-orange-med: #ff9340;
 $color-orange-dark: #fe7000;
 
 $gradient-blue: linear-gradient(to bottom, $color-blue-lighter, $color-blue-light);
+$gradient-gray: linear-gradient(to bottom, $color-white, $color-gray-bd);
+$gradient-coral: linear-gradient(to bottom, $color-coral-light, $color-coral-med);
+$gradient-green: linear-gradient(to bottom, $color-green-light, $color-green-med);
+$gradient-yellow: linear-gradient(to bottom, $color-yellow-light, $color-yellow-med);
+$gradient-orange: linear-gradient(to bottom, $color-orange-med, $color-orange-dark);
 
 /* Decorations */
 $rad-inner: 3px;

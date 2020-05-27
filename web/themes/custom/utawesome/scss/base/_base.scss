@@ -16,6 +16,11 @@ html {
   line-height: 1.5;
   color: $color-blue-dark;
   font-family: $font-main;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-white;
 }
 
 *,

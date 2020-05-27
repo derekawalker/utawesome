@@ -14,3 +14,9 @@ owl-carousel:
     js/homepage-carousels.js: {}
   dependencies:
     - core/jquery
+places:
+  version: 1.x
+  js:
+    js/places.js: {}
+  dependencies:
+    - core/jquery

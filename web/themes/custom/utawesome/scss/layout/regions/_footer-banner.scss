@@ -5,6 +5,8 @@ $region-height: 70px;
 .region-footer-banner {
   background: $color-blue-med;
   color: $color-white;
+  position: relative;
+  z-index: 9;
 
   .region-inner {
     .block {

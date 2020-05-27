@@ -70,7 +70,9 @@
  *   in different view modes.
  */
 #}
-{% block libraries %}{% endblock %}
+{% block libraries %}
+  {{ attach_library('utawesome/places') }}
+{% endblock %}
 
 {%
   set classes = [
@@ -107,7 +109,9 @@
 
   <div{{ content_attributes.addClass('node__content') }}>
 
+    {% if not (node.field_image.isEmpty == true) %}
     {{ content.field_image }}
+    {% endif %}
 
     <div class="node-attraction-intro">
 
@@ -117,105 +121,169 @@
         {{ label }}
       </h2>
 
+      {% if not (node.field_location.isEmpty == true) %}
       <div class="node-attraction-location">
         {{ content.field_location.0 }}
       </div>
+      {% endif %}
 
+
+      {% if not (node.field_category.isEmpty == true) %}
       <div class="node-attraction-category">
         {{ content.field_category.0 }}
       </div>
+      {% endif %}
     </div>
 
     <div id="node-attraction-tabs" class="node-attraction-tabs">
       <div class="node-attraction-tab active">
-        <i class="fas fa-info-circle"></i>
-        <div>About</div>
+        <a href="#node--about">
+          <i class="fas fa-info-circle"></i>
+          <div>About</div>
+        </a>
       </div>
 
       <div class="node-attraction-tab">
-        <i class="fas fa-comments"></i>
-        <div>Reviews</div>
+       <a href="#node--reviews">
+          <i class="fas fa-comments"></i>
+          <div>Reviews</div>
+       </a>
       </div>
 
+      {% if not (node.field_coupons.isEmpty == true) %}
       <div class="node-attraction-tab">
-        <i class="fas fa-tags"></i>
-        <div>Coupons</div>
+        <a href="#node--coupons">
+          <i class="fas fa-tags"></i>
+          <div>Coupons</div>
+        </a>
       </div>
+      {% endif %}
 
+      {% if not (node.field_gear.isEmpty == true) %}
       <div class="node-attraction-tab">
-        <i class="fas fa-hiking"></i>
-        <div>Gear</div>
+        <a href="#node--gear">
+          <i class="fas fa-hiking"></i>
+          <div>Gear</div>
+        </a>
       </div>
+      {% endif %}
     </div>
 
+    <span id="node--about" class="anchor"></span>
     <div class="node-attraction-tabs-container">
-      <span id="node--about"></span>
+
       {{ content.field_rating }}
-      {{ content.body }}
 
+      {% if not (node.body.isEmpty == true) %}
+      {% set summary = content.body|render|striptags %}
+      <details class="node-attraction-body">
+        <summary >
+          {{ summary|length > 100 ? summary|slice(0, 100) ~ '...' : summary }}
+          <span><a>more</a></span>
+        </summary>
+        {{ content.body }}
+      </details>
+      {% endif %}
+
+      {% if not ((node.field_price.isEmpty == true) and (node.field_indoor_outdoor.isEmpty == true)) %}
       <div class="node-attraction-pill-wrapper">
-        {{ content.field_price }}
-        {{ content.field_indoor_outdoor }}
-      </div>
+        {% if not (node.field_price.isEmpty == true) %}
+        <div class="node-attraction-pill">{{ content.field_price }}</div>
+        {% endif %}
 
-      <div class="node-attraction-collapse-wrapper">
-        <div class="node-attraction-collapse-title">
+        {% if not (node.field_indoor_outdoor.isEmpty == true) %}
+        <div class="node-attraction-pill">{{ content.field_indoor_outdoor }}</div>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {% if not (node.field_tips.isEmpty == true) %}
+      <details class="node-attraction-collapse-wrapper">
+        <summary class="node-attraction-collapse-title">
           Tips &amp; Suggestions
-          <i class="fas fa-caret-down"></i>
-        </div>
+        </summary>
 
         <div class="node-attraction-collapse-body">
           {{ content.field_tips }}
         </div>
-      </div>
+      </details>
+      {% endif %}
 
-      <div class="node-attraction-collapse-wrapper">
-        <div class="node-attraction-collapse-title">
+      {% if not (node.field_features.isEmpty == true) %}
+      <details class="node-attraction-collapse-wrapper">
+        <summary class="node-attraction-collapse-title">
           Features &amp; Amenities
-          <i class="fas fa-caret-down"></i>
-        </div>
+        </summary>
 
         <div class="node-attraction-collapse-body">
           {{ content.field_features }}
         </div>
-      </div>
+      </details>
+      {% endif %}
 
       <div class="node-attraction-expand-wrapper">
         <div class="node-attraction-expand-title">
-          More Information
+          Location &amp; Contact Information
         </div>
 
+        {%
+          if not ((node.field_address.isEmpty == true)
+         and (node.field_phone.isEmpty == true)
+         and (content.field_website.isEmpty == true))
+        %}
         <div class="node-attraction-expand-body">
+          {% if not (node.field_address.isEmpty == true) %}
           {{ content.field_address }}
           {{ content.field_map }}
+          {% endif %}
 
-          <i class="fas fa-phone"></i> {{ content.field_phone }}
-          <i class="fas fa-external-link-alt"></i>{{ content.field_website }}
-        </div>
+          {% if not (node.field_phone.isEmpty == true) %}
+          {{ content.field_phone }}
+          {% endif %}
 
-        <div id="node--reviews" class="node-attraction-section node-attraction-section-reviews">
-          <h4 class="node-attraction-section-title">Reviews</h4>
-
-          <h5 class="node-attraction-section-title">In-Depth Local Reviews:</h5>
-          {{ content.field_local_reviews }}
-
-          <h5 class="node-attraction-section-title">Additional Articles:</h5>
-          {{ content.field_articles }}
-
-          <h5 class="node-attraction-section-title">Visitor Reviews:</h5>
-          {{ content.field_reviews }}
-        </div>
-
-        <div id="node--coupons" class="node-attraction-section node-attraction-section-coupons">
-          <h4 class="node-attraction-section-title">Coupons</h4>
-          {{ content.field_coupons }}
-        </div>
-
-        <div id="node--coupons" class="node-attraction-section node-attraction-section-coupons">
-          <h4 class="node-attraction-section-title">What to Bring</h4>
-          {{ content.field_gear }}
+          {% if not (content.field_website.isEmpty == true) %}
+          {{ content.field_website }}
+          {% endif %}
         </div>
       </div>
+      {% endif %}
+
+      <span id="node--reviews" class="anchor"></span>
+      <div class="node-attraction-section node-attraction-section-reviews">
+        <h4 class="node-attraction-section-title">Reviews</h4>
+
+        {% if not (node.field_local_reviews.isEmpty == true) %}
+        <h5 class="node-attraction-section-title">In-Depth Local Reviews:</h5>
+        {{ content.field_local_reviews }}
+        {% endif %}
+
+        {% if not (node.field_articles.isEmpty == true) %}
+        <h5 class="node-attraction-section-title">Additional Articles:</h5>
+        {{ content.field_articles }}
+        {% endif %}
+
+        <details>
+          <summary><h5 class="node-attraction-section-title">Visitor Reviews:</h5></summary>
+          <div class="node-attraction-section-reviews-details">{{ content.field_reviews }}</div>
+        </details>
+      </div>
+
+
+      {% if not (node.field_coupons.isEmpty == true) %}
+      <span id="node--coupons" class="anchor"></span>
+      <div class="node-attraction-section node-attraction-section-coupons">
+        <h4 class="node-attraction-section-title">Coupons</h4>
+        {{ content.field_coupons }}
+      </div>
+      {% endif %}
+
+      {% if not (node.field_gear.isEmpty == true) %}
+      <span id="node--gear" class="anchor"></span>
+      <div class="node-attraction-section node-attraction-section-gear">
+        <h4 class="node-attraction-section-title">What to Bring</h4>
+        {{ content.field_gear }}
+      </div>
+      {% endif %}
 
     </div>
 

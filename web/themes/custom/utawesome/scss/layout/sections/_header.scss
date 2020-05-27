@@ -1,13 +1,14 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
 .utawesome-section-header {
-  position: relative;
   z-index: 100;
+  position: sticky;
+  top: 0;
+}
 
-  header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
+.path-frontpage {
+  .utawesome-section-header {
+    position: relative;
   }
 }
 
