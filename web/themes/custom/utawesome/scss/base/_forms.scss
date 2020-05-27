@@ -1,0 +1,94 @@
+// Mobile (up to 567px) ---------------------------------
+// ------------------------------------------------------
+input {
+  &[type='text'] {
+    border: 1px solid #004a61;
+    color: #004a61;
+    border-radius: $rad;
+    background: #fff;
+    padding: 0.25em 0.5em;
+    font-weight: 400;
+    height: 30px;
+    max-width: 100%;
+  }
+
+  &[type='submit'] {
+    color: #fff;
+    background: $gradient-blue;
+    padding: 0.5em 0.75em;
+    text-align: center;
+    border: 0;
+    border-radius: $rad;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    margin: 0.5rem;
+    box-shadow: 1px 1px 3px $color-black-25;
+
+    &#edit-preview,
+    &#edit-reset {
+      background: $color-black-25;
+    }
+  }
+}
+
+select {
+  border: 1px solid #004a61;
+  color: #004a61;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0.25em 0.5em;
+  font-weight: 400;
+  height: 30px;
+}
+
+.form-textarea-wrapper {
+  border: 1px solid #004a61;
+  color: #004a61;
+  border-radius: $rad;
+  background: #fff;
+
+  textarea,
+  .cke_reset {
+    border-radius: $rad;
+  }
+}
+
+.filter-wrapper {
+  border: 0;
+  padding: 0.5em 0;
+
+  .form-item-label {
+    display: block;
+  }
+}
+
+.form-item {
+  label {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    display: block;
+  }
+}
+
+// Phablet (568px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+}

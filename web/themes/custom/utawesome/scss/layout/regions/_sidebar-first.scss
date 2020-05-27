@@ -1,9 +1,54 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
+.layout-sidebar-first {
+  background: $color-white;
+}
+
+.region-sidebar-first {
+  > .region-inner {
+    padding: 1rem 1.5rem;
+
+    .block {
+      margin-bottom: 1.5rem;
+
+      > h2 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      ul.menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li.menu-item {
+          margin: 0;
+          padding: 0;
+
+          a {
+            text-decoration: none;
+            font-weight: normal;
+
+            &:before {
+              content: '\f0da';
+              font-family: 'Font Awesome 5 Free';
+              font-weight: 900;
+              margin-right: 0.5em;
+              color: $color-orange-med;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 // Phablet (568px to 767px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $phab) {
+  .layout-sidebar-first {
+    border-left: 1px solid $color-black-10;
+  }
 }
 
 // Tablet (768px to 1023px) -----------------------------
@@ -19,4 +64,7 @@
 // Wide (over 1340px) -----------------------------------
 // ------------------------------------------------------
 @media (min-width: $wide) {
+  .layout-sidebar-first {
+    border-right: 1px solid $color-black-10;
+  }
 }

@@ -22,33 +22,6 @@
           margin: 0.5rem;
         }
 
-        label {
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-          font-weight: 700;
-          font-size: 0.75rem;
-        }
-
-        input {
-          border: 1px solid $color-blue-med;
-          color: $color-blue-med;
-          border-radius: $rad;
-          background: $color-white;
-          padding: 0.25em 0.5em;
-          font-weight: 400;
-          height: 30px;
-        }
-
-        select {
-          border: 1px solid $color-blue-med;
-          color: $color-blue-med;
-          border-radius: $rad;
-          background: $color-white;
-          padding: 0.25em 0.5em;
-          font-weight: 400;
-          height: 30px;
-        }
-
         &.form-item-field-location-target-id {
           width: calc(100% - 1rem);
           position: relative;
@@ -88,21 +61,10 @@
         width: 100%;
 
         input {
-          color: $color-white;
-          background: linear-gradient(to bottom, $color-blue-lighter, $color-blue-light);
-          padding: 0.5em 0.75em;
-          text-align: center;
-          border: 0;
-          border-radius: $rad;
           width: calc(100% - 1rem);
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-          font-weight: 700;
-          margin: 0.5rem;
           box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
 
           &[data-drupal-selector='edit-reset'] {
-            background: $color-black-15;
             order: 1;
           }
         }

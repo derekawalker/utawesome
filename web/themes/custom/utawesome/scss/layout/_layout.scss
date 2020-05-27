@@ -104,10 +104,11 @@
   .both-sidebars {
     .layout-content {
       width: 55%;
+      order: 2;
     }
 
     .layout-sidebar-first {
-      order: 2;
+      order: 1;
       width: 25%;
     }
 
