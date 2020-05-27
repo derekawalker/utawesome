@@ -9,6 +9,62 @@
 
 .node__content {
   padding: 1rem;
+
+  details {
+    margin: 1rem;
+    background: $color-white;
+    border-radius: $rad;
+    border: 1px solid $color-black-10;
+
+    &[open] {
+      summary {
+        &:after {
+          content: '\f0d8';
+        }
+      }
+    }
+
+    summary {
+      padding: 0.5em 1em;
+      font-family: $font-header;
+      font-size: 1.2rem;
+      text-align: left;
+      position: relative;
+
+      &:after {
+        content: '\f0d7';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 40px;
+      }
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+
+    > div {
+      padding: 1rem;
+
+      > * {
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }
 
 // Phablet (568px to 767px) -----------------------------

@@ -1,6 +1,8 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
 .views-card {
+  position: relative;
+
   > a {
     display: flex;
     text-decoration: none;

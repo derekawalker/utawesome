@@ -26,3 +26,9 @@ views:
     js/views.js: {}
   dependencies:
     - core/jquery
+common:
+  version: 1.x
+  js:
+    js/common/main.js: {}
+  dependencies:
+    - core/jquery

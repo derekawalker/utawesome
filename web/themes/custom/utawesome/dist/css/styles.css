@@ -755,42 +755,6 @@ select {
   top: -150px;
   visibility: hidden; }
 
-.page-node-type-attraction details {
-  margin: 1rem;
-  background: #fff;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1); }
-  .page-node-type-attraction details[open] summary:after {
-    content: '\f0d8'; }
-  .page-node-type-attraction details summary {
-    padding: 0.5em 1em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    font-family: ironbrine, Lato, Arial, Helvetica, sans-serif;
-    font-size: 1.2rem; }
-    .page-node-type-attraction details summary:after {
-      content: '\f0d7';
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
-      display: block;
-      margin-left: auto; }
-    .page-node-type-attraction details summary::-webkit-details-marker {
-      display: none; }
-  .page-node-type-attraction details > div {
-    padding: 1rem; }
-    .page-node-type-attraction details > div > *:first-child {
-      margin-top: 0; }
-    .page-node-type-attraction details > div > *:last-child {
-      margin-bottom: 0; }
-
 .page-node-type-attraction .node-attraction-intro {
   padding: 1.5rem 1rem;
   background: #f1f1f1;
@@ -1136,18 +1100,10 @@ select {
       border: 0; }
 
 .page-node-type-attraction .node-attraction-section-reviews details {
-  margin: 1rem 0;
-  background: #fff;
-  border-radius: 5px;
-  border: 1px solid #bdbdbd; }
+  margin: 1rem 0; }
   .page-node-type-attraction .node-attraction-section-reviews details h5.node-attraction-section-title {
     margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    text-align: left; }
   .page-node-type-attraction .node-attraction-section-reviews details .node-attraction-section-reviews-details {
     padding: 1rem; }
   .page-node-type-attraction .node-attraction-section-reviews details .indented {
@@ -1279,42 +1235,6 @@ select {
   position: relative;
   top: -150px;
   visibility: hidden; }
-
-.page-node-type-hike details {
-  margin: 1rem;
-  background: #fff;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1); }
-  .page-node-type-hike details[open] summary:after {
-    content: '\f0d8'; }
-  .page-node-type-hike details summary {
-    padding: 0.5em 1em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    font-family: ironbrine, Lato, Arial, Helvetica, sans-serif;
-    font-size: 1.2rem; }
-    .page-node-type-hike details summary:after {
-      content: '\f0d7';
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
-      display: block;
-      margin-left: auto; }
-    .page-node-type-hike details summary::-webkit-details-marker {
-      display: none; }
-  .page-node-type-hike details > div {
-    padding: 1rem; }
-    .page-node-type-hike details > div > *:first-child {
-      margin-top: 0; }
-    .page-node-type-hike details > div > *:last-child {
-      margin-bottom: 0; }
 
 .page-node-type-hike .node-hike-intro {
   padding: 1.5rem 1rem;
@@ -1692,18 +1612,10 @@ select {
       border: 0; }
 
 .page-node-type-hike .node-hike-section-reviews details {
-  margin: 1rem 0;
-  background: #fff;
-  border-radius: 5px;
-  border: 1px solid #bdbdbd; }
+  margin: 1rem 0; }
   .page-node-type-hike .node-hike-section-reviews details h5.node-hike-section-title {
     margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    text-align: left; }
   .page-node-type-hike .node-hike-section-reviews details .node-hike-section-reviews-details {
     padding: 1rem; }
   .page-node-type-hike .node-hike-section-reviews details .indented {
@@ -1835,42 +1747,6 @@ select {
   position: relative;
   top: -150px;
   visibility: hidden; }
-
-.page-node-type-lodging details {
-  margin: 1rem;
-  background: #fff;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1); }
-  .page-node-type-lodging details[open] summary:after {
-    content: '\f0d8'; }
-  .page-node-type-lodging details summary {
-    padding: 0.5em 1em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    font-family: ironbrine, Lato, Arial, Helvetica, sans-serif;
-    font-size: 1.2rem; }
-    .page-node-type-lodging details summary:after {
-      content: '\f0d7';
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
-      display: block;
-      margin-left: auto; }
-    .page-node-type-lodging details summary::-webkit-details-marker {
-      display: none; }
-  .page-node-type-lodging details > div {
-    padding: 1rem; }
-    .page-node-type-lodging details > div > *:first-child {
-      margin-top: 0; }
-    .page-node-type-lodging details > div > *:last-child {
-      margin-bottom: 0; }
 
 .page-node-type-lodging .node-lodging-intro {
   padding: 1.5rem 1rem;
@@ -2217,18 +2093,10 @@ select {
       border: 0; }
 
 .page-node-type-lodging .node-lodging-section-reviews details {
-  margin: 1rem 0;
-  background: #fff;
-  border-radius: 5px;
-  border: 1px solid #bdbdbd; }
+  margin: 1rem 0; }
   .page-node-type-lodging .node-lodging-section-reviews details h5.node-lodging-section-title {
     margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    text-align: left; }
   .page-node-type-lodging .node-lodging-section-reviews details .node-lodging-section-reviews-details {
     padding: 1rem; }
   .page-node-type-lodging .node-lodging-section-reviews details .indented {
@@ -2356,6 +2224,46 @@ select {
 
 .node__content {
   padding: 1rem; }
+  .node__content details {
+    margin: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+    .node__content details[open] summary:after {
+      content: '\f0d8'; }
+    .node__content details summary {
+      padding: 0.5em 1em;
+      font-family: ironbrine, Lato, Arial, Helvetica, sans-serif;
+      font-size: 1.2rem;
+      text-align: left;
+      position: relative; }
+      .node__content details summary:after {
+        content: '\f0d7';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-left: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 40px; }
+      .node__content details summary::-webkit-details-marker {
+        display: none; }
+    .node__content details > div {
+      padding: 1rem; }
+      .node__content details > div > *:first-child {
+        margin-top: 0; }
+      .node__content details > div > *:last-child {
+        margin-bottom: 0; }
 
 .page-node-type-post .node__content {
   padding: 0;
@@ -2412,42 +2320,6 @@ select {
   position: relative;
   top: -150px;
   visibility: hidden; }
-
-.page-node-type-restaurant details {
-  margin: 1rem;
-  background: #fff;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1); }
-  .page-node-type-restaurant details[open] summary:after {
-    content: '\f0d8'; }
-  .page-node-type-restaurant details summary {
-    padding: 0.5em 1em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    font-family: ironbrine, Lato, Arial, Helvetica, sans-serif;
-    font-size: 1.2rem; }
-    .page-node-type-restaurant details summary:after {
-      content: '\f0d7';
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
-      display: block;
-      margin-left: auto; }
-    .page-node-type-restaurant details summary::-webkit-details-marker {
-      display: none; }
-  .page-node-type-restaurant details > div {
-    padding: 1rem; }
-    .page-node-type-restaurant details > div > *:first-child {
-      margin-top: 0; }
-    .page-node-type-restaurant details > div > *:last-child {
-      margin-bottom: 0; }
 
 .page-node-type-restaurant .node-restaurant-intro {
   padding: 1.5rem 1rem;
@@ -2780,18 +2652,10 @@ select {
       border: 0; }
 
 .page-node-type-restaurant .node-restaurant-section-reviews details {
-  margin: 1rem 0;
-  background: #fff;
-  border-radius: 5px;
-  border: 1px solid #bdbdbd; }
+  margin: 1rem 0; }
   .page-node-type-restaurant .node-restaurant-section-reviews details h5.node-restaurant-section-title {
     margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    text-align: left; }
   .page-node-type-restaurant .node-restaurant-section-reviews details .node-restaurant-section-reviews-details {
     padding: 1rem; }
   .page-node-type-restaurant .node-restaurant-section-reviews details .indented {
@@ -3524,92 +3388,93 @@ select {
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap; } }
 
-.views-card > a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-decoration: none;
-  position: relative;
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 1rem 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  color: #003d51; }
-  .views-card > a:after {
-    content: '\f105';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    display: block;
-    padding-left: 1rem;
-    margin-left: auto; }
-  .views-card > a:hover, .views-card > a:active, .views-card > a:focus {
-    color: #3aa1aa; }
-  .views-card > a .card-image {
-    border-radius: 5px;
-    overflow: hidden;
-    margin-right: 1rem;
-    min-width: 30%;
-    max-width: 30%; }
-    .views-card > a .card-image img {
-      display: block;
-      border-radius: 5px;
-      width: 100%; }
-  .views-card > a .card-title {
-    font-size: 1.2em;
-    margin: 0;
-    line-height: 1; }
-  .views-card > a .card-location {
-    color: #003d51;
-    font-size: 0.875em; }
-  .views-card > a .card-date {
-    color: #003d51;
-    font-size: 0.875em; }
-
-.views-card .card-flag {
-  position: absolute;
-  top: -5px;
-  left: 11px; }
-  .views-card .card-flag a {
-    background: #ea7359;
-    border-radius: 20px;
-    height: 30px;
-    width: 30px;
-    display: block;
-    text-align: center;
-    overflow: hidden;
+.views-card {
+  position: relative; }
+  .views-card > a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     text-decoration: none;
-    -webkit-box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.75);
-            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.75);
-    border: 1px solid #ffa693; }
-    .views-card .card-flag a:before {
-      content: '\f005';
+    position: relative;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 1rem 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    color: #003d51; }
+    .views-card > a:after {
+      content: '\f105';
       font-family: 'Font Awesome 5 Free';
-      font-weight: 400;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      color: #ffa693;
-      width: 28px;
-      height: 28px;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-  .views-card .card-flag .action-unflag a {
-    background: #82ab0d;
-    border-color: #b1ee03; }
-    .views-card .card-flag .action-unflag a:before {
-      color: #b1ee03;
-      font-weight: 900; }
+      font-weight: 900;
+      display: block;
+      padding-left: 1rem;
+      margin-left: auto; }
+    .views-card > a:hover, .views-card > a:active, .views-card > a:focus {
+      color: #3aa1aa; }
+    .views-card > a .card-image {
+      border-radius: 5px;
+      overflow: hidden;
+      margin-right: 1rem;
+      min-width: 30%;
+      max-width: 30%; }
+      .views-card > a .card-image img {
+        display: block;
+        border-radius: 5px;
+        width: 100%; }
+    .views-card > a .card-title {
+      font-size: 1.2em;
+      margin: 0;
+      line-height: 1; }
+    .views-card > a .card-location {
+      color: #003d51;
+      font-size: 0.875em; }
+    .views-card > a .card-date {
+      color: #003d51;
+      font-size: 0.875em; }
+  .views-card .card-flag {
+    position: absolute;
+    top: -5px;
+    left: 11px; }
+    .views-card .card-flag a {
+      background: #ea7359;
+      border-radius: 20px;
+      height: 30px;
+      width: 30px;
+      display: block;
+      text-align: center;
+      overflow: hidden;
+      text-decoration: none;
+      -webkit-box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.75);
+              box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.75);
+      border: 1px solid #ffa693; }
+      .views-card .card-flag a:before {
+        content: '\f005';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 400;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: #ffa693;
+        width: 28px;
+        height: 28px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+    .views-card .card-flag .action-unflag a {
+      background: #82ab0d;
+      border-color: #b1ee03; }
+      .views-card .card-flag .action-unflag a:before {
+        color: #b1ee03;
+        font-weight: 900; }
 
 @media (min-width: 768px) {
   .views-card > a .card-image {

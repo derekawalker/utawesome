@@ -22,25 +22,25 @@
         {{ label }}
       </h3>
 
-      {% if not (node.field_location.isEmpty == true) %}
+      {% if content.field_location is not empty %}
       <div class="card-location">
         {{ content.field_location.0 }}
       </div>
       {% endif %}
 
-      {% if not (node.field_post_date.isEmpty == true) %}
+      {% if content.field_post_date is not empty %}
       <div class="card-date">
         {{ content.field_post_date }}
-      </div>
-      {% endif %}
-
-      {% if not (node.flag_add_to_trip.isEmpty == true) %}
-      <div class="card-flag">
-        {{ content.flag_add_to_trip }}
       </div>
       {% endif %}
     </div>
 
   </a>
+
+  {% if content.flag_add_to_trip is not empty %}
+  <div class="card-flag">
+    {{ content.flag_add_to_trip }}
+  </div>
+  {% endif %}
 </article>
 

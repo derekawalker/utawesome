@@ -17,56 +17,6 @@
     visibility: hidden;
   }
 
-  details {
-    margin: 1rem;
-    background: $color-white;
-    border-radius: $rad;
-    border: 1px solid $color-black-10;
-
-    &[open] {
-      summary {
-        &:after {
-          content: '\f0d8';
-        }
-      }
-    }
-
-    summary {
-      padding: 0.5em 1em;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      font-family: $font-header;
-      font-size: 1.2rem;
-
-      &:after {
-        content: '\f0d7';
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 900;
-        display: block;
-        margin-left: auto;
-      }
-
-      &::-webkit-details-marker {
-        display: none;
-      }
-    }
-
-    > div {
-      padding: 1rem;
-
-      > * {
-        &:first-child {
-          margin-top: 0;
-        }
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
-
   .node-attraction-intro {
     padding: 1.5rem 1rem;
     background: $color-gray-f1;
@@ -487,14 +437,10 @@
   .node-attraction-section-reviews {
     details {
       margin: 1rem 0;
-      background: $color-white;
-      border-radius: $rad;
-      border: 1px solid $color-gray-bd;
 
       h5.node-attraction-section-title {
         margin: 0;
-        display: flex;
-        align-items: center;
+        text-align: left;
       }
 
       .node-attraction-section-reviews-details {
