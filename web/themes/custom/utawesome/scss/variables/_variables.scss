@@ -39,6 +39,7 @@ $color-blue-lighter: #5cd1db;
 $color-blue-light: #3aa1aa;
 $color-blue-med: #004a61;
 $color-blue-dark: #003d51;
+$color-blue-darker: #002a38;
 $color-yellow-light: #ffdb70;
 $color-yellow-med: #fbc834;
 $color-yellow-dark: #e7ad00;
@@ -51,6 +52,7 @@ $color-orange-med: #ff9340;
 $color-orange-dark: #fe7000;
 
 $gradient-blue: linear-gradient(to bottom, $color-blue-lighter, $color-blue-light);
+$gradient-blue-dark: linear-gradient(to bottom, $color-blue-dark, $color-blue-med);
 $gradient-gray: linear-gradient(to bottom, $color-white, $color-gray-bd);
 $gradient-coral: linear-gradient(to bottom, $color-coral-light, $color-coral-med);
 $gradient-green: linear-gradient(to bottom, $color-green-light, $color-green-med);

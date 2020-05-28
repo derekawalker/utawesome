@@ -68,12 +68,26 @@
 
       a {
         color: $color-white;
+        border: 0;
 
         &:hover,
         &:focus,
         &:active {
           background: $color-white-50;
           color: $color-blue-dark;
+          border: 0;
+          color: $color-blue-med;
+        }
+
+        &.is-active {
+          background: $color-blue-med;
+          border: 0;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: $color-white;
+          }
         }
       }
     }

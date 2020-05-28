@@ -3,7 +3,7 @@
 $region-height: 70px;
 
 .region-footer-banner {
-  background: $color-blue-med;
+  background: $color-blue-dark;
   color: $color-white;
   position: relative;
   z-index: 9;
@@ -12,6 +12,29 @@ $region-height: 70px;
     .block {
       text-align: center;
       padding: 1rem;
+
+      ul.menu {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+
+        .menu-item {
+          padding: 0;
+
+          a {
+            display: block;
+            text-transform: uppercase;
+            font-size: 0.75em;
+            letter-spacing: 0.05em;
+            padding: 0.5em;
+            text-decoration: none;
+            font-weight: 400;
+          }
+        }
+      }
     }
   }
 }

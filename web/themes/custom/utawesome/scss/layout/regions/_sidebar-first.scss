@@ -1,7 +1,7 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
 .layout-sidebar-first {
-  background: $color-white;
+  background: $color-blue-med;
 }
 
 .region-sidebar-first {
@@ -9,6 +9,7 @@
     padding: 1rem 1.5rem;
 
     .block {
+      color: $color-white;
       margin-bottom: 1.5rem;
 
       > h2 {
@@ -34,7 +35,7 @@
               font-family: 'Font Awesome 5 Free';
               font-weight: 900;
               margin-right: 0.5em;
-              color: $color-orange-med;
+              color: $color-yellow-med;
             }
           }
         }
@@ -46,9 +47,6 @@
 // Phablet (568px to 767px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $phab) {
-  .layout-sidebar-first {
-    border-left: 1px solid $color-black-10;
-  }
 }
 
 // Tablet (768px to 1023px) -----------------------------
@@ -64,7 +62,4 @@
 // Wide (over 1340px) -----------------------------------
 // ------------------------------------------------------
 @media (min-width: $wide) {
-  .layout-sidebar-first {
-    border-right: 1px solid $color-black-10;
-  }
 }

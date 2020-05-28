@@ -1,18 +1,9 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
-$region-height: 70px;
-
-.region-footer {
-  background: $color-blue-darker;
-  color: $color-white;
-  padding-bottom: 5rem;
-
-  .region-inner {
-    .block {
-      text-align: center;
-      padding: 1.5rem 1rem;
-    }
-  }
+#block-socialmedialinks {
+  font-size: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 // Phablet (568px to 767px) -----------------------------

@@ -1,16 +1,33 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
-$region-height: 70px;
+.paragraph--type--place-summary {
+  margin: 1rem;
+  background: $color-blue-dark;
+  padding: 1rem 2rem;
+  border-radius: $rad;
 
-.region-footer {
-  background: $color-blue-darker;
-  color: $color-white;
-  padding-bottom: 5rem;
+  .field--name-field-place-title {
+    font-family: $font-header;
+    font-size: 1.75em;
+    color: $color-orange-med;
+  }
 
-  .region-inner {
-    .block {
-      text-align: center;
-      padding: 1.5rem 1rem;
+  .field--name-field-place-summary {
+    color: $color-white;
+  }
+
+  .views-card {
+    margin-bottom: 1rem;
+
+    > a {
+      border: 0;
+      background: $color-white-85;
+      padding: 1rem;
+      border-radius: $rad-inner;
+    }
+
+    .card-flag {
+      left: -5px;
     }
   }
 }

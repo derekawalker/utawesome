@@ -9,7 +9,7 @@
   font-style: normal; }
 
 html {
-  background: #003d51;
+  background: #002a38;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
@@ -175,29 +175,64 @@ select {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    width: 25%; }
+    width: 20%; }
   .both-sidebars .layout-sidebar-second {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    width: 20%; }
+    width: 25%; }
   .has-sidebar:not(.both-sidebars) .layout-content {
-    width: 75%; }
+    width: 75%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
   .has-sidebar:not(.both-sidebars) .layout-sidebar-first,
   .has-sidebar:not(.both-sidebars) .layout-sidebar-second {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     width: 25%; } }
 
+.region-content .region-inner {
+  padding: 1px 0; }
+
 .region-footer-banner {
-  background: #004a61;
+  background: #003d51;
   color: #fff;
   position: relative;
   z-index: 9; }
   .region-footer-banner .region-inner .block {
     text-align: center;
     padding: 1rem; }
+    .region-footer-banner .region-inner .block ul.menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 0;
+      margin: 0; }
+      .region-footer-banner .region-inner .block ul.menu .menu-item {
+        padding: 0; }
+        .region-footer-banner .region-inner .block ul.menu .menu-item a {
+          display: block;
+          text-transform: uppercase;
+          font-size: 0.75em;
+          letter-spacing: 0.05em;
+          padding: 0.5em;
+          text-decoration: none;
+          font-weight: 400; }
 
 .region-footer {
-  background: #003d51;
+  background: #002a38;
   color: #fff;
   padding-bottom: 5rem; }
   .region-footer .region-inner .block {
@@ -228,11 +263,12 @@ select {
     position: relative; }
 
 .layout-sidebar-first {
-  background: #fff; }
+  background: #004a61; }
 
 .region-sidebar-first > .region-inner {
   padding: 1rem 1.5rem; }
   .region-sidebar-first > .region-inner .block {
+    color: #fff;
     margin-bottom: 1.5rem; }
     .region-sidebar-first > .region-inner .block > h2 {
       margin-top: 0;
@@ -252,15 +288,7 @@ select {
             font-family: 'Font Awesome 5 Free';
             font-weight: 900;
             margin-right: 0.5em;
-            color: #ff9340; }
-
-@media (min-width: 568px) {
-  .layout-sidebar-first {
-    border-left: 1px solid rgba(0, 0, 0, 0.1); } }
-
-@media (min-width: 1340px) {
-  .layout-sidebar-first {
-    border-right: 1px solid rgba(0, 0, 0, 0.1); } }
+            color: #fbc834; }
 
 .layout-sidebar-second {
   background: #004a61; }
@@ -449,6 +477,11 @@ select {
   #block-utawesome-views-block-popular-block-1 {
     padding: 8% 0; } }
 
+#block-socialmedialinks {
+  font-size: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
 #block-viewitinerarybutton {
   position: fixed;
   bottom: 0;
@@ -463,7 +496,7 @@ select {
     display: inline-block;
     padding: 1em 2em;
     text-decoration: none;
-    margin: 0.5em auto;
+    margin: 1em auto;
     border-radius: 2em;
     -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
@@ -576,10 +609,18 @@ select {
       #block-utawesome-horizontalmenu ul.sub-nav li.menu-item:last-child {
         border-bottom: 0; }
       #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a {
-        color: #fff; }
+        color: #fff;
+        border: 0; }
         #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a:hover, #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a:focus, #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a:active {
           background: rgba(255, 255, 255, 0.5);
-          color: #003d51; }
+          color: #003d51;
+          border: 0;
+          color: #004a61; }
+        #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a.is-active {
+          background: #004a61;
+          border: 0; }
+          #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a.is-active:hover, #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a.is-active:focus, #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a.is-active:active {
+            color: #fff; }
 
 @media (min-width: 768px) {
   #block-utawesome-horizontalmenu,
@@ -2220,7 +2261,8 @@ select {
   text-align: center;
   text-transform: uppercase;
   font-size: 2.5rem;
-  color: #003d51; }
+  color: #003d51;
+  padding: 0 1rem; }
 
 .node__content {
   padding: 1rem; }
@@ -2791,6 +2833,27 @@ select {
   .path-frontpage .node__content {
     padding: 1rem 10%; } }
 
+.paragraph--type--place-summary {
+  margin: 1rem;
+  background: #003d51;
+  padding: 1rem 2rem;
+  border-radius: 5px; }
+  .paragraph--type--place-summary .field--name-field-place-title {
+    font-family: ironbrine, Lato, Arial, Helvetica, sans-serif;
+    font-size: 1.75em;
+    color: #ff9340; }
+  .paragraph--type--place-summary .field--name-field-place-summary {
+    color: #fff; }
+  .paragraph--type--place-summary .views-card {
+    margin-bottom: 1rem; }
+    .paragraph--type--place-summary .views-card > a {
+      border: 0;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 1rem;
+      border-radius: 3px; }
+    .paragraph--type--place-summary .views-card .card-flag {
+      left: -5px; }
+
 .vocabulary-coupons {
   margin-bottom: 1rem; }
   .vocabulary-coupons .content {
@@ -2986,7 +3049,7 @@ select {
       max-width: 25%; } }
 
 .view-id-articles.view-display-id-page_1 .view-header {
-  padding: 1rem; }
+  padding: 0 1rem; }
 
 .view-id-coupons_discounts.view-display-id-page_1 .view-content {
   padding: 1rem; }
