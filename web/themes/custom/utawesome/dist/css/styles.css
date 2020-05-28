@@ -600,7 +600,7 @@ select {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    font-size: 1.35rem; }
+    font-size: 1.15rem; }
     #block-utawesome-horizontalmenu ul.sf-menu li.menu-item {
       padding: 0;
       margin: 0; }
@@ -652,6 +652,10 @@ select {
   .responsive-menu-block-wrapper,
   .block-responsive-menu-horizontal-menu {
     display: block; } }
+
+@media (min-width: 1024px) {
+  #block-utawesome-horizontalmenu ul.sf-menu {
+    font-size: 1.35rem; } }
 
 #block-utawesome-responsivemenumobileicon #toggle-icon .label {
   display: none; }

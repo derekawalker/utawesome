@@ -11,7 +11,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    font-size: 1.35rem;
+    font-size: 1.15rem;
 
     li.menu-item {
       padding: 0;
@@ -112,6 +112,11 @@
 // Desktop (1024px to 1339px) ---------------------------
 // ------------------------------------------------------
 @media (min-width: $desk) {
+  #block-utawesome-horizontalmenu {
+    ul.sf-menu {
+      font-size: 1.35rem;
+    }
+  }
 }
 
 // Wide (over 1340px) -----------------------------------
