@@ -21,7 +21,7 @@
       &:nth-child(2) {
         a {
           &:before {
-            background-image: url('/themes/custom/utawesome/assets/images/zion_national_park.jpg');
+            background-image: url('/themes/custom/utawesome/assets/images/road_trip.jpg');
           }
         }
       }
@@ -29,7 +29,7 @@
       &:nth-child(3) {
         a {
           &:before {
-            background-image: url('/themes/custom/utawesome/assets/images/logan_utah.jpg');
+            background-image: url('/themes/custom/utawesome/assets/images/discounts.jpg');
           }
         }
       }
@@ -54,8 +54,8 @@
           margin-right: 1rem;
           background-color: $color-blue-dark;
           border-radius: $rad;
-          background: url('/themes/custom/utawesome/assets/images/needles_district.jpg') center
-            center no-repeat;
+          background: url('/themes/custom/utawesome/assets/images/arches.jpg') center center
+            no-repeat;
           background-size: cover;
           border: 1px solid $color-blue-dark;
         }

@@ -1,7 +1,9 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
 input {
-  &[type='text'] {
+  &[type='text'],
+  &[type='number'],
+  &[type='password'] {
     border: 1px solid #004a61;
     color: #004a61;
     border-radius: $rad;

@@ -11,7 +11,9 @@
   }
 }
 
-.view-itinerary {
+.view-itinerary.view-display-id-page_1 {
+  margin: 0 -1rem;
+
   .view-content {
     background: $color-gray-f1;
     padding: 2rem 0;
@@ -24,7 +26,7 @@
     align-items: flex-start;
 
     > * {
-      width: 100%;
+      width: calc(100% - 1rem);
     }
 
     .itinerary-add-more-button {
@@ -44,8 +46,13 @@
       }
     }
 
+    > div > a {
+      width: calc(100% - 1rem);
+      margin-left: 0.5rem;
+    }
+
     a {
-      width: calc(100% - 1em);
+      width: calc(100% - 1rem);
       z-index: 1;
       color: $color-white;
       text-transform: uppercase;

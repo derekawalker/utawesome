@@ -1,6 +1,9 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
-.view-id-coupons_discounts.view-display-id-page_1 {
+.view-id-coupons_discounts.view-display-id-page_1,
+.view-id-coupons_discounts.view-display-id-page_2 {
+  margin: 0 -1rem;
+
   .view-content {
     padding: 1rem;
   }
@@ -22,6 +25,7 @@
     img {
       border-radius: $rad;
       width: 100%;
+      display: block;
     }
   }
 

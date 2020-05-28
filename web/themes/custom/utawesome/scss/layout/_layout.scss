@@ -12,14 +12,17 @@
 
     .layout-content {
       width: 60%;
+      order: 2;
     }
 
     .layout-sidebar-second {
       width: 100%;
+      order: 3;
     }
 
     .layout-sidebar-first {
       width: 40%;
+      order: 1;
     }
   }
 
@@ -31,11 +34,17 @@
 
     .layout-content {
       width: 60%;
+      order: 2;
     }
 
-    .layout-sidebar-first,
+    .layout-sidebar-first {
+      width: 40%;
+      order: 1;
+    }
+
     .layout-sidebar-second {
       width: 40%;
+      order: 3;
     }
   }
 }

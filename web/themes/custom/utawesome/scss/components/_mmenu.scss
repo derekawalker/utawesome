@@ -1,18 +1,8 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
-.view-id-gear.view-display-id-page_1 {
-  margin: 0 -1rem;
-
-  .view-content {
-    padding: 1rem;
-  }
-
-  .gear-wrapper {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .gear-description {
-    color: $color-blue-dark;
+.mm-listview {
+  .menu-item {
+    padding: 0;
   }
 }
 

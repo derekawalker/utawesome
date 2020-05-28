@@ -3,7 +3,15 @@
 
 .region-content {
   .region-inner {
-    padding: 1px 0;
+    &:before {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .block-system-main-block {
+      padding: 0 1em;
+    }
   }
 }
 
