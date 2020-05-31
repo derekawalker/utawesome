@@ -66,6 +66,35 @@
       }
     }
   }
+
+  .flag-report-an-error {
+    margin: -1.1rem 1rem 1rem 1rem;
+    text-align: right;
+
+    a {
+      display: inline-block;
+      background: $color-black-25;
+      border-radius: 0 0 10px 10px;
+      padding: 0.75em 1.5em;
+      color: $color-white;
+      text-decoration: none;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-align: center;
+      line-height: 1;
+      margin-right: 10px;
+
+      &:before {
+        content: '!';
+        margin-right: 0.5rem;
+      }
+
+      &:hover {
+        background: $color-red-med;
+      }
+    }
+  }
 }
 
 // Phablet (568px to 767px) -----------------------------

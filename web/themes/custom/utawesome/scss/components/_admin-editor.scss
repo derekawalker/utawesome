@@ -1,25 +1,12 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
-.path-node {
-  .ui-dialog {
-    overflow: hidden;
-    border-radius: $rad;
-
-    textarea {
-      padding: 1em;
+.layout-node-form {
+  .field--type-text-with-summary {
+    img {
+      max-width: 100px;
     }
-
-    .filter-wrapper {
-      display: none;
-    }
-  }
-
-  .ui-widget-overlay {
-    background: #000;
-    opacity: 0.5;
   }
 }
-
 // Phablet (568px to 767px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $phab) {

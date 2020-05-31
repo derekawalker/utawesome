@@ -25,19 +25,23 @@
 #}
 {%
   set classes = [
+    'views-slide',
     'taxonomy-term',
     'vocabulary-' ~ term.bundle|clean_class,
   ]
 %}
-<div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
-  <div class="content" >
-    <a class="gear-wrapper" href="{{ content.field_link[0]["#url"] }}">
-      <div class="gear-image">{{ content.field_main_photo }}</div>
-      <div class="gear-text">
-        <div class="gear-title">{{ name }}</div>
-        {{ content.description }}
-      </div>
-    </a>
-  </div>
-</div>
+
+<article {{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
+  <a href="{{ url }}" rel="bookmark">
+
+    <h2 class="slide-title">
+      {{ name }}
+    </h2>
+
+    <div class="slide-image">
+      {{ content.field_lifestyle_photo }}
+    </div>
+
+  </a>
+</article>
 

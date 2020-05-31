@@ -1,75 +1,78 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
-.vocabulary-gear {
-  margin-bottom: 1rem;
+.field--name-field-gear,
+.views-field-nothing {
+  .vocabulary-gear {
+    margin-bottom: 1rem;
 
-  .content {
-    position: relative;
-  }
-
-  .gear-wrapper {
-    position: relative;
-    background: $color-white;
-    border-radius: $rad;
-    padding: 1rem;
-    border: 1px solid $color-gray-bd;
-    display: flex;
-    flex-flow: column;
-    text-decoration: none;
-
-    .field--name-field-main-photo {
-      padding-bottom: 1rem;
-      img {
-        display: block;
-        width: 100%;
-      }
+    .content {
+      position: relative;
     }
 
-    .field--name-description {
-      font-size: 0.875em;
-      color: $color-blue-dark;
-
-      ul,
-      ol {
-        text-align: left;
-      }
-    }
-
-    .gear-image {
-      text-align: center;
-
-      img {
-        max-height: 200px;
-        width: auto;
-        margin: 0 auto;
-      }
-    }
-
-    .gear-title {
-      font-family: $font-header;
-      text-align: center;
-      line-height: 1.2;
-      font-size: 1.35rem;
-      text-decoration: none;
+    .gear-wrapper {
+      position: relative;
+      background: $color-white;
+      border-radius: $rad;
+      padding: 1rem;
+      border: 1px solid $color-gray-bd;
       display: flex;
-      justify-content: center;
-      color: $color-blue-light;
+      flex-flow: column;
+      text-decoration: none;
 
-      &:hover,
-      &:active,
-      &:focus {
-        text-decoration: underline;
-
-        &:after {
-          text-decoration: none;
+      .field--name-field-main-photo {
+        padding-bottom: 1rem;
+        img {
+          display: block;
+          width: 100%;
         }
       }
 
-      &:after {
-        content: '\f35d';
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 900;
-        margin-left: 1em;
+      .field--name-description {
+        font-size: 0.875em;
+        color: $color-blue-dark;
+
+        ul,
+        ol {
+          text-align: left;
+        }
+      }
+
+      .gear-image {
+        text-align: center;
+
+        img {
+          max-height: 200px;
+          width: auto;
+          margin: 0 auto;
+        }
+      }
+
+      .gear-title {
+        font-family: $font-header;
+        text-align: center;
+        line-height: 1.2;
+        font-size: 1.35rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        color: $color-blue-light;
+
+        &:hover,
+        &:active,
+        &:focus {
+          text-decoration: underline;
+
+          &:after {
+            text-decoration: none;
+          }
+        }
+
+        &:after {
+          content: '\f35d';
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          margin-left: 1em;
+        }
       }
     }
   }
@@ -77,30 +80,33 @@
 // Phablet (568px to 767px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $phab) {
-  .vocabulary-gear {
-    margin-bottom: 1rem;
+  .field--name-field-gear,
+  .views-field-nothing {
+    .vocabulary-gear {
+      margin-bottom: 1rem;
 
-    .gear-wrapper {
-      flex-flow: row nowrap;
+      .gear-wrapper {
+        flex-flow: row nowrap;
 
-      .gear-title {
-        justify-content: flex-start;
-        text-align: left;
+        .gear-title {
+          justify-content: flex-start;
+          text-align: left;
 
-        &:after {
-          margin-left: auto;
+          &:after {
+            margin-left: auto;
+          }
         }
-      }
 
-      .gear-image {
-        min-width: 40%;
-        max-width: 40%;
-      }
+        .gear-image {
+          min-width: 40%;
+          max-width: 40%;
+        }
 
-      .gear-text {
-        width: 100%;
-        padding-left: 1.5rem;
-        text-align: left;
+        .gear-text {
+          width: 100%;
+          padding-left: 1.5rem;
+          text-align: left;
+        }
       }
     }
   }
@@ -114,13 +120,16 @@
 // Desktop (1024px to 1339px) ---------------------------
 // ------------------------------------------------------
 @media (min-width: $desk) {
-  .vocabulary-gear {
-    .gear-wrapper {
-      align-items: center;
+  .field--name-field-gear,
+  .views-field-nothing {
+    .vocabulary-gear {
+      .gear-wrapper {
+        align-items: center;
 
-      .gear-image {
-        min-width: 25%;
-        max-width: 25%;
+        .gear-image {
+          min-width: 25%;
+          max-width: 25%;
+        }
       }
     }
   }

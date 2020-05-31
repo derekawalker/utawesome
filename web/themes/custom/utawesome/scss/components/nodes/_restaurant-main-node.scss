@@ -31,12 +31,11 @@
 
       &.action-unflag {
         a {
-          background: $gradient-green;
-          border-color: $color-green-med;
+          background: $gradient-blue;
+          border-color: $color-blue-light;
 
           &:before {
             font-weight: 900;
-            color: $color-green-light;
           }
         }
       }
@@ -66,7 +65,7 @@
           font-weight: 400;
           display: inline-block;
           margin-right: 0.5em;
-          color: $color-coral-light;
+          color: $color-white;
         }
       }
     }

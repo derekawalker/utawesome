@@ -1,22 +1,16 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
-.path-node {
-  .ui-dialog {
-    overflow: hidden;
-    border-radius: $rad;
+#block-views-block-gear-block-1 {
+  background: $color-purple-dark;
+  color: $color-white;
+  padding: 2rem 0;
 
-    textarea {
-      padding: 1em;
-    }
-
-    .filter-wrapper {
-      display: none;
-    }
-  }
-
-  .ui-widget-overlay {
-    background: #000;
-    opacity: 0.5;
+  > h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0 1rem 2rem;
+    margin: 0;
   }
 }
 
@@ -28,6 +22,9 @@
 // Tablet (768px to 1023px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $tab) {
+  #block-views-block-gear-block-1 {
+    padding: 6% 0;
+  }
 }
 
 // Desktop (1024px to 1339px) ---------------------------

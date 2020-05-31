@@ -21,3 +21,6 @@ regions:
   sidebar_second: Second Sidebar
   footer_banner: Footer Banner
   footer: Footer
+
+ckeditor_stylesheets:
+  - css/ckeditor.css

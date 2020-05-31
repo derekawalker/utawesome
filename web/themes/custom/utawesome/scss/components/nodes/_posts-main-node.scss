@@ -51,6 +51,19 @@
       }
     }
 
+    .field--name-field-content-reference {
+      padding-top: 1rem;
+
+      .field__label {
+        font-family: $font-header;
+        font-size: 1.2em;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        color: $color-orange-med;
+        border-bottom: 1px solid $color-black-15;
+      }
+    }
+
     .field--name-comment {
       padding: 1rem;
       background: $color-yellow-med;

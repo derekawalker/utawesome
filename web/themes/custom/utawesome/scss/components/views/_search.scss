@@ -1,22 +1,25 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
-.path-node {
-  .ui-dialog {
-    overflow: hidden;
-    border-radius: $rad;
-
-    textarea {
-      padding: 1em;
-    }
-
-    .filter-wrapper {
-      display: none;
-    }
+.path-search {
+  .search-form {
+    background: $color-gray-f1;
+    padding: 1rem;
+    margin: 0 -1rem;
   }
 
-  .ui-widget-overlay {
-    background: #000;
-    opacity: 0.5;
+  .item-list {
+    .search-results {
+      padding: 0;
+
+      li {
+        margin: 1rem 0;
+        border: 1px solid $color-black-10;
+        padding: 0 1rem;
+        border-radius: $rad;
+        background: $color-white;
+        box-shadow: 0 0 20px $color-black-10;
+      }
+    }
   }
 }
 

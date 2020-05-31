@@ -1,0 +1,79 @@
+// Mobile (up to 567px) ---------------------------------
+// ------------------------------------------------------
+.view-id-taxonomy_term.view-display-id-page_1 {
+  .vocabulary-gear {
+    .gear-wrapper {
+      color: $color-blue-med;
+      text-decoration: none;
+      text-align: center;
+      position: relative;
+
+      .gear-image {
+        max-height: 400px;
+
+        img {
+          max-height: 400px;
+          object-fit: contain;
+        }
+      }
+
+      .gear-text {
+        .gear-title {
+          font-family: $font-header;
+          font-size: 1.75rem;
+          position: relative;
+          color: $color-blue-light;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: center;
+          margin-top: 1rem;
+
+          &:after {
+            content: '\f35d';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: $color-blue-light;
+            margin-left: 1rem;
+            display: inline-block;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      &:after {
+        margin-top: 1rem;
+        content: 'Recommended for:';
+        font-family: $font-header;
+        font-size: 1.5rem;
+        display: block;
+        padding: 0.5em 1em;
+        background: $color-black-05;
+        border-radius: $rad;
+      }
+    }
+  }
+  .view-content {
+    margin: 1rem -1rem;
+  }
+}
+
+// Phablet (568px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+}
