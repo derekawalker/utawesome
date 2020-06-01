@@ -4,7 +4,8 @@ input {
   &[type='text'],
   &[type='number'],
   &[type='password'],
-  &[type='search'] {
+  &[type='search'],
+  &[type='email'] {
     border: 1px solid #004a61;
     color: #004a61;
     border-radius: $rad;

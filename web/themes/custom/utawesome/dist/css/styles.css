@@ -52,7 +52,7 @@ h6 {
   background: #f2a900;
   color: #004a61; }
 
-input[type='text'], input[type='number'], input[type='password'], input[type='search'] {
+input[type='text'], input[type='number'], input[type='password'], input[type='search'], input[type='email'] {
   border: 1px solid #004a61;
   color: #004a61;
   border-radius: 5px;
@@ -255,6 +255,8 @@ select {
           padding: 0.5em;
           text-decoration: none;
           font-weight: 400; }
+          .region-footer-banner .region-inner .block ul.menu .menu-item a:hover, .region-footer-banner .region-inner .block ul.menu .menu-item a:active, .region-footer-banner .region-inner .block ul.menu .menu-item a:focus, .region-footer-banner .region-inner .block ul.menu .menu-item a.is-active {
+            color: #5cd1db; }
 
 .region-footer {
   background: #002a38;
@@ -469,12 +471,20 @@ select {
         color: #003d51; }
 
 .block-utawesome-banner {
-  background: url("/themes/custom/utawesome/assets/images/fairyland_canyon_utah.jpg") center center no-repeat;
+  background: #003d51 center center no-repeat;
   background-size: cover;
   padding: 10% 8% 10% 12%; }
+  .block-utawesome-banner.morning {
+    background-image: url("/themes/custom/utawesome/assets/images/coyote_buttes.jpg"); }
+  .block-utawesome-banner.day {
+    background-image: url("/themes/custom/utawesome/assets/images/salt_flats.jpg"); }
+  .block-utawesome-banner.evening {
+    background-image: url("/themes/custom/utawesome/assets/images/arches_sunset.jpg"); }
+  .block-utawesome-banner.night {
+    background-image: url("/themes/custom/utawesome/assets/images/fairyland_canyon_utah.jpg"); }
 
 #block-utawesome-views-block-popular-block-2 {
-  background: #ea7359;
+  background: #f2a900;
   color: #fff;
   padding: 2rem 0; }
   #block-utawesome-views-block-popular-block-2 > h2 {
@@ -519,8 +529,8 @@ select {
     padding: 6% 0; } }
 
 #block-views-block-posts-block-1 {
-  background: #f2a900;
-  color: #004a61;
+  background: #004a61;
+  color: #fff;
   padding: 2rem 0; }
   #block-views-block-posts-block-1 > h2 {
     text-transform: uppercase;
@@ -534,7 +544,7 @@ select {
     padding: 6% 0; } }
 
 #block-utawesome-views-block-popular-block-1 {
-  background: #004a61;
+  background: #ea7359;
   color: #fff;
   padding: 2rem 0; }
   #block-utawesome-views-block-popular-block-1 > h2 {
@@ -622,6 +632,15 @@ select {
         position: absolute;
         left: 0;
         top: 0; }
+      #block-headernav ul.menu li.menu-item a[href='/map']:after {
+        content: 'map';
+        text-transform: uppercase;
+        font-size: 0.25rem;
+        position: absolute;
+        bottom: -1px;
+        left: -32px;
+        letter-spacing: 0;
+        color: #004a61; }
       #block-headernav ul.menu li.menu-item a[href='/places']:before {
         content: '\f3c5';
         font-family: 'Font Awesome 5 Free';
@@ -630,11 +649,20 @@ select {
         height: 38px;
         display: block;
         position: absolute;
-        left: -38px;
+        left: -33px;
         top: 0;
         color: #003d51;
         font-size: 22px;
         line-height: 38px; }
+      #block-headernav ul.menu li.menu-item a[href='/places']:after {
+        content: 'places';
+        text-transform: uppercase;
+        font-size: 0.25rem;
+        position: absolute;
+        bottom: -1px;
+        left: -36px;
+        letter-spacing: 0;
+        color: #004a61; }
       #block-headernav ul.menu li.menu-item a[href='/search']:before {
         content: '\f002';
         font-family: 'Font Awesome 5 Free';
@@ -648,6 +676,15 @@ select {
         color: #003d51;
         font-size: 22px;
         line-height: 38px; }
+      #block-headernav ul.menu li.menu-item a[href='/search']:after {
+        content: 'search';
+        text-transform: uppercase;
+        font-size: 0.25rem;
+        position: absolute;
+        bottom: -1px;
+        left: -40px;
+        letter-spacing: 0;
+        color: #004a61; }
 
 #block-utawesome-horizontalmenu {
   display: none;
@@ -727,16 +764,6 @@ select {
   #block-utawesome-responsivemenumobileicon {
     display: none; } }
 
-#block-utawesome-search {
-  position: absolute;
-  bottom: -73px;
-  left: -1rem;
-  width: calc(100% + 2rem);
-  background: #004a61;
-  padding: 1rem;
-  z-index: 100;
-  display: none; }
-
 #block-utawesome-subnav ul.menu {
   margin: 0;
   padding: 0;
@@ -778,7 +805,7 @@ select {
         margin-right: 1rem;
         background-color: #003d51;
         border-radius: 5px;
-        background: url("/themes/custom/utawesome/assets/images/arches.jpg") center center no-repeat;
+        background: url("/themes/custom/utawesome/assets/images/the-narrows_zion-national-park.jpg") center center no-repeat;
         background-size: cover;
         border: 1px solid #003d51; }
       #block-utawesome-subnav ul.menu li.menu-item a:after {
@@ -1172,7 +1199,9 @@ select {
     color: #fff; }
 
 .page-node-type-attraction .field--name-field-map {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem; }
 
 .page-node-type-attraction .field--name-field-phone {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -1588,7 +1617,7 @@ select {
       color: #3aa1aa; }
     .page-node-type-hike .node-hike-tabs-container .node-hike-pill-wrapper .Strenuous .field--name-field-difficult:before {
       content: '\f0c8';
-      color: #000;
+      color: #003d51;
       -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
               transform: rotate(45deg); }
@@ -1609,7 +1638,7 @@ select {
         font-weight: 900;
         display: inline-block;
         margin-right: 0.5em;
-        color: #4d4b00;
+        color: #a39900;
         font-size: 1rem; }
   .page-node-type-hike .node-hike-tabs-container .field--name-field-tips .field__item {
     display: -webkit-box;
@@ -1684,7 +1713,9 @@ select {
     color: #fff; }
 
 .page-node-type-hike .field--name-field-map {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem; }
 
 .page-node-type-hike .field--name-field-phone {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -2165,7 +2196,9 @@ select {
     color: #fff; }
 
 .page-node-type-lodging .field--name-field-map {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem; }
 
 .page-node-type-lodging .field--name-field-phone {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -2756,7 +2789,9 @@ select {
     color: #fff; }
 
 .page-node-type-restaurant .field--name-field-map {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem; }
 
 .page-node-type-restaurant .field--name-field-phone {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -2943,7 +2978,7 @@ select {
 
 @media (min-width: 768px) {
   .path-frontpage .region-subbanner {
-    background: #f2a900;
+    background: #004a61;
     padding-bottom: 1rem; }
     .path-frontpage .region-subbanner .region-inner {
       width: 90%;
@@ -3000,21 +3035,23 @@ select {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    line-height: 1.2; }
     .view-id-taxonomy_term.view-display-id-page_1 .vocabulary-gear .gear-wrapper .gear-text .gear-title:after {
       content: '\f35d';
       font-family: 'Font Awesome 5 Free';
       font-weight: 900;
       color: #3aa1aa;
-      margin-left: 1rem;
+      margin-left: 0.5rem;
       display: inline-block;
-      font-size: 1rem; }
+      font-size: 1rem;
+      margin-top: 5px; }
   .view-id-taxonomy_term.view-display-id-page_1 .vocabulary-gear .gear-wrapper:after {
     margin-top: 1rem;
     content: 'Recommended for:';
@@ -3847,7 +3884,7 @@ select {
       margin: 0; }
 
 .view .feed-icons {
-  padding: 1rem; }
+  padding: 1rem 0; }
 
 .view .pager .pager__items {
   display: -webkit-box;

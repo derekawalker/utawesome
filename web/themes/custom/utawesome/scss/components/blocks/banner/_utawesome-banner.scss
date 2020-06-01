@@ -1,10 +1,25 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
 .block-utawesome-banner {
-  background: url('/themes/custom/utawesome/assets/images/fairyland_canyon_utah.jpg') center center
-    no-repeat;
+  background: $color-blue-dark center center no-repeat;
   background-size: cover;
   padding: 10% 8% 10% 12%;
+
+  &.morning {
+    background-image: url('/themes/custom/utawesome/assets/images/coyote_buttes.jpg');
+  }
+
+  &.day {
+    background-image: url('/themes/custom/utawesome/assets/images/salt_flats.jpg');
+  }
+
+  &.evening {
+    background-image: url('/themes/custom/utawesome/assets/images/arches_sunset.jpg');
+  }
+
+  &.night {
+    background-image: url('/themes/custom/utawesome/assets/images/fairyland_canyon_utah.jpg');
+  }
 }
 
 // Phablet (568px to 767px) -----------------------------

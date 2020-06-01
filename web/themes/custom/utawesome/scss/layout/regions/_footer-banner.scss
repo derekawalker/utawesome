@@ -32,6 +32,13 @@ $region-height: 70px;
             padding: 0.5em;
             text-decoration: none;
             font-weight: 400;
+
+            &:hover,
+            &:active,
+            &:focus,
+            &.is-active {
+              color: $color-blue-lighter;
+            }
           }
         }
       }
