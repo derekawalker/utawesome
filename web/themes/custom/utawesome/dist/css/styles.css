@@ -632,15 +632,6 @@ select {
         position: absolute;
         left: 0;
         top: 0; }
-      #block-headernav ul.menu li.menu-item a[href='/map']:after {
-        content: 'map';
-        text-transform: uppercase;
-        font-size: 0.25rem;
-        position: absolute;
-        bottom: -1px;
-        left: -32px;
-        letter-spacing: 0;
-        color: #004a61; }
       #block-headernav ul.menu li.menu-item a[href='/places']:before {
         content: '\f3c5';
         font-family: 'Font Awesome 5 Free';
@@ -654,15 +645,6 @@ select {
         color: #003d51;
         font-size: 22px;
         line-height: 38px; }
-      #block-headernav ul.menu li.menu-item a[href='/places']:after {
-        content: 'places';
-        text-transform: uppercase;
-        font-size: 0.25rem;
-        position: absolute;
-        bottom: -1px;
-        left: -36px;
-        letter-spacing: 0;
-        color: #004a61; }
       #block-headernav ul.menu li.menu-item a[href='/search']:before {
         content: '\f002';
         font-family: 'Font Awesome 5 Free';
@@ -676,15 +658,6 @@ select {
         color: #003d51;
         font-size: 22px;
         line-height: 38px; }
-      #block-headernav ul.menu li.menu-item a[href='/search']:after {
-        content: 'search';
-        text-transform: uppercase;
-        font-size: 0.25rem;
-        position: absolute;
-        bottom: -1px;
-        left: -40px;
-        letter-spacing: 0;
-        color: #004a61; }
 
 #block-utawesome-horizontalmenu {
   display: none;

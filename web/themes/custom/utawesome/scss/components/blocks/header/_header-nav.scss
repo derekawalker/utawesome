@@ -37,17 +37,6 @@
             left: 0;
             top: 0;
           }
-
-          &:after {
-            content: 'map';
-            text-transform: uppercase;
-            font-size: 0.25rem;
-            position: absolute;
-            bottom: -1px;
-            left: -32px;
-            letter-spacing: 0;
-            color: $color-blue-med;
-          }
         }
 
         &[href='/places'] {
@@ -65,17 +54,6 @@
             font-size: 22px;
             line-height: 38px;
           }
-
-          &:after {
-            content: 'places';
-            text-transform: uppercase;
-            font-size: 0.25rem;
-            position: absolute;
-            bottom: -1px;
-            left: -36px;
-            letter-spacing: 0;
-            color: $color-blue-med;
-          }
         }
 
         &[href='/search'] {
@@ -92,17 +70,6 @@
             color: $color-blue-dark;
             font-size: 22px;
             line-height: 38px;
-          }
-
-          &:after {
-            content: 'search';
-            text-transform: uppercase;
-            font-size: 0.25rem;
-            position: absolute;
-            bottom: -1px;
-            left: -40px;
-            letter-spacing: 0;
-            color: $color-blue-med;
           }
         }
       }
