@@ -19,18 +19,11 @@
   .path-frontpage {
     .region-subbanner {
       background: $color-blue-med;
-      padding-bottom: 1rem;
 
       .region-inner {
-        width: 90%;
-        margin: 0 5%;
-        margin-top: -3rem;
         background: #fff;
         z-index: 1;
-        position: relative;
-        border-radius: 8px;
         padding: 2.5rem 3rem 1rem;
-        display: inline-block;
       }
     }
   }

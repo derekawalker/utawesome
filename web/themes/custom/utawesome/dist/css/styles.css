@@ -2951,18 +2951,11 @@ select {
 
 @media (min-width: 768px) {
   .path-frontpage .region-subbanner {
-    background: #004a61;
-    padding-bottom: 1rem; }
+    background: #004a61; }
     .path-frontpage .region-subbanner .region-inner {
-      width: 90%;
-      margin: 0 5%;
-      margin-top: -3rem;
       background: #fff;
       z-index: 1;
-      position: relative;
-      border-radius: 8px;
-      padding: 2.5rem 3rem 1rem;
-      display: inline-block; } }
+      padding: 2.5rem 3rem 1rem; } }
 
 .paragraph--type--place-summary {
   margin: 1rem;
