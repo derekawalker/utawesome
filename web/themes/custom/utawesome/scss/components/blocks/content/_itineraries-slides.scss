@@ -1,7 +1,7 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
 #block-views-block-popular-block-3 {
-  background: $color-green-light;
+  background: $color-green-med;
   color: $color-white;
   padding: 2rem 0;
 
@@ -11,6 +11,13 @@
     font-size: 2.5rem;
     padding: 0 1rem 2rem;
     margin: 0;
+  }
+
+  .more-link {
+    a {
+      color: $color-white;
+      text-decoration: none;
+    }
   }
 }
 

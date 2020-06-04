@@ -493,6 +493,9 @@ select {
     font-size: 2.5rem;
     padding: 0 1rem 2rem;
     margin: 0; }
+  #block-utawesome-views-block-popular-block-2 .more-link a {
+    color: #fff;
+    text-decoration: none; }
 
 @media (min-width: 768px) {
   #block-utawesome-views-block-popular-block-2 {
@@ -508,13 +511,16 @@ select {
     font-size: 2.5rem;
     padding: 0 1rem 2rem;
     margin: 0; }
+  #block-views-block-gear-block-1 .more-link a {
+    color: #fff;
+    text-decoration: none; }
 
 @media (min-width: 768px) {
   #block-views-block-gear-block-1 {
     padding: 6% 0; } }
 
 #block-views-block-popular-block-3 {
-  background: #a39900;
+  background: #718a01;
   color: #fff;
   padding: 2rem 0; }
   #block-views-block-popular-block-3 > h2 {
@@ -523,6 +529,9 @@ select {
     font-size: 2.5rem;
     padding: 0 1rem 2rem;
     margin: 0; }
+  #block-views-block-popular-block-3 .more-link a {
+    color: #fff;
+    text-decoration: none; }
 
 @media (min-width: 768px) {
   #block-views-block-popular-block-3 {
@@ -538,6 +547,9 @@ select {
     font-size: 2.5rem;
     padding: 0 1rem 2rem;
     margin: 0; }
+  #block-views-block-posts-block-1 .more-link a {
+    color: #fff;
+    text-decoration: none; }
 
 @media (min-width: 768px) {
   #block-views-block-posts-block-1 {
@@ -553,6 +565,9 @@ select {
     font-size: 2.5rem;
     padding: 0 1rem 2rem;
     margin: 0; }
+  #block-utawesome-views-block-popular-block-1 .more-link a {
+    color: #fff;
+    text-decoration: none; }
 
 @media (min-width: 768px) {
   #block-utawesome-views-block-popular-block-1 {
@@ -581,9 +596,7 @@ select {
     border-radius: 2em;
     -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffa693), to(#ea7359));
-    background: -o-linear-gradient(top, #ffa693, #ea7359);
-    background: linear-gradient(to bottom, #ffa693, #ea7359); }
+    background: #ea7359; }
 
 #block-utawesome-branding {
   margin-right: auto; }
@@ -623,17 +636,20 @@ select {
       overflow: hidden;
       position: relative; }
       #block-headernav ul.menu li.menu-item a[href='/map']:before {
-        content: '';
-        background: url(/themes/custom/utawesome/assets/icons/utah_map_icon.svg) no-repeat center center;
-        background-size: 20px;
+        content: '\f279';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
         width: 38px;
         height: 38px;
         display: block;
         position: absolute;
-        left: 0;
-        top: 0; }
+        left: -33px;
+        top: 0;
+        color: #003d51;
+        font-size: 22px;
+        line-height: 38px; }
       #block-headernav ul.menu li.menu-item a[href='/places']:before {
-        content: '\f3c5';
+        content: '\f00b';
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         width: 38px;
@@ -658,6 +674,12 @@ select {
         color: #003d51;
         font-size: 22px;
         line-height: 38px; }
+
+@media (min-width: 1024px) {
+  #block-headernav ul.menu li.menu-item a[href='/map'] {
+    display: none; }
+  #block-headernav ul.menu li.menu-item a[href='/places'] {
+    display: none; } }
 
 #block-utawesome-horizontalmenu {
   display: none;
@@ -690,6 +712,22 @@ select {
         #block-utawesome-horizontalmenu ul.sf-menu li.menu-item a:hover, #block-utawesome-horizontalmenu ul.sf-menu li.menu-item a:focus, #block-utawesome-horizontalmenu ul.sf-menu li.menu-item a:active {
           color: #3aa1aa;
           border-bottom: 3px solid #3aa1aa; }
+        #block-utawesome-horizontalmenu ul.sf-menu li.menu-item a[href='/map']:before {
+          content: '\f279';
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          margin-right: 0.5em;
+          font-size: 0.75em;
+          vertical-align: middle;
+          display: inline-block; }
+        #block-utawesome-horizontalmenu ul.sf-menu li.menu-item a[href='/places']:before {
+          content: '\f00b';
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          margin-right: 0.5em;
+          font-size: 0.75em;
+          vertical-align: middle;
+          display: inline-block; }
   #block-utawesome-horizontalmenu ul.sub-nav {
     background: #3aa1aa;
     font-family: Lato, Arial, Helvetica, sans-serif;
@@ -720,7 +758,9 @@ select {
   #block-utawesome-horizontalmenu,
   .responsive-menu-block-wrapper,
   .block-responsive-menu-horizontal-menu {
-    display: block; } }
+    display: block; }
+  #block-utawesome-horizontalmenu ul.sf-menu {
+    font-size: 1rem; } }
 
 @media (min-width: 1024px) {
   #block-utawesome-horizontalmenu ul.sf-menu {
@@ -1167,7 +1207,7 @@ select {
     margin-top: 1em; }
 
 .page-node-type-attraction .node-attraction-section-coupons {
-  background: #4d4b00; }
+  background: #718a01; }
   .page-node-type-attraction .node-attraction-section-coupons h4.node-attraction-section-title {
     color: #fff; }
 
@@ -1251,7 +1291,7 @@ select {
       position: absolute;
       left: -15px;
       top: 10px;
-      background: #4d4b00;
+      background: #718a01;
       color: #fff;
       border-radius: 50%;
       width: 30px;
@@ -1611,7 +1651,7 @@ select {
         font-weight: 900;
         display: inline-block;
         margin-right: 0.5em;
-        color: #a39900;
+        color: #b4d305;
         font-size: 1rem; }
   .page-node-type-hike .node-hike-tabs-container .field--name-field-tips .field__item {
     display: -webkit-box;
@@ -1681,7 +1721,7 @@ select {
     margin-top: 1em; }
 
 .page-node-type-hike .node-hike-section-coupons {
-  background: #4d4b00; }
+  background: #718a01; }
   .page-node-type-hike .node-hike-section-coupons h4.node-hike-section-title {
     color: #fff; }
 
@@ -1765,7 +1805,7 @@ select {
       position: absolute;
       left: -15px;
       top: 10px;
-      background: #4d4b00;
+      background: #718a01;
       color: #fff;
       border-radius: 50%;
       width: 30px;
@@ -2164,7 +2204,7 @@ select {
     margin-top: 1em; }
 
 .page-node-type-lodging .node-lodging-section-coupons {
-  background: #4d4b00; }
+  background: #718a01; }
   .page-node-type-lodging .node-lodging-section-coupons h4.node-lodging-section-title {
     color: #fff; }
 
@@ -2248,7 +2288,7 @@ select {
       position: absolute;
       left: -15px;
       top: 10px;
-      background: #4d4b00;
+      background: #718a01;
       color: #fff;
       border-radius: 50%;
       width: 30px;
@@ -2757,7 +2797,7 @@ select {
     margin-top: 1em; }
 
 .page-node-type-restaurant .node-restaurant-section-coupons {
-  background: #4d4b00; }
+  background: #718a01; }
   .page-node-type-restaurant .node-restaurant-section-coupons h4.node-restaurant-section-title {
     color: #fff; }
 
@@ -2841,7 +2881,7 @@ select {
       position: absolute;
       left: -15px;
       top: 10px;
-      background: #4d4b00;
+      background: #718a01;
       color: #fff;
       border-radius: 50%;
       width: 30px;
@@ -3345,9 +3385,15 @@ select {
         width: 100%; }
         .view-id-map.view-display-id-page_1 .views-exposed-form .form--inline .form-actions input {
           width: calc(100% - 1rem); }
+  .view-id-map.view-display-id-page_1 .geolocation-map-control.control_locate button, .view-id-map.view-display-id-page_1 .geolocation-map-control.control_recenter button {
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    border-radius: 16px; }
 
 .flex-inline-view-place {
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  position: relative; }
   .flex-inline-view-place a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3374,10 +3420,50 @@ select {
       display: block; }
   .flex-inline-view-place .text-wrapper {
     width: calc(100% - 80px);
-    padding: 1em; }
+    padding: 0 1em; }
     .flex-inline-view-place .text-wrapper h4,
     .flex-inline-view-place .text-wrapper p {
       margin: 0; }
+  .flex-inline-view-place .flag-add-to-trip {
+    position: absolute;
+    top: 4px;
+    left: -8px; }
+    .flex-inline-view-place .flag-add-to-trip a {
+      background: #bdbdbd;
+      border-radius: 20px;
+      height: 30px;
+      width: 30px;
+      display: block;
+      text-align: center;
+      overflow: hidden;
+      text-decoration: none;
+      -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+              box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.5); }
+      .flex-inline-view-place .flag-add-to-trip a:before {
+        content: '\f005';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 400;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: rgba(255, 255, 255, 0.5);
+        width: 28px;
+        height: 28px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+    .flex-inline-view-place .flag-add-to-trip.action-unflag a {
+      background: -webkit-gradient(linear, left top, left bottom, from(#5cd1db), to(#3aa1aa));
+      background: -o-linear-gradient(top, #5cd1db, #3aa1aa);
+      background: linear-gradient(to bottom, #5cd1db, #3aa1aa);
+      border-color: rgba(255, 255, 255, 0.5); }
+      .flex-inline-view-place .flag-add-to-trip.action-unflag a:before {
+        font-weight: 900;
+        color: rgba(255, 255, 255, 0.5); }
 
 .view-places-search {
   margin: 0 -1rem; }
@@ -3614,7 +3700,7 @@ select {
     top: 0;
     left: 0; }
   .trip-item-card-flag .flag-add-to-trip.action-flag a:before {
-    background: #a39900;
+    background: #b4d305;
     content: '\f067'; }
 
 .trip-item-card-type {
@@ -3755,8 +3841,8 @@ select {
       text-align: center;
       overflow: hidden;
       text-decoration: none;
-      -webkit-box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.75);
-              box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+              box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
       border: 1px solid rgba(255, 255, 255, 0.5); }
       .views-card .card-flag a:before {
         content: '\f005';
@@ -3932,3 +4018,10 @@ select {
     content: '\f104'; }
   .view .pager .pager__item.pager__item--first a:before {
     content: '\f100'; }
+
+.view .more-link {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem; }

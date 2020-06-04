@@ -46,6 +46,30 @@
           color: $color-blue-light;
           border-bottom: 3px solid $color-blue-light;
         }
+
+        &[href='/map'] {
+          &:before {
+            content: '\f279';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            margin-right: 0.5em;
+            font-size: 0.75em;
+            vertical-align: middle;
+            display: inline-block;
+          }
+        }
+
+        &[href='/places'] {
+          &:before {
+            content: '\f00b';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            margin-right: 0.5em;
+            font-size: 0.75em;
+            vertical-align: middle;
+            display: inline-block;
+          }
+        }
       }
     }
   }
@@ -106,6 +130,12 @@
   .responsive-menu-block-wrapper,
   .block-responsive-menu-horizontal-menu {
     display: block;
+  }
+
+  #block-utawesome-horizontalmenu {
+    ul.sf-menu {
+      font-size: 1rem;
+    }
   }
 }
 

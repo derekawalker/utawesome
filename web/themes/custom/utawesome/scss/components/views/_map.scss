@@ -37,6 +37,18 @@
       }
     }
   }
+
+  .geolocation-map-control {
+    &.control_locate,
+    &.control_recenter {
+      button {
+        height: 32px;
+        width: 32px;
+        padding: 0;
+        border-radius: 16px;
+      }
+    }
+  }
 }
 
 // Phablet (568px to 767px) -----------------------------

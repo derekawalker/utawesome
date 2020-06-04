@@ -2,6 +2,7 @@
 // ------------------------------------------------------
 .flex-inline-view-place {
   margin-bottom: 0.5rem;
+  position: relative;
 
   a {
     display: flex;
@@ -26,11 +27,54 @@
 
   .text-wrapper {
     width: calc(100% - 80px);
-    padding: 1em;
+    padding: 0 1em;
 
     h4,
     p {
       margin: 0;
+    }
+  }
+
+  .flag-add-to-trip {
+    position: absolute;
+    top: 4px;
+    left: -8px;
+
+    a {
+      background: $color-gray-bd;
+      border-radius: 20px;
+      height: 30px;
+      width: 30px;
+      display: block;
+      text-align: center;
+      overflow: hidden;
+      text-decoration: none;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+      border: 1px solid $color-white-50;
+
+      &:before {
+        content: '\f005';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 400;
+        display: flex;
+        color: $color-white-50;
+        width: 28px;
+        height: 28px;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &.action-unflag {
+      a {
+        background: $gradient-blue;
+        border-color: $color-white-50;
+
+        &:before {
+          font-weight: 900;
+          color: $color-white-50;
+        }
+      }
     }
   }
 }
