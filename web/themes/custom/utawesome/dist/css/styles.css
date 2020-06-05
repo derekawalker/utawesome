@@ -473,15 +473,16 @@ select {
 .block-utawesome-banner {
   background: #003d51 center center no-repeat;
   background-size: cover;
-  padding: 10% 8% 10% 12%; }
+  padding: 10% 8% 10% 12%;
+  background-image: url("/themes/custom/utawesome/assets/images/coyote_buttes_day.jpg"); }
   .block-utawesome-banner.morning {
-    background-image: url("/themes/custom/utawesome/assets/images/coyote_buttes.jpg"); }
+    background-image: url("/themes/custom/utawesome/assets/images/coyote_buttes_morning.jpg"); }
   .block-utawesome-banner.day {
-    background-image: url("/themes/custom/utawesome/assets/images/salt_flats.jpg"); }
+    background-image: url("/themes/custom/utawesome/assets/images/coyote_buttes_day.jpg"); }
   .block-utawesome-banner.evening {
-    background-image: url("/themes/custom/utawesome/assets/images/arches_sunset.jpg"); }
+    background-image: url("/themes/custom/utawesome/assets/images/coyote_buttes_evening.jpg"); }
   .block-utawesome-banner.night {
-    background-image: url("/themes/custom/utawesome/assets/images/fairyland_canyon_utah.jpg"); }
+    background-image: url("/themes/custom/utawesome/assets/images/coyote_buttes_night.jpg"); }
 
 #block-utawesome-views-block-popular-block-2 {
   background: #f2a900;
