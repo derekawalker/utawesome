@@ -1,0 +1,71 @@
+#block-simpleinstagramfeed {
+  padding: 1rem 0 0 0;
+}
+
+.instagram_gallery {
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  > a {
+    display: block;
+    width: 20%;
+
+    img {
+      display: block;
+      width: 100%;
+      border: 1px solid $color-blue-med;
+    }
+
+    &:nth-child(n + 6) {
+      display: none;
+    }
+  }
+}
+
+// Mobile (up to 567px) ---------------------------------
+// ------------------------------------------------------
+.instagram_gallery {
+}
+
+// Phablet (568px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+  .instagram_gallery {
+    > a {
+      width: 14.2857%;
+
+      &:nth-child(n + 6) {
+        display: block;
+      }
+      &:nth-child(n + 8) {
+        display: none;
+      }
+    }
+  }
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+  .instagram_gallery {
+    > a {
+      width: 11.1111%;
+
+      &:nth-child(n + 8) {
+        display: block;
+      }
+    }
+  }
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+}

@@ -573,6 +573,45 @@ select {
   #block-utawesome-views-block-popular-block-1 {
     padding: 6% 0; } }
 
+#block-simpleinstagramfeed {
+  padding: 1rem 0 0 0; }
+
+.instagram_gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .instagram_gallery > a {
+    display: block;
+    width: 20%; }
+    .instagram_gallery > a img {
+      display: block;
+      width: 100%;
+      border: 1px solid #004a61; }
+    .instagram_gallery > a:nth-child(n + 6) {
+      display: none; }
+
+@media (min-width: 568px) {
+  .instagram_gallery > a {
+    width: 14.2857%; }
+    .instagram_gallery > a:nth-child(n + 6) {
+      display: block; }
+    .instagram_gallery > a:nth-child(n + 8) {
+      display: none; } }
+
+@media (min-width: 768px) {
+  .instagram_gallery > a {
+    width: 11.1111%; }
+    .instagram_gallery > a:nth-child(n + 8) {
+      display: block; } }
+
 #block-socialmedialinks {
   font-size: 2rem;
   margin-bottom: 0;
@@ -701,8 +740,8 @@ select {
         font-family: 'Font Awesome 5 Free';
         font-weight: 900; }
       #block-utawesome-horizontalmenu ul.sf-menu li.menu-item a {
-        padding: 0 0.5em;
-        line-height: 38px;
+        padding: 0.5em 1em;
+        line-height: 1.2;
         text-decoration: none;
         color: #003d51;
         border-top: 3px solid transparent;
@@ -733,9 +772,11 @@ select {
     font-family: Lato, Arial, Helvetica, sans-serif;
     text-transform: none;
     font-size: 1rem;
-    border-radius: 5px;
     letter-spacing: 0;
-    font-weight: 400; }
+    font-weight: 400;
+    top: 55px;
+    border-radius: 0 0 5px 5px;
+    left: -16px; }
     #block-utawesome-horizontalmenu ul.sub-nav li.menu-item {
       border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
       #block-utawesome-horizontalmenu ul.sub-nav li.menu-item:last-child {
@@ -875,7 +916,8 @@ select {
 
 .page-node-type-article .node__content {
   padding: 0;
-  background: #fff; }
+  background: #fff;
+  margin: 0 -1rem; }
   .page-node-type-article .node__content .field--name-body {
     padding: 0 1rem; }
     .page-node-type-article .node__content .field--name-body h1,
@@ -910,6 +952,9 @@ select {
   .page-node-type-article .node__content .field--name-comment {
     padding: 1rem;
     background: #f2a900; }
+
+.page-node-type-article .comment-form .filter-wrapper {
+  display: none; }
 
 .page-node-type-attraction .node__content {
   padding: 0;
@@ -2514,6 +2559,15 @@ select {
   .page-node-type-post .node__content .field--name-comment {
     padding: 1rem;
     background: #f2a900; }
+  .page-node-type-post .node__content .author-name {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: Caveat, ironbrine, Lato, Arial;
+    font-style: italic;
+    padding: 1rem;
+    text-transform: capitalize; }
+    .page-node-type-post .node__content .author-name:before {
+      content: '- '; }
 
 .page-node-type-restaurant .node__content {
   padding: 0;

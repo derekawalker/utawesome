@@ -29,8 +29,8 @@
       }
 
       a {
-        padding: 0 0.5em;
-        line-height: 38px;
+        padding: 0.5em 1em;
+        line-height: 1.2;
         text-decoration: none;
         color: $color-blue-dark;
         border-top: 3px solid transparent;
@@ -79,9 +79,11 @@
     font-family: $font-main;
     text-transform: none;
     font-size: 1rem;
-    border-radius: $rad;
     letter-spacing: 0;
     font-weight: 400;
+    top: 55px;
+    border-radius: 0 0 $rad $rad;
+    left: -16px;
 
     li.menu-item {
       border-bottom: 1px solid $color-white-50;
