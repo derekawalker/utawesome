@@ -741,8 +741,8 @@ select {
         font-family: 'Font Awesome 5 Free';
         font-weight: 900; }
       #block-utawesome-horizontalmenu ul.sf-menu li.menu-item a {
-        padding: 0.5em 1em;
-        line-height: 1.2;
+        padding: 0 0.5em;
+        line-height: 38px;
         text-decoration: none;
         color: #003d51;
         border-top: 3px solid transparent;
@@ -784,7 +784,9 @@ select {
         border-bottom: 0; }
       #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a {
         color: #fff;
-        border: 0; }
+        border: 0;
+        padding: 0.5em 1em;
+        line-height: 1.2; }
         #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a:hover, #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a:focus, #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a:active {
           background: rgba(255, 255, 255, 0.5);
           color: #003d51;
@@ -2507,6 +2509,9 @@ select {
         margin-right: 0.5rem; }
       .node__content .flag-report-an-error a:hover {
         background: #9b4741; }
+  .node__content .disclaimer-wrapper {
+    font-size: .875rem;
+    line-height: 1.1; }
 
 .page-node-type-post .node__content {
   padding: 0;

@@ -72,6 +72,7 @@
 #}
 {% block libraries %}
   {{ attach_library('utawesome/places') }}
+  {{ attach_library('utawesome/pinterest') }}
 {% endblock %}
 
 {%
@@ -275,6 +276,9 @@
       <span id="node--coupons" class="anchor"></span>
       <div class="node-attraction-section node-attraction-section-coupons">
         <h4 class="node-attraction-section-title">Coupons</h4>
+        <div class="disclaimer-wrapper">
+          {{ drupal_entity('block_content', '5') }}
+        </div>
         {{ content.field_coupons }}
       </div>
       {% endif %}
@@ -283,6 +287,9 @@
       <span id="node--gear" class="anchor"></span>
       <div class="node-attraction-section node-attraction-section-gear">
         <h4 class="node-attraction-section-title">What to Bring</h4>
+        <div class="disclaimer-wrapper">
+          {{ drupal_entity('block_content', '5') }}
+        </div>
         {{ content.field_gear }}
       </div>
       {% endif %}
