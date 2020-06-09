@@ -109,13 +109,17 @@
 
   <div{{ content_attributes.addClass('node__content') }}>
 
-    {{ content.field_image }}
+    <img src={{ node.field_image.entity.uri.value|image_style('node_header') }}/>
 
     <div class="disclaimer-wrapper">
       {{ drupal_entity('block_content', '5') }}
     </div>
 
     {{ content|without('field_image') }}
+
+    <div class="pinterest-wrapper">
+      {{ content.field_image }}
+    </div>
   </div>
 
 </article>

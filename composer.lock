@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "642b288d999e562694ac5c99409c816e",
+    "content-hash": "71791572502ac438a491c1f021b16392",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5667,6 +5667,67 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/tamper",
                 "issues": "http://drupal.org/project/issues/tamper"
+            }
+        },
+        {
+            "name": "drupal/textimage",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/textimage.git",
+                "reference": "8.x-4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/textimage-8.x-4.0.zip",
+                "reference": "8.x-4.0",
+                "shasum": "3a1de8ab7058f5255e487ea6057bd708c1a8f632"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "drupal/image_effects": "^3",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "drupal/redirect": "1.x-dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-4.0",
+                    "datestamp": "1587970192",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Deciphered",
+                    "homepage": "https://www.drupal.org/user/103796"
+                },
+                {
+                    "name": "bjuncosa",
+                    "homepage": "https://www.drupal.org/user/869206"
+                },
+                {
+                    "name": "mondrake",
+                    "homepage": "https://www.drupal.org/user/1307444"
+                },
+                {
+                    "name": "wundo",
+                    "homepage": "https://www.drupal.org/user/25523"
+                }
+            ],
+            "description": "Provides Text and Image field formatters, and an API, to allow building image styles with variable text.",
+            "homepage": "https://www.drupal.org/project/textimage",
+            "support": {
+                "source": "https://git.drupalcode.org/project/textimage"
             }
         },
         {
