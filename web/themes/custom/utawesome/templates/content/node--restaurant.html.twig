@@ -72,6 +72,7 @@
 #}
 {% block libraries %}
   {{ attach_library('utawesome/places') }}
+  {{ attach_library('utawesome/pinterest') }}
 {% endblock %}
 
 {%
@@ -231,6 +232,9 @@
       <span id="node--reviews" class="anchor"></span>
       <div class="node-restaurant-section node-restaurant-section-reviews">
         <h4 class="node-restaurant-section-title">Reviews</h4>
+        <div class="disclaimer-wrapper contained">
+          {{ drupal_entity('block_content', '5') }}
+        </div>
 
         {% if not (node.field_local_reviews.isEmpty == true) %}
         <h5 class="node-restaurant-section-title">In-Depth Local Reviews:</h5>

@@ -255,6 +255,10 @@
       <div class="node-attraction-section node-attraction-section-reviews">
         <h4 class="node-attraction-section-title">Reviews</h4>
 
+        <div class="disclaimer-wrapper contained">
+          {{ drupal_entity('block_content', '5') }}
+        </div>
+
         {% if not (node.field_local_reviews.isEmpty == true) %}
         <h5 class="node-attraction-section-title">In-Depth Local Reviews:</h5>
         {{ content.field_local_reviews }}
@@ -276,9 +280,6 @@
       <span id="node--coupons" class="anchor"></span>
       <div class="node-attraction-section node-attraction-section-coupons">
         <h4 class="node-attraction-section-title">Coupons</h4>
-        <div class="disclaimer-wrapper">
-          {{ drupal_entity('block_content', '5') }}
-        </div>
         {{ content.field_coupons }}
       </div>
       {% endif %}
@@ -287,9 +288,6 @@
       <span id="node--gear" class="anchor"></span>
       <div class="node-attraction-section node-attraction-section-gear">
         <h4 class="node-attraction-section-title">What to Bring</h4>
-        <div class="disclaimer-wrapper">
-          {{ drupal_entity('block_content', '5') }}
-        </div>
         {{ content.field_gear }}
       </div>
       {% endif %}

@@ -473,8 +473,7 @@ select {
 .block-utawesome-banner {
   background: #003d51 center center no-repeat;
   background-size: cover;
-  padding: 10% 8% 10% 12%;
-  background-image: url("/themes/custom/utawesome/assets/images/coyote_buttes_day.jpg"); }
+  padding: 10% 8% 10% 12%; }
   .block-utawesome-banner.morning {
     background-image: url("/themes/custom/utawesome/assets/images/coyote_buttes_morning.jpg"); }
   .block-utawesome-banner.day {
@@ -2510,8 +2509,15 @@ select {
       .node__content .flag-report-an-error a:hover {
         background: #9b4741; }
   .node__content .disclaimer-wrapper {
-    font-size: .875rem;
-    line-height: 1.1; }
+    font-size: .75rem;
+    line-height: 1.1;
+    padding: 1px 0;
+    background: rgba(0, 0, 0, 0.05);
+    margin: 1rem;
+    border-radius: 5px;
+    text-align: center; }
+    .node__content .disclaimer-wrapper.contained {
+      margin: 1rem 0; }
 
 .page-node-type-post .node__content {
   padding: 0;
@@ -3062,6 +3068,14 @@ select {
   background: #003d51;
   padding: 1rem 2rem;
   border-radius: 5px; }
+  .paragraph--type--place-summary .field__item:nth-child(2) .field--name-field-place-title {
+    color: #718a01; }
+  .paragraph--type--place-summary .field__item:nth-child(3) .field--name-field-place-title {
+    color: #a513bb; }
+  .paragraph--type--place-summary .field__item:nth-child(4) .field--name-field-place-title {
+    color: #f2a900; }
+  .paragraph--type--place-summary .field__item:nth-child(5) .field--name-field-place-title {
+    color: #ea7359; }
   .paragraph--type--place-summary .field--name-field-place-title {
     font-family: ironbrine, Lato, Arial, Helvetica, sans-serif;
     font-size: 1.75em;

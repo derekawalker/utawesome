@@ -258,6 +258,10 @@
       <div class="node-hike-section node-hike-section-reviews">
         <h4 class="node-hike-section-title">Reviews</h4>
 
+        <div class="disclaimer-wrapper contained">
+          {{ drupal_entity('block_content', '5') }}
+        </div>
+
         {% if not (node.field_local_reviews.isEmpty == true) %}
         <h5 class="node-hike-section-title">In-Depth Local Reviews:</h5>
         {{ content.field_local_reviews }}
@@ -278,9 +282,6 @@
       <span id="node--gear" class="anchor"></span>
       <div class="node-hike-section node-hike-section-gear">
         <h4 class="node-hike-section-title">What to Bring</h4>
-        <div class="disclaimer-wrapper">
-          {{ drupal_entity('block_content', '5') }}
-        </div>
         {{ content.field_gear }}
       </div>
       {% endif %}

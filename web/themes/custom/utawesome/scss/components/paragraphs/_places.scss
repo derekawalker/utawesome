@@ -6,6 +6,32 @@
   padding: 1rem 2rem;
   border-radius: $rad;
 
+  .field__item {
+    &:nth-child(2) {
+      .field--name-field-place-title {
+        color: $color-green-med;
+      }
+    }
+
+    &:nth-child(3) {
+      .field--name-field-place-title {
+        color: $color-purple-med;
+      }
+    }
+
+    &:nth-child(4) {
+      .field--name-field-place-title {
+        color: $color-yellow-med;
+      }
+    }
+
+    &:nth-child(5) {
+      .field--name-field-place-title {
+        color: $color-coral-med;
+      }
+    }
+  }
+
   .field--name-field-place-title {
     font-family: $font-header;
     font-size: 1.75em;
