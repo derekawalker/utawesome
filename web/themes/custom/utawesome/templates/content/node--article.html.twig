@@ -108,18 +108,27 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
+    <div class="pinterest-wrapper">
+      {{ content.field_image }}
+    </div>
 
-    <img src={{ node.field_image.entity.uri.value|image_style('node_header') }}/>
+    {% for item in content.field_image['#items'] %}
+      {% set header_image = {
+        '#theme':      'image_style',
+        '#style_name': 'node_header',
+        '#uri':        item.entity.uri.value,
+        '#alt':        item.alt,
+        '#width':      item.width,
+        '#height':     item.height
+      } %}
+      {{ header_image }}
+    {% endfor %}
 
     <div class="disclaimer-wrapper">
       {{ drupal_entity('block_content', '5') }}
     </div>
 
     {{ content|without('field_image') }}
-
-    <div class="pinterest-wrapper">
-      {{ content.field_image }}
-    </div>
   </div>
 
 </article>
