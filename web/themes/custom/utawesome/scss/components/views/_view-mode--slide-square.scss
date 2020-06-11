@@ -1,22 +1,40 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
-#block-utawesome-views-block-popular-block-1 {
-  background: $color-coral-med;
-  color: $color-white;
-  padding: 2rem 0;
+.views-slide-square {
+  max-width: 200px;
+  border-radius: $rad-outer;
+  overflow: hidden;
+  margin: 0.5rem;
+  border: 1px solid $color-black-10;
 
-  > h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 0 1rem 2rem;
-    margin: 0;
-  }
+  a {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
 
-  .more-link {
-    a {
-      color: $color-white;
-      text-decoration: none;
+    .slide-image {
+      position: relative;
+      z-index: 2;
+
+      img {
+        display: block;
+      }
+    }
+
+    .slide-title {
+      position: absolute;
+      z-index: 3;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0.75rem;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.2;
+      font-size: 1rem;
+      margin: 0;
+      background: $color-white-85;
     }
   }
 }
@@ -29,9 +47,6 @@
 // Tablet (768px to 1023px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $tab) {
-  #block-utawesome-views-block-popular-block-1 {
-    padding: 2rem 0 1rem;
-  }
 }
 
 // Desktop (1024px to 1339px) ---------------------------

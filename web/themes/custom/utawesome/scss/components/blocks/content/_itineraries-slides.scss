@@ -1,7 +1,7 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
 #block-views-block-popular-block-3 {
-  background: $color-green-med;
+  background: $color-blue-med;
   color: $color-white;
   padding: 2rem 0;
 
@@ -30,7 +30,7 @@
 // ------------------------------------------------------
 @media (min-width: $tab) {
   #block-views-block-popular-block-3 {
-    padding: 6% 0;
+    padding: 2rem 0 1rem;
   }
 }
 

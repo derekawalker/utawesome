@@ -1,8 +1,6 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
 #block-views-block-gear-block-1 {
-  background: $color-purple-dark;
-  color: $color-white;
   padding: 2rem 0;
 
   > h2 {
@@ -15,28 +13,55 @@
 
   .more-link {
     a {
-      color: $color-white;
       text-decoration: none;
     }
+  }
+
+  .view-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 -0.5rem;
+  }
+
+  .views-row {
+    max-width: 45%;
   }
 }
 
 // Phablet (568px to 767px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $phab) {
+  #block-views-block-gear-block-1 {
+    .views-row {
+      max-width: 32%;
+    }
+  }
 }
 
 // Tablet (768px to 1023px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $tab) {
   #block-views-block-gear-block-1 {
-    padding: 6% 0;
+    padding: 2rem 0 1rem;
+
+    .views-row {
+      max-width: 23%;
+    }
   }
 }
 
 // Desktop (1024px to 1339px) ---------------------------
 // ------------------------------------------------------
 @media (min-width: $desk) {
+  #block-views-block-gear-block-1 {
+    padding: 2rem 0 1rem;
+
+    .views-row {
+      max-width: 16%;
+    }
+  }
 }
 
 // Wide (over 1340px) -----------------------------------

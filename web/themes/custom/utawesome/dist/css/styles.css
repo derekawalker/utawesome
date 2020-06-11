@@ -27,7 +27,10 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #fff; }
+  background-color: #002a38; }
+
+.mm-page {
+  background: transparent; }
 
 *,
 *:before,
@@ -116,6 +119,11 @@ select {
   font-size: 0.75rem;
   letter-spacing: 0.05em;
   display: block; }
+
+.layout-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #fff; }
 
 @media (min-width: 568px) {
   .both-sidebars .layout-columns {
@@ -490,8 +498,6 @@ select {
     background-image: url("/themes/custom/utawesome/assets/images/coyote_buttes_night.jpg"); }
 
 #block-utawesome-views-block-popular-block-2 {
-  background: #f2a900;
-  color: #fff;
   padding: 2rem 0; }
   #block-utawesome-views-block-popular-block-2 > h2 {
     text-transform: uppercase;
@@ -500,16 +506,31 @@ select {
     padding: 0 1rem 2rem;
     margin: 0; }
   #block-utawesome-views-block-popular-block-2 .more-link a {
-    color: #fff;
     text-decoration: none; }
 
 @media (min-width: 768px) {
   #block-utawesome-views-block-popular-block-2 {
-    padding: 6% 0; } }
+    padding: 2rem 0 1rem; } }
+
+#block-views-block-posts-block-1 {
+  background: #f2a900;
+  color: #fff;
+  padding: 2rem 0; }
+  #block-views-block-posts-block-1 > h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0 1rem 2rem;
+    margin: 0; }
+  #block-views-block-posts-block-1 .more-link a {
+    color: #fff;
+    text-decoration: none; }
+
+@media (min-width: 768px) {
+  #block-views-block-posts-block-1 {
+    padding: 2rem 0 1rem; } }
 
 #block-views-block-gear-block-1 {
-  background: #64005a;
-  color: #fff;
   padding: 2rem 0; }
   #block-views-block-gear-block-1 > h2 {
     text-transform: uppercase;
@@ -518,12 +539,40 @@ select {
     padding: 0 1rem 2rem;
     margin: 0; }
   #block-views-block-gear-block-1 .more-link a {
-    color: #fff;
     text-decoration: none; }
+  #block-views-block-gear-block-1 .view-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 -0.5rem; }
+  #block-views-block-gear-block-1 .views-row {
+    max-width: 45%; }
+
+@media (min-width: 568px) {
+  #block-views-block-gear-block-1 .views-row {
+    max-width: 32%; } }
 
 @media (min-width: 768px) {
   #block-views-block-gear-block-1 {
-    padding: 6% 0; } }
+    padding: 2rem 0 1rem; }
+    #block-views-block-gear-block-1 .views-row {
+      max-width: 23%; } }
+
+@media (min-width: 1024px) {
+  #block-views-block-gear-block-1 {
+    padding: 2rem 0 1rem; }
+    #block-views-block-gear-block-1 .views-row {
+      max-width: 16%; } }
 
 .hotel-book-button {
   text-align: center; }
@@ -547,7 +596,7 @@ select {
       background: #718a01; }
 
 #block-views-block-popular-block-3 {
-  background: #718a01;
+  background: #004a61;
   color: #fff;
   padding: 2rem 0; }
   #block-views-block-popular-block-3 > h2 {
@@ -562,25 +611,7 @@ select {
 
 @media (min-width: 768px) {
   #block-views-block-popular-block-3 {
-    padding: 6% 0; } }
-
-#block-views-block-posts-block-1 {
-  background: #004a61;
-  color: #fff;
-  padding: 2rem 0; }
-  #block-views-block-posts-block-1 > h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 0 1rem 2rem;
-    margin: 0; }
-  #block-views-block-posts-block-1 .more-link a {
-    color: #fff;
-    text-decoration: none; }
-
-@media (min-width: 768px) {
-  #block-views-block-posts-block-1 {
-    padding: 6% 0; } }
+    padding: 2rem 0 1rem; } }
 
 #block-utawesome-views-block-popular-block-1 {
   background: #ea7359;
@@ -598,7 +629,7 @@ select {
 
 @media (min-width: 768px) {
   #block-utawesome-views-block-popular-block-1 {
-    padding: 6% 0; } }
+    padding: 2rem 0 1rem; } }
 
 #block-simpleinstagramfeed {
   padding: 1rem 0 0 0; }
@@ -4001,6 +4032,36 @@ select {
     font-size: 1.75em; }
   .views-card > a .card-location {
     font-size: 1.25em; } }
+
+.views-slide-square {
+  max-width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+  .views-slide-square a {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    width: 100%; }
+    .views-slide-square a .slide-image {
+      position: relative;
+      z-index: 2; }
+      .views-slide-square a .slide-image img {
+        display: block; }
+    .views-slide-square a .slide-title {
+      position: absolute;
+      z-index: 3;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0.75rem;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.2;
+      font-size: 1rem;
+      margin: 0;
+      background: rgba(255, 255, 255, 0.85); }
 
 .views-slide {
   max-width: 300px;

@@ -11,10 +11,9 @@
 @font-face {
   font-family: 'cubano';
   src: url('/themes/custom/utawesome/fonts/cubano-webfont.woff2') format('woff2'),
-       url('/themes/custom/utawesome/fonts/cubano-webfont.woff') format('woff');
+    url('/themes/custom/utawesome/fonts/cubano-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 html {
@@ -29,7 +28,11 @@ html {
 }
 
 body {
-  background-color: $color-white;
+  background-color: $color-blue-darker;
+}
+
+.mm-page {
+  background: transparent;
 }
 
 *,

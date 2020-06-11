@@ -1,8 +1,6 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
 #block-utawesome-views-block-popular-block-2 {
-  background: $color-yellow-med;
-  color: $color-white;
   padding: 2rem 0;
 
   > h2 {
@@ -15,7 +13,6 @@
 
   .more-link {
     a {
-      color: $color-white;
       text-decoration: none;
     }
   }
@@ -30,7 +27,7 @@
 // ------------------------------------------------------
 @media (min-width: $tab) {
   #block-utawesome-views-block-popular-block-2 {
-    padding: 6% 0;
+    padding: 2rem 0 1rem;
   }
 }
 
