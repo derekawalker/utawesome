@@ -1,0 +1,45 @@
+// Mobile (up to 567px) ---------------------------------
+// ------------------------------------------------------
+.hotel-book-button {
+  text-align: center;
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    margin: 1em auto;
+    border-radius: 2em;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+    background: $gradient-green;
+    border: 1px solid $color-green-light;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: $color-green-med;
+    }
+  }
+}
+
+// Phablet (568px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+}

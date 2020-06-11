@@ -171,11 +171,15 @@
       <details class="node-lodging-body">
         <summary >
           {{ summary|length > 100 ? summary|slice(0, 100) ~ '...' : summary }}
-          <span><a>more</a></span>
+          <span>more</span>
         </summary>
         {{ content.body }}
       </details>
       {% endif %}
+
+      <div class="hotel-book-button">
+        <a href="https://search.hotellook.com/hotels?destination={{ content.field_location.0 }}%2C+United+States+&marker=285822&language=en_us&currency=usd" target="_blank">Book Now</a>
+      </div>
 
       {% if not ((node.field_hotel_class.isEmpty == true) and (node.field_lodging_category.isEmpty == true)) %}
       <div class="node-lodging-pill-wrapper">

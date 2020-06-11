@@ -525,6 +525,27 @@ select {
   #block-views-block-gear-block-1 {
     padding: 6% 0; } }
 
+.hotel-book-button {
+  text-align: center; }
+  .hotel-book-button a {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    margin: 1em auto;
+    border-radius: 2em;
+    -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+    background: -webkit-gradient(linear, left top, left bottom, from(#b4d305), to(#718a01));
+    background: -o-linear-gradient(top, #b4d305, #718a01);
+    background: linear-gradient(to bottom, #b4d305, #718a01);
+    border: 1px solid #b4d305; }
+    .hotel-book-button a:hover, .hotel-book-button a:active, .hotel-book-button a:focus {
+      background: #718a01; }
+
 #block-views-block-popular-block-3 {
   background: #718a01;
   color: #fff;
