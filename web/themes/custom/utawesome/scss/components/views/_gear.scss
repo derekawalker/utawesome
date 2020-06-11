@@ -1,10 +1,12 @@
 // Mobile (up to 567px) ---------------------------------
 // ------------------------------------------------------
-.view-id-gear.view-display-id-page_1 {
-  margin: 0 -1rem;
-
-  .view-content {
-    padding: 1rem;
+.view.view-id-gear.view-display-id-page_1 {
+  .views-exposed-form {
+    .form--inline {
+      .form-item {
+        width: calc(100% - 1rem);
+      }
+    }
   }
 
   .gear-wrapper {
@@ -24,6 +26,15 @@
 // Tablet (768px to 1023px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $tab) {
+  .view.view-id-gear.view-display-id-page_1 {
+    .views-exposed-form {
+      .form--inline {
+        .form-item {
+          width: calc(33.3333% - 1rem);
+        }
+      }
+    }
+  }
 }
 
 // Desktop (1024px to 1339px) ---------------------------

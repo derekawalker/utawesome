@@ -2,10 +2,8 @@
 // ------------------------------------------------------
 .views-slide-square {
   max-width: 200px;
-  border-radius: $rad-outer;
-  overflow: hidden;
+
   margin: 0.5rem;
-  border: 1px solid $color-black-10;
 
   a {
     display: block;
@@ -19,22 +17,30 @@
 
       img {
         display: block;
+        border: 1px solid $color-black-10;
+        border-radius: $rad-outer;
       }
     }
 
     .slide-title {
-      position: absolute;
-      z-index: 3;
-      bottom: 0;
-      left: 0;
-      right: 0;
       padding: 0.75rem;
       text-align: center;
       text-transform: uppercase;
       line-height: 1.2;
       font-size: 1rem;
       margin: 0;
-      background: $color-white-85;
+    }
+
+    &:hover {
+      .slide-title {
+        text-decoration: underline;
+      }
+
+      .slide-image {
+        img {
+          border-color: $color-blue-light;
+        }
+      }
     }
   }
 }

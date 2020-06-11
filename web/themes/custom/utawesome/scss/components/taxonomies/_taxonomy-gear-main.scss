@@ -3,7 +3,7 @@
 .field--name-field-gear,
 .views-field-nothing {
   .vocabulary-gear {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 
     .content {
       position: relative;
@@ -16,11 +16,10 @@
       padding: 1rem;
       border: 1px solid $color-gray-bd;
       display: flex;
-      flex-flow: column;
+      flex-flow: row nowrap;
       text-decoration: none;
 
       .field--name-field-main-photo {
-        padding-bottom: 1rem;
         img {
           display: block;
           width: 100%;
@@ -39,23 +38,32 @@
 
       .gear-image {
         text-align: center;
+        min-width: 25%;
+        max-width: 25%;
 
         img {
-          max-height: 200px;
+          max-height: 150px;
           width: auto;
           margin: 0 auto;
         }
       }
 
+      .gear-text {
+        width: 100%;
+        padding-left: 1.5rem;
+        text-align: left;
+      }
+
       .gear-title {
         font-family: $font-header;
-        text-align: center;
         line-height: 1.2;
         font-size: 1.35rem;
         text-decoration: none;
         display: flex;
-        justify-content: center;
         color: $color-blue-light;
+        margin: 0;
+        justify-content: flex-start;
+        text-align: left;
 
         &:hover,
         &:active,
@@ -71,7 +79,24 @@
           content: '\f35d';
           font-family: 'Font Awesome 5 Free';
           font-weight: 900;
-          margin-left: 1em;
+          margin-left: auto;
+          font-size: 0.9em;
+        }
+      }
+
+      .gear-description,
+      .field--name-description {
+        line-height: 1.4;
+        font-size: 14px;
+
+        > * {
+          &:first-child {
+            margin-top: 0.5em;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -83,29 +108,15 @@
   .field--name-field-gear,
   .views-field-nothing {
     .vocabulary-gear {
-      margin-bottom: 1rem;
-
       .gear-wrapper {
-        flex-flow: row nowrap;
-
-        .gear-title {
-          justify-content: flex-start;
-          text-align: left;
-
-          &:after {
-            margin-left: auto;
-          }
-        }
-
         .gear-image {
-          min-width: 40%;
-          max-width: 40%;
+          min-width: 25%;
+          max-width: 25%;
         }
 
-        .gear-text {
-          width: 100%;
-          padding-left: 1.5rem;
-          text-align: left;
+        .gear-description,
+        .field--name-description {
+          font-size: 1rem;
         }
       }
     }
@@ -127,8 +138,8 @@
         align-items: center;
 
         .gear-image {
-          min-width: 25%;
-          max-width: 25%;
+          min-width: 12%;
+          max-width: 12%;
         }
       }
     }

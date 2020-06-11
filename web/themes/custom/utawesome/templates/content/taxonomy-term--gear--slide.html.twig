@@ -34,13 +34,13 @@
 <article {{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
   <a href="{{ url }}" rel="bookmark">
 
-    <h2 class="slide-title">
-      {{ name }}
-    </h2>
-
     <div class="slide-image">
       {{ content.field_main_photo }}
     </div>
+
+    <h2 class="slide-title">
+      {{ name }}
+    </h2>
 
   </a>
 </article>
