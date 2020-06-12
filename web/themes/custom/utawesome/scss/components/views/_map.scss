@@ -30,6 +30,8 @@
 
   > .attachment-after {
     margin: 0 -1rem;
+    height: 600px !important;
+    overflow-y: auto;
   }
 }
 
@@ -79,8 +81,6 @@
 
     > .attachment-after {
       width: calc(30% + 1rem);
-      height: 600px !important;
-      overflow-y: auto;
       margin-left: 0;
 
       .card-title {
