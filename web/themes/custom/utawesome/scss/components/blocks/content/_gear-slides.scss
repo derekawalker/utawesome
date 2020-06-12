@@ -24,20 +24,11 @@
     justify-content: center;
     margin: 0 -0.5rem;
   }
-
-  .views-row {
-    max-width: 45%;
-  }
 }
 
 // Phablet (568px to 767px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $phab) {
-  #block-views-block-gear-block-1 {
-    .views-row {
-      max-width: 32%;
-    }
-  }
 }
 
 // Tablet (768px to 1023px) -----------------------------
@@ -55,13 +46,6 @@
 // Desktop (1024px to 1339px) ---------------------------
 // ------------------------------------------------------
 @media (min-width: $desk) {
-  #block-views-block-gear-block-1 {
-    padding: 2rem 0 1rem;
-
-    .views-row {
-      max-width: 16%;
-    }
-  }
 }
 
 // Wide (over 1340px) -----------------------------------

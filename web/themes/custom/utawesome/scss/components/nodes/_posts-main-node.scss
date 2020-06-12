@@ -82,6 +82,20 @@
       }
     }
   }
+
+  .flippy {
+    li {
+      margin: 0.5rem 0;
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+        font-family: $font-header;
+        padding: 0.5em;
+        display: block;
+      }
+    }
+  }
 }
 
 // Phablet (568px to 767px) -----------------------------

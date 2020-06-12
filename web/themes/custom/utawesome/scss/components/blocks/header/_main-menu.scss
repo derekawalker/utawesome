@@ -20,7 +20,7 @@
       &.menu-item--expanded {
         > a {
           &:after {
-            content: '\f0d7';
+            content: '\f107';
             margin-left: 0.25em;
             font-family: 'Font Awesome 5 Free';
             font-weight: 900;
@@ -49,19 +49,7 @@
 
         &[href='/map'] {
           &:before {
-            content: '\f279';
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            margin-right: 0.5em;
-            font-size: 0.75em;
-            vertical-align: middle;
-            display: inline-block;
-          }
-        }
-
-        &[href='/places'] {
-          &:before {
-            content: '\f00b';
+            content: '\f3c5';
             font-family: 'Font Awesome 5 Free';
             font-weight: 900;
             margin-right: 0.5em;
@@ -139,6 +127,14 @@
   #block-utawesome-horizontalmenu {
     ul.sf-menu {
       font-size: 1rem;
+
+      li.menu-item {
+        a {
+          &[href='/search'] {
+            display: none;
+          }
+        }
+      }
     }
   }
 }
