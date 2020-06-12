@@ -4,7 +4,7 @@
   .views-exposed-form {
     .form--inline {
       .form-item {
-        &.form-item-field-location-target-id {
+        &.form-item-title {
           width: calc(100% - 1rem);
           position: relative;
 
@@ -73,7 +73,7 @@
         .form-item {
           width: calc(15% - 1rem);
 
-          &.form-item-field-location-target-id {
+          &.form-item-title {
             width: calc(15% - 1rem);
 
             input {

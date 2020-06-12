@@ -123,7 +123,8 @@ select {
 .layout-container {
   max-width: 1440px;
   margin: 0 auto;
-  background: #fff; }
+  background: #fff;
+  overflow: hidden; }
 
 @media (min-width: 568px) {
   .both-sidebars .layout-columns {
@@ -489,20 +490,20 @@ select {
   background-size: cover;
   padding: 10% 8% 10% 12%; }
   .block-utawesome-banner.morning {
-    background-image: url("/themes/custom/utawesome/assets/images/coyote_buttes_morning.jpg"); }
+    background-image: url("/themes/custom/utawesome/assets/images/sandstone.jpg"); }
   .block-utawesome-banner.day {
-    background-image: url("/themes/custom/utawesome/assets/images/coyote_buttes_day.jpg"); }
+    background-image: url("/themes/custom/utawesome/assets/images/salt_flats.jpg"); }
   .block-utawesome-banner.evening {
-    background-image: url("/themes/custom/utawesome/assets/images/coyote_buttes_evening.jpg"); }
+    background-image: url("/themes/custom/utawesome/assets/images/mountain_sunset.jpg"); }
   .block-utawesome-banner.night {
-    background-image: url("/themes/custom/utawesome/assets/images/coyote_buttes_night.jpg"); }
+    background-image: url("/themes/custom/utawesome/assets/images/fairyland_canyon_utah.jpg"); }
 
 #block-utawesome-views-block-popular-block-2 {
   padding: 2rem 0; }
   #block-utawesome-views-block-popular-block-2 > h2 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0 1rem 2rem;
     margin: 0; }
   #block-utawesome-views-block-popular-block-2 .more-link a {
@@ -510,7 +511,9 @@ select {
 
 @media (min-width: 768px) {
   #block-utawesome-views-block-popular-block-2 {
-    padding: 2rem 0 1rem; } }
+    padding: 2rem 0 1rem; }
+    #block-utawesome-views-block-popular-block-2 > h2 {
+      font-size: 2.5rem; } }
 
 #block-views-block-posts-block-1 {
   background: #f2a900;
@@ -519,7 +522,7 @@ select {
   #block-views-block-posts-block-1 > h2 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0 1rem 2rem;
     margin: 0; }
   #block-views-block-posts-block-1 .more-link a {
@@ -528,14 +531,16 @@ select {
 
 @media (min-width: 768px) {
   #block-views-block-posts-block-1 {
-    padding: 2rem 0 1rem; } }
+    padding: 2rem 0 1rem; }
+    #block-views-block-posts-block-1 > h2 {
+      font-size: 2.5rem; } }
 
 #block-views-block-gear-block-1 {
   padding: 2rem 0; }
   #block-views-block-gear-block-1 > h2 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0 1rem 2rem;
     margin: 0; }
   #block-views-block-gear-block-1 .more-link a {
@@ -564,7 +569,9 @@ select {
 
 @media (min-width: 768px) {
   #block-views-block-gear-block-1 {
-    padding: 2rem 0 1rem; } }
+    padding: 2rem 0 1rem; }
+    #block-views-block-gear-block-1 > h2 {
+      font-size: 2.5rem; } }
 
 @media (min-width: 1024px) {
   #block-views-block-gear-block-1 {
@@ -600,7 +607,7 @@ select {
   #block-views-block-popular-block-3 > h2 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0 1rem 2rem;
     margin: 0; }
   #block-views-block-popular-block-3 .more-link a {
@@ -609,7 +616,9 @@ select {
 
 @media (min-width: 768px) {
   #block-views-block-popular-block-3 {
-    padding: 2rem 0 1rem; } }
+    padding: 2rem 0 1rem; }
+    #block-views-block-popular-block-3 > h2 {
+      font-size: 2.5rem; } }
 
 #block-utawesome-views-block-popular-block-1 {
   background: #ea7359;
@@ -618,7 +627,7 @@ select {
   #block-utawesome-views-block-popular-block-1 > h2 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0 1rem 2rem;
     margin: 0; }
   #block-utawesome-views-block-popular-block-1 .more-link a {
@@ -627,7 +636,9 @@ select {
 
 @media (min-width: 768px) {
   #block-utawesome-views-block-popular-block-1 {
-    padding: 2rem 0 1rem; } }
+    padding: 2rem 0 1rem; }
+    #block-utawesome-views-block-popular-block-1 > h2 {
+      font-size: 2.5rem; } }
 
 #block-simpleinstagramfeed {
   padding: 1rem 0 0 0; }
@@ -3564,10 +3575,10 @@ select {
         font-weight: 900;
         color: rgba(255, 255, 255, 0.5); }
 
-.view.view-places-search .views-exposed-form .form--inline .form-item.form-item-field-location-target-id {
+.view.view-places-search .views-exposed-form .form--inline .form-item.form-item-title {
   width: calc(100% - 1rem);
   position: relative; }
-  .view.view-places-search .views-exposed-form .form--inline .form-item.form-item-field-location-target-id input {
+  .view.view-places-search .views-exposed-form .form--inline .form-item.form-item-title input {
     font-family: Cubano, ironbrine, Lato, Arial, Helvetica, sans-serif;
     font-size: 1.35rem;
     padding: 0.5em 15% 0.5em 0.75em;
@@ -3592,9 +3603,9 @@ select {
 @media (min-width: 1340px) {
   .view.view-places-search .views-exposed-form .form--inline .form-item {
     width: calc(15% - 1rem); }
-    .view.view-places-search .views-exposed-form .form--inline .form-item.form-item-field-location-target-id {
+    .view.view-places-search .views-exposed-form .form--inline .form-item.form-item-title {
       width: calc(15% - 1rem); }
-      .view.view-places-search .views-exposed-form .form--inline .form-item.form-item-field-location-target-id input {
+      .view.view-places-search .views-exposed-form .form--inline .form-item.form-item-title input {
         font-family: Lato, Arial, Helvetica, sans-serif;
         font-size: 1rem;
         text-align: left;

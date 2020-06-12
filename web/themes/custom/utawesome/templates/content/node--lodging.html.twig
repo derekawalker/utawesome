@@ -118,9 +118,9 @@
 
       {{ content.flag_add_to_trip }}
 
-      <h2 class="node-lodging-title">
+      <h1 class="node-lodging-title">
         {{ label }}
-      </h2>
+      </h1>
 
       {% if not (node.field_location.isEmpty == true) %}
       <div class="node-lodging-location">
@@ -170,7 +170,7 @@
       {% set summary = content.body|render|striptags %}
       <details class="node-lodging-body">
         <summary >
-          {{ summary|length > 100 ? summary|slice(0, 100) ~ '...' : summary }}
+          {{ summary|length > 200 ? summary|slice(0, 200) ~ '...' : summary }}
           <span>more</span>
         </summary>
         {{ content.body }}

@@ -118,9 +118,9 @@
 
       {{ content.flag_add_to_trip }}
 
-      <h2 class="node-hike-title">
+      <h1 class="node-hike-title">
         {{ label }}
-      </h2>
+      </h1>
 
       {% if not (node.field_location.isEmpty == true) %}
       <div class="node-hike-location">
@@ -170,8 +170,8 @@
       {% set summary = content.body|render|striptags %}
       <details class="node-hike-body">
         <summary >
-          {{ summary|length > 100 ? summary|slice(0, 100) ~ '...' : summary }}
-          <span><a>more</a></span>
+          {{ summary|length > 200 ? summary|slice(0, 200) ~ '...' : summary }}
+          <span>more</span>
         </summary>
         {{ content.body }}
       </details>
