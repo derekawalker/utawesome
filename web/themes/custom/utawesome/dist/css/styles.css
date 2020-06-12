@@ -731,7 +731,20 @@ select {
       overflow: hidden;
       position: relative; }
       #block-headernav ul.menu li.menu-item a[href='/map']:before {
-        content: '\f3c5';
+        content: '\f5a0';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        width: 38px;
+        height: 38px;
+        display: block;
+        position: absolute;
+        left: -33px;
+        top: 0;
+        color: #003d51;
+        font-size: 22px;
+        line-height: 38px; }
+      #block-headernav ul.menu li.menu-item a[href='/places']:before {
+        content: '\f00b';
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         width: 38px;
@@ -795,7 +808,7 @@ select {
           color: #3aa1aa;
           border-bottom: 3px solid #3aa1aa; }
         #block-utawesome-horizontalmenu ul.sf-menu li.menu-item a[href='/map']:before {
-          content: '\f3c5';
+          content: '\f5a0';
           font-family: 'Font Awesome 5 Free';
           font-weight: 900;
           margin-right: 0.5em;
@@ -3479,6 +3492,58 @@ select {
   width: 32px;
   padding: 0;
   border-radius: 16px; }
+
+.view-id-map.view-display-id-page_1 .form-item-field-map-boundary-lat-north-east,
+.view-id-map.view-display-id-page_1 .form-item-field-map-boundary-lng-north-east,
+.view-id-map.view-display-id-page_1 .form-item-field-map-boundary-lat-south-west,
+.view-id-map.view-display-id-page_1 .form-item-field-map-boundary-lng-south-west {
+  display: none; }
+
+.view-id-map.view-display-id-page_1 .views-exposed-form {
+  margin-bottom: 0; }
+
+.view-id-map.view-display-id-page_1 > .view-content {
+  margin: 0 -1rem; }
+
+.view-id-map.view-display-id-page_1 > .attachment-after {
+  margin: 0 -1rem; }
+
+.path-map .page-title {
+  margin-bottom: 0; }
+
+@media (min-width: 1024px) {
+  .path-map .page-title {
+    margin-bottom: 0.67em; }
+  .view-id-map.view-display-id-page_1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .view-id-map.view-display-id-page_1 .view-filters {
+      width: 100%; }
+    .view-id-map.view-display-id-page_1 > .view-content {
+      width: calc(70% + 1rem);
+      margin-right: 0; }
+      .view-id-map.view-display-id-page_1 > .view-content .geolocation-map-container {
+        height: 600px !important; }
+    .view-id-map.view-display-id-page_1 > .attachment-after {
+      width: calc(30% + 1rem);
+      height: 600px !important;
+      overflow-y: auto;
+      margin-left: 0; }
+      .view-id-map.view-display-id-page_1 > .attachment-after .card-title {
+        font-size: 1.2rem; }
+      .view-id-map.view-display-id-page_1 > .attachment-after .card-location {
+        font-size: 0.875rem; } }
 
 .flex-inline-view-place {
   margin-bottom: 0.5rem;

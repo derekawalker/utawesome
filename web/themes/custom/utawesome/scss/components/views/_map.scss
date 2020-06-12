@@ -12,6 +12,31 @@
       }
     }
   }
+
+  .form-item-field-map-boundary-lat-north-east,
+  .form-item-field-map-boundary-lng-north-east,
+  .form-item-field-map-boundary-lat-south-west,
+  .form-item-field-map-boundary-lng-south-west {
+    display: none;
+  }
+
+  .views-exposed-form {
+    margin-bottom: 0;
+  }
+
+  > .view-content {
+    margin: 0 -1rem;
+  }
+
+  > .attachment-after {
+    margin: 0 -1rem;
+  }
+}
+
+.path-map {
+  .page-title {
+    margin-bottom: 0;
+  }
 }
 
 // Phablet (568px to 767px) -----------------------------
@@ -27,6 +52,46 @@
 // Desktop (1024px to 1339px) ---------------------------
 // ------------------------------------------------------
 @media (min-width: $desk) {
+  .path-map {
+    .page-title {
+      margin-bottom: 0.67em;
+    }
+  }
+
+  .view-id-map.view-display-id-page_1 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .view-filters {
+      width: 100%;
+    }
+
+    > .view-content {
+      width: calc(70% + 1rem);
+      margin-right: 0;
+
+      .geolocation-map-container {
+        height: 600px !important;
+      }
+    }
+
+    > .attachment-after {
+      width: calc(30% + 1rem);
+      height: 600px !important;
+      overflow-y: auto;
+      margin-left: 0;
+
+      .card-title {
+        font-size: 1.2rem;
+      }
+
+      .card-location {
+        font-size: 0.875rem;
+      }
+    }
+  }
 }
 
 // Wide (over 1340px) -----------------------------------
