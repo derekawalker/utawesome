@@ -1020,6 +1020,120 @@ select {
 .page-node-type-article .comment-form .filter-wrapper {
   display: none; }
 
+.page-node-type-article article.comment {
+  background: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  border: 1px solid #bdbdbd;
+  margin-bottom: 1rem;
+  position: relative; }
+  .page-node-type-article article.comment mark {
+    position: absolute;
+    left: -15px;
+    top: 10px;
+    background: #718a01;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    font-weight: 700; }
+    .page-node-type-article article.comment mark.hidden {
+      display: none; }
+  .page-node-type-article article.comment .content .links {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    font-size: 0.65em;
+    left: 0;
+    background: rgba(0, 0, 0, 0.05); }
+    .page-node-type-article article.comment .content .links a {
+      color: #bdbdbd; }
+  .page-node-type-article article.comment .content .field--name-field-rating {
+    margin-bottom: 0.5em; }
+    .page-node-type-article article.comment .content .field--name-field-rating .fivestar- {
+      margin-top: 0; }
+  .page-node-type-article article.comment .content .field--name-comment-body > *:first-child {
+    margin-top: 0; }
+  .page-node-type-article article.comment .content .field--name-comment-body > *:last-child {
+    margin-bottom: 0; }
+  .page-node-type-article article.comment .comment__submitted {
+    margin-top: 0;
+    color: #3aa1aa;
+    font-family: Caveat, ironbrine, Lato, Arial;
+    font-size: 1.25em; }
+    .page-node-type-article article.comment .comment__submitted a {
+      text-decoration: none; }
+
+.page-node-type-article .comment-form__title {
+  margin-top: 2em;
+  margin-bottom: 0.5em; }
+
+.page-node-type-article .comment-form {
+  background: #f2a900;
+  border-radius: 5px; }
+  .page-node-type-article .comment-form select {
+    border: 1px solid #3aa1aa;
+    color: #3aa1aa;
+    padding: 0.5em;
+    text-align: center;
+    width: calc(100% - 3rem); }
+  .page-node-type-article .comment-form .form-textarea-wrapper {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #bdbdbd; }
+  .page-node-type-article .comment-form .filter-wrapper {
+    display: none; }
+  .page-node-type-article .comment-form .form-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0 -0.5rem;
+    width: 100%; }
+    .page-node-type-article .comment-form .form-actions input {
+      color: #fff;
+      background: -webkit-gradient(linear, left top, left bottom, from(#5cd1db), to(#3aa1aa));
+      background: -o-linear-gradient(top, #5cd1db, #3aa1aa);
+      background: linear-gradient(to bottom, #5cd1db, #3aa1aa);
+      padding: 0.5em 0.75em;
+      text-align: center;
+      border: 0;
+      border-radius: 5px;
+      width: calc(100% - 1rem);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      margin: 0.5rem;
+      -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+              box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25); }
+      .page-node-type-article .comment-form .form-actions input[data-drupal-selector='edit-preview'] {
+        background: rgba(0, 0, 0, 0.15);
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1; }
+
 .page-node-type-attraction .node__content {
   padding: 0;
   background: #fff;
@@ -2656,6 +2770,120 @@ select {
     font-family: Cubano, ironbrine, Lato, Arial, Helvetica, sans-serif;
     padding: 0.5em;
     display: block; }
+
+.page-node-type-post article.comment {
+  background: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  border: 1px solid #bdbdbd;
+  margin-bottom: 1rem;
+  position: relative; }
+  .page-node-type-post article.comment mark {
+    position: absolute;
+    left: -15px;
+    top: 10px;
+    background: #718a01;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    font-weight: 700; }
+    .page-node-type-post article.comment mark.hidden {
+      display: none; }
+  .page-node-type-post article.comment .content .links {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    font-size: 0.65em;
+    left: 0;
+    background: rgba(0, 0, 0, 0.05); }
+    .page-node-type-post article.comment .content .links a {
+      color: #bdbdbd; }
+  .page-node-type-post article.comment .content .field--name-field-rating {
+    margin-bottom: 0.5em; }
+    .page-node-type-post article.comment .content .field--name-field-rating .fivestar- {
+      margin-top: 0; }
+  .page-node-type-post article.comment .content .field--name-comment-body > *:first-child {
+    margin-top: 0; }
+  .page-node-type-post article.comment .content .field--name-comment-body > *:last-child {
+    margin-bottom: 0; }
+  .page-node-type-post article.comment .comment__submitted {
+    margin-top: 0;
+    color: #3aa1aa;
+    font-family: Caveat, ironbrine, Lato, Arial;
+    font-size: 1.25em; }
+    .page-node-type-post article.comment .comment__submitted a {
+      text-decoration: none; }
+
+.page-node-type-post .comment-form__title {
+  margin-top: 2em;
+  margin-bottom: 0.5em; }
+
+.page-node-type-post .comment-form {
+  background: #f2a900;
+  border-radius: 5px; }
+  .page-node-type-post .comment-form select {
+    border: 1px solid #3aa1aa;
+    color: #3aa1aa;
+    padding: 0.5em;
+    text-align: center;
+    width: calc(100% - 3rem); }
+  .page-node-type-post .comment-form .form-textarea-wrapper {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #bdbdbd; }
+  .page-node-type-post .comment-form .filter-wrapper {
+    display: none; }
+  .page-node-type-post .comment-form .form-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0 -0.5rem;
+    width: 100%; }
+    .page-node-type-post .comment-form .form-actions input {
+      color: #fff;
+      background: -webkit-gradient(linear, left top, left bottom, from(#5cd1db), to(#3aa1aa));
+      background: -o-linear-gradient(top, #5cd1db, #3aa1aa);
+      background: linear-gradient(to bottom, #5cd1db, #3aa1aa);
+      padding: 0.5em 0.75em;
+      text-align: center;
+      border: 0;
+      border-radius: 5px;
+      width: calc(100% - 1rem);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      margin: 0.5rem;
+      -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+              box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25); }
+      .page-node-type-post .comment-form .form-actions input[data-drupal-selector='edit-preview'] {
+        background: rgba(0, 0, 0, 0.15);
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1; }
 
 .page-node-type-restaurant .node__content {
   padding: 0;

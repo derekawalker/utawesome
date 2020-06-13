@@ -55,6 +55,143 @@
       display: none;
     }
   }
+
+  article.comment {
+    background: $color-white;
+    border-radius: $rad;
+    padding: 1rem;
+    border: 1px solid $color-gray-bd;
+    margin-bottom: 1rem;
+    position: relative;
+
+    mark {
+      position: absolute;
+      left: -15px;
+      top: 10px;
+      background: $color-green-med;
+      color: $color-white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.6em;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      &.hidden {
+        display: none;
+      }
+    }
+
+    .content {
+      .links {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+        padding: 0.5em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        font-size: 0.65em;
+        left: 0;
+        background: $color-black-05;
+
+        a {
+          color: $color-gray-bd;
+        }
+      }
+
+      .field--name-field-rating {
+        margin-bottom: 0.5em;
+
+        .fivestar- {
+          margin-top: 0;
+        }
+      }
+
+      .field--name-comment-body {
+        > * {
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .comment__submitted {
+      margin-top: 0;
+      color: $color-blue-light;
+      font-family: $font-handwriting;
+      font-size: 1.25em;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .comment-form__title {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  .comment-form {
+    background: $color-yellow-med;
+    border-radius: $rad;
+
+    select {
+      border: 1px solid $color-blue-light;
+      color: $color-blue-light;
+      padding: 0.5em;
+      text-align: center;
+      width: calc(100% - 3rem);
+    }
+
+    .form-textarea-wrapper {
+      background: $color-white;
+      border-radius: $rad;
+      border: 1px solid $color-gray-bd;
+    }
+
+    .filter-wrapper {
+      display: none;
+    }
+
+    .form-actions {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      margin: 0 -0.5rem;
+      width: 100%;
+
+      input {
+        color: $color-white;
+        background: linear-gradient(to bottom, $color-blue-lighter, $color-blue-light);
+        padding: 0.5em 0.75em;
+        text-align: center;
+        border: 0;
+        border-radius: $rad;
+        width: calc(100% - 1rem);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        margin: 0.5rem;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+
+        &[data-drupal-selector='edit-preview'] {
+          background: $color-black-15;
+          order: 1;
+        }
+      }
+    }
+  }
 }
 
 // Phablet (568px to 767px) -----------------------------
