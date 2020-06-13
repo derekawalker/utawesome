@@ -3524,10 +3524,8 @@ select {
 
 .view-id-map.view-display-id-page_1 > .attachment-after {
   margin: 0 -1rem;
-  height: 600px !important;
   position: relative;
-  z-index: 1;
-  overflow-y: auto; }
+  z-index: 1; }
 
 .path-map .page-title {
   margin-bottom: 0; }
@@ -3561,7 +3559,9 @@ select {
     .view-id-map.view-display-id-page_1 > .attachment-after {
       width: calc(30% + 1rem);
       margin-left: 0;
-      position: relative; }
+      position: relative;
+      height: 600px !important;
+      overflow-y: auto; }
       .view-id-map.view-display-id-page_1 > .attachment-after .card-title {
         font-size: 1.2rem; }
       .view-id-map.view-display-id-page_1 > .attachment-after .card-location {
