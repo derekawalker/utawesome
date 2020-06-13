@@ -22,15 +22,21 @@
 
   .views-exposed-form {
     margin-bottom: 0;
+    border-bottom: 1px solid $color-gray-e6;
   }
 
   > .view-content {
     margin: 0 -1rem;
+    position: sticky;
+    top: 70px;
+    z-index: 2;
   }
 
   > .attachment-after {
     margin: 0 -1rem;
     height: 600px !important;
+    position: relative;
+    z-index: 1;
     overflow-y: auto;
   }
 }
@@ -73,6 +79,8 @@
     > .view-content {
       width: calc(70% + 1rem);
       margin-right: 0;
+      position: relative;
+      top: 0;
 
       .geolocation-map-container {
         height: 600px !important;
@@ -82,6 +90,7 @@
     > .attachment-after {
       width: calc(30% + 1rem);
       margin-left: 0;
+      position: relative;
 
       .card-title {
         font-size: 1.2rem;

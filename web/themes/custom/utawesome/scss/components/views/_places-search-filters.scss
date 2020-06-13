@@ -4,14 +4,18 @@
   .views-exposed-form {
     .form--inline {
       .form-item {
-        &.form-item-title {
+        &.form-item-type {
+          width: calc(100% - 1rem);
+        }
+
+        &.form-item-combine {
           width: calc(100% - 1rem);
           position: relative;
 
           input {
             font-family: $font-header;
             font-size: 1.35rem;
-            padding: 0.5em 15% 0.5em 0.75em;
+            padding: 0.5em 0.75em;
             text-align: center;
             height: auto;
             background-position: 96% center;
@@ -21,7 +25,6 @@
 
       .form-actions {
         width: 100%;
-        margin: 0 0.5rem 0.5rem;
       }
     }
   }
@@ -39,7 +42,11 @@
     .views-exposed-form {
       .form--inline {
         .form-item {
-          width: calc(50% - 1rem);
+          width: calc(33.3333% - 1rem);
+
+          &.form-item-type {
+            width: calc(33.3333% - 1rem);
+          }
         }
       }
     }
@@ -54,10 +61,26 @@
       .form--inline {
         .form-item {
           width: calc(25% - 1rem);
+
+          &.form-item-type {
+            width: calc(25% - 1rem);
+          }
+
+          &.form-item-combine {
+            width: calc(25% - 1rem);
+
+            input {
+              font-family: $font-main;
+              font-size: 1rem;
+              text-align: left;
+              height: 30px;
+            }
+          }
         }
 
         .form-actions {
           width: auto;
+          margin: 0 0.5rem;
         }
       }
     }
@@ -73,15 +96,12 @@
         .form-item {
           width: calc(15% - 1rem);
 
-          &.form-item-title {
+          &.form-item-type {
             width: calc(15% - 1rem);
+          }
 
-            input {
-              font-family: $font-main;
-              font-size: 1rem;
-              text-align: left;
-              height: 30px;
-            }
+          &.form-item-combine {
+            width: calc(15% - 1rem);
           }
         }
 

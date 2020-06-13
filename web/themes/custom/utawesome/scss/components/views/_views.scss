@@ -154,16 +154,19 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
-        margin: 0 0.5rem 0.5rem;
+        margin: 0 0 0.5rem;
         width: 100%;
 
         input {
           box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
           font-size: 13px;
           width: 100%;
+          margin-left: 0.5em;
+          margin-right: 0.5em;
 
           &[data-drupal-selector='edit-reset'] {
             order: 1;
+            background: $color-black-50;
           }
         }
       }
