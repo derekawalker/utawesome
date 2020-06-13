@@ -4000,6 +4000,10 @@ select {
       background: -o-linear-gradient(top, #ffa693, #ea7359);
       background: linear-gradient(to bottom, #ffa693, #ea7359);
       text-align: center; }
+  .view-itinerary.view-display-id-page_1 .view-empty {
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 1.25rem; }
 
 .trip-item-card {
   margin: 2rem;
