@@ -40,17 +40,6 @@
       display: inline-block;
       transition: all 0.25s ease-out;
     }
-
-    &:hover {
-      padding: 0 2em;
-      width: 200px;
-      transition: all 0.25s ease-out;
-
-      .fas {
-        margin-right: 0;
-        transition: all 0.25s ease-out;
-      }
-    }
   }
 }
 
@@ -67,6 +56,20 @@
 // Desktop (1024px to 1339px) ---------------------------
 // ------------------------------------------------------
 @media (min-width: $desk) {
+  #block-viewitinerarybutton {
+    .trip-planner-button {
+      &:hover {
+        padding: 0 2em;
+        width: 200px;
+        transition: all 0.25s ease-out;
+
+        .fas {
+          margin-right: 0;
+          transition: all 0.25s ease-out;
+        }
+      }
+    }
+  }
 }
 
 // Wide (over 1340px) -----------------------------------
