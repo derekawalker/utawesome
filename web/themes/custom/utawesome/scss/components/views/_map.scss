@@ -27,8 +27,6 @@
 
   > .view-content {
     margin: 0 -1rem;
-    position: sticky;
-    top: 70px;
     z-index: 2;
   }
 
@@ -77,8 +75,6 @@
     > .view-content {
       width: calc(70% + 1rem);
       margin-right: 0;
-      position: relative;
-      top: 0;
 
       .geolocation-map-container {
         height: 600px !important;

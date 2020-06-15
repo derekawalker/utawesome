@@ -3820,9 +3820,6 @@ select {
 
 .view-id-map.view-display-id-page_1 > .view-content {
   margin: 0 -1rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 70px;
   z-index: 2; }
 
 .view-id-map.view-display-id-page_1 > .attachment-after {
@@ -3854,9 +3851,7 @@ select {
       width: 100%; }
     .view-id-map.view-display-id-page_1 > .view-content {
       width: calc(70% + 1rem);
-      margin-right: 0;
-      position: relative;
-      top: 0; }
+      margin-right: 0; }
       .view-id-map.view-display-id-page_1 > .view-content .geolocation-map-container {
         height: 600px !important; }
     .view-id-map.view-display-id-page_1 > .attachment-after {
