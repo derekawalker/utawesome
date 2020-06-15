@@ -119,6 +119,10 @@
       {{ drupal_entity('block_content', '5') }}
     </div>
 
+    <div class="reference-top">
+      {{ content.field_content_reference }}
+    </div>
+
     {{ content|without('field_content_reference', 'field_image', 'field_post_date', 'flippy_pager') }}
 
     {% if display_submitted %}

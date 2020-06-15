@@ -7,6 +7,9 @@
   width: 100%;
   z-index: 1;
   max-width: 1440px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
 
   .trip-planner-button {
     color: $color-white;
@@ -14,12 +17,40 @@
     letter-spacing: 0.05em;
     font-weight: 700;
     display: inline-block;
-    padding: 1em 2em;
+    padding: 0;
     text-decoration: none;
-    margin: 1em auto;
+    margin: 1em 1em 1em auto;
     border-radius: 2em;
     box-shadow: 3px 3px 8px $color-black-25;
     background: $color-coral-med;
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 0 0 18px;
+    justify-content: flex-end;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.25s ease-out;
+
+    .fas {
+      margin-right: 2rem;
+      display: inline-block;
+      transition: all 0.25s ease-out;
+    }
+
+    &:hover {
+      padding: 0 2em;
+      width: 200px;
+      transition: all 0.25s ease-out;
+
+      .fas {
+        margin-right: 0;
+        transition: all 0.25s ease-out;
+      }
+    }
   }
 }
 

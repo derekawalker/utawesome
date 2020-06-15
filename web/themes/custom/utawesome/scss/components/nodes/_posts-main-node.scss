@@ -64,6 +64,39 @@
       }
     }
 
+    .reference-top {
+      .field--name-field-content-reference {
+        padding-top: 0;
+
+        .field__label {
+          display: none;
+        }
+
+        .field__items {
+          &:before {
+            content: 'Mentioned in this post:';
+            display: block;
+            margin: 0 0.5rem;
+            font-family: $font-header;
+            font-size: 0.875rem;
+          }
+
+          .card-image {
+            min-width: 60px;
+            max-width: 60px;
+          }
+
+          .card-title {
+            font-size: 1rem;
+          }
+
+          .card-location {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
     .field--name-comment {
       padding: 1rem;
       background: $color-yellow-med;

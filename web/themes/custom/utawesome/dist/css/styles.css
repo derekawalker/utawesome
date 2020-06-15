@@ -682,20 +682,68 @@ select {
   padding: 0;
   width: 100%;
   z-index: 1;
-  max-width: 1440px; }
+  max-width: 1440px;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   #block-viewitinerarybutton .trip-planner-button {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-weight: 700;
     display: inline-block;
-    padding: 1em 2em;
+    padding: 0;
     text-decoration: none;
-    margin: 1em auto;
+    margin: 1em 1em 1em auto;
     border-radius: 2em;
     -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
-    background: #ea7359; }
+    background: #ea7359;
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 0 0 18px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out; }
+    #block-viewitinerarybutton .trip-planner-button .fas {
+      margin-right: 2rem;
+      display: inline-block;
+      -webkit-transition: all 0.25s ease-out;
+      -o-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out; }
+    #block-viewitinerarybutton .trip-planner-button:hover {
+      padding: 0 2em;
+      width: 200px;
+      -webkit-transition: all 0.25s ease-out;
+      -o-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out; }
+      #block-viewitinerarybutton .trip-planner-button:hover .fas {
+        margin-right: 0;
+        -webkit-transition: all 0.25s ease-out;
+        -o-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out; }
 
 #block-utawesome-branding {
   margin-right: auto; }
@@ -1166,8 +1214,6 @@ select {
       background: -o-linear-gradient(top, #5cd1db, #3aa1aa);
       background: linear-gradient(to bottom, #5cd1db, #3aa1aa);
       border-color: #3aa1aa; }
-      .page-node-type-attraction .node-attraction-intro .flag-add-to-trip.action-unflag a:before {
-        font-weight: 900; }
     .page-node-type-attraction .node-attraction-intro .flag-add-to-trip a {
       display: block;
       position: absolute;
@@ -1190,9 +1236,9 @@ select {
       -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
               box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25); }
       .page-node-type-attraction .node-attraction-intro .flag-add-to-trip a:before {
-        content: '\f005';
+        content: '\f5e4';
         font-family: 'Font Awesome 5 Free';
-        font-weight: 400;
+        font-weight: 900;
         display: inline-block;
         margin-right: 0.5em;
         color: #fff; }
@@ -1649,8 +1695,6 @@ select {
       background: -o-linear-gradient(top, #5cd1db, #3aa1aa);
       background: linear-gradient(to bottom, #5cd1db, #3aa1aa);
       border-color: #3aa1aa; }
-      .page-node-type-hike .node-hike-intro .flag-add-to-trip.action-unflag a:before {
-        font-weight: 900; }
     .page-node-type-hike .node-hike-intro .flag-add-to-trip a {
       display: block;
       position: absolute;
@@ -1673,9 +1717,9 @@ select {
       -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
               box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25); }
       .page-node-type-hike .node-hike-intro .flag-add-to-trip a:before {
-        content: '\f005';
+        content: '\f5e4';
         font-family: 'Font Awesome 5 Free';
-        font-weight: 400;
+        font-weight: 900;
         display: inline-block;
         margin-right: 0.5em;
         color: #fff; }
@@ -2163,8 +2207,6 @@ select {
       background: -o-linear-gradient(top, #5cd1db, #3aa1aa);
       background: linear-gradient(to bottom, #5cd1db, #3aa1aa);
       border-color: #3aa1aa; }
-      .page-node-type-lodging .node-lodging-intro .flag-add-to-trip.action-unflag a:before {
-        font-weight: 900; }
     .page-node-type-lodging .node-lodging-intro .flag-add-to-trip a {
       display: block;
       position: absolute;
@@ -2187,9 +2229,9 @@ select {
       -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
               box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25); }
       .page-node-type-lodging .node-lodging-intro .flag-add-to-trip a:before {
-        content: '\f005';
+        content: '\f5e4';
         font-family: 'Font Awesome 5 Free';
-        font-weight: 400;
+        font-weight: 900;
         display: inline-block;
         margin-right: 0.5em;
         color: #fff; }
@@ -2749,6 +2791,23 @@ select {
       padding-left: 1rem;
       color: #ff9340;
       border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+  .page-node-type-post .node__content .reference-top .field--name-field-content-reference {
+    padding-top: 0; }
+    .page-node-type-post .node__content .reference-top .field--name-field-content-reference .field__label {
+      display: none; }
+    .page-node-type-post .node__content .reference-top .field--name-field-content-reference .field__items:before {
+      content: 'Mentioned in this post:';
+      display: block;
+      margin: 0 0.5rem;
+      font-family: Cubano, ironbrine, Lato, Arial, Helvetica, sans-serif;
+      font-size: 0.875rem; }
+    .page-node-type-post .node__content .reference-top .field--name-field-content-reference .field__items .card-image {
+      min-width: 60px;
+      max-width: 60px; }
+    .page-node-type-post .node__content .reference-top .field--name-field-content-reference .field__items .card-title {
+      font-size: 1rem; }
+    .page-node-type-post .node__content .reference-top .field--name-field-content-reference .field__items .card-location {
+      font-size: 0.9rem; }
   .page-node-type-post .node__content .field--name-comment {
     padding: 1rem;
     background: #f2a900; }
@@ -2917,8 +2976,6 @@ select {
       background: -o-linear-gradient(top, #5cd1db, #3aa1aa);
       background: linear-gradient(to bottom, #5cd1db, #3aa1aa);
       border-color: #3aa1aa; }
-      .page-node-type-restaurant .node-restaurant-intro .flag-add-to-trip.action-unflag a:before {
-        font-weight: 900; }
     .page-node-type-restaurant .node-restaurant-intro .flag-add-to-trip a {
       display: block;
       position: absolute;
@@ -2941,9 +2998,9 @@ select {
       -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
               box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25); }
       .page-node-type-restaurant .node-restaurant-intro .flag-add-to-trip a:before {
-        content: '\f005';
+        content: '\f5e4';
         font-family: 'Font Awesome 5 Free';
-        font-weight: 400;
+        font-weight: 900;
         display: inline-block;
         margin-right: 0.5em;
         color: #fff; }
@@ -3845,9 +3902,9 @@ select {
               box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
       border: 1px solid rgba(255, 255, 255, 0.5); }
       .flex-inline-view-place .flag-add-to-trip a:before {
-        content: '\f005';
+        content: '\f5e4';
         font-family: 'Font Awesome 5 Free';
-        font-weight: 400;
+        font-weight: 900;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -3866,7 +3923,6 @@ select {
       background: linear-gradient(to bottom, #5cd1db, #3aa1aa);
       border-color: rgba(255, 255, 255, 0.5); }
       .flex-inline-view-place .flag-add-to-trip.action-unflag a:before {
-        font-weight: 900;
         color: rgba(255, 255, 255, 0.5); }
 
 .view.view-places-search .views-exposed-form .form--inline .form-item.form-item-type {
@@ -3917,6 +3973,26 @@ select {
       width: calc(15% - 1rem); }
   .view.view-places-search .views-exposed-form .form--inline .form-actions {
     margin: 17px 0.5rem 0.5rem; } }
+
+.view-id-posts.view-display-id-block_2 .views-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 0;
+  margin: 0.5em 0;
+  border-radius: 5px; }
+  .view-id-posts.view-display-id-block_2 .views-card a {
+    color: #fff; }
+    .view-id-posts.view-display-id-block_2 .views-card a:hover {
+      color: #fff; }
+    .view-id-posts.view-display-id-block_2 .views-card a:after {
+      color: #3aa1aa; }
+    .view-id-posts.view-display-id-block_2 .views-card a .card-image {
+      min-width: 80px;
+      max-width: 80px; }
+    .view-id-posts.view-display-id-block_2 .views-card a .card-title {
+      font-size: 1rem;
+      color: #3aa1aa; }
+    .view-id-posts.view-display-id-block_2 .views-card a .card-date {
+      color: #fff; }
 
 .view-id-posts.view-display-id-page_1 {
   margin: 0 -1rem; }
@@ -4226,9 +4302,9 @@ select {
               box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
       border: 1px solid rgba(255, 255, 255, 0.5); }
       .views-card .card-flag a:before {
-        content: '\f005';
+        content: '\f5e4';
         font-family: 'Font Awesome 5 Free';
-        font-weight: 400;
+        font-weight: 900;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -4247,7 +4323,6 @@ select {
       background: linear-gradient(to bottom, #5cd1db, #3aa1aa);
       border-color: rgba(255, 255, 255, 0.5); }
       .views-card .card-flag .action-unflag a:before {
-        font-weight: 900;
         color: rgba(255, 255, 255, 0.5); }
 
 @media (min-width: 768px) {
