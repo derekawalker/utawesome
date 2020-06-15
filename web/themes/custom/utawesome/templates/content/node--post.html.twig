@@ -123,7 +123,9 @@
       {{ content.field_content_reference }}
     </div>
 
-    {{ content|without('field_content_reference', 'field_image', 'field_post_date', 'flippy_pager') }}
+    <div class="post-body-wrapper">
+      {{ content|without('field_content_reference', 'field_image', 'field_post_date', 'flippy_pager', 'comment') }}
+    </div>
 
     {% if display_submitted %}
     <footer class="author-name">
@@ -132,6 +134,7 @@
     {% endif %}
 
     {{ content.field_content_reference }}
+    {{ content.comment }}
     {{ content.flippy_pager}}
   </div>
 

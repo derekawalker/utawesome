@@ -6,17 +6,27 @@
     background: $color-white;
     margin: 0 -1rem;
 
-    .field--name-body {
+    .post-body-wrapper {
+      text-align: center;
       padding: 0 1rem;
 
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: $font-main;
-        font-weight: 700;
+      .field--name-body {
+        margin: 0 auto;
+        text-align: left;
+
+        img {
+          width: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-family: $font-main;
+          font-weight: 700;
+        }
       }
     }
 
@@ -281,6 +291,23 @@
 // Desktop (1024px to 1339px) ---------------------------
 // ------------------------------------------------------
 @media (min-width: $desk) {
+  .page-node-type-post {
+    .node__content {
+      .post-body-wrapper {
+        padding: 2rem 0;
+
+        .field--name-body {
+          max-width: 70%;
+        }
+      }
+
+      .author-name {
+        max-width: 70%;
+        padding: 0 0 2rem;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 // Wide (over 1340px) -----------------------------------

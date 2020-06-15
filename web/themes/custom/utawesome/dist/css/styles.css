@@ -2748,16 +2748,22 @@ select {
   padding: 0;
   background: #fff;
   margin: 0 -1rem; }
-  .page-node-type-post .node__content .field--name-body {
+  .page-node-type-post .node__content .post-body-wrapper {
+    text-align: center;
     padding: 0 1rem; }
-    .page-node-type-post .node__content .field--name-body h1,
-    .page-node-type-post .node__content .field--name-body h2,
-    .page-node-type-post .node__content .field--name-body h3,
-    .page-node-type-post .node__content .field--name-body h4,
-    .page-node-type-post .node__content .field--name-body h5,
-    .page-node-type-post .node__content .field--name-body h6 {
-      font-family: Lato, Arial, Helvetica, sans-serif;
-      font-weight: 700; }
+    .page-node-type-post .node__content .post-body-wrapper .field--name-body {
+      margin: 0 auto;
+      text-align: left; }
+      .page-node-type-post .node__content .post-body-wrapper .field--name-body img {
+        width: 100%; }
+      .page-node-type-post .node__content .post-body-wrapper .field--name-body h1,
+      .page-node-type-post .node__content .post-body-wrapper .field--name-body h2,
+      .page-node-type-post .node__content .post-body-wrapper .field--name-body h3,
+      .page-node-type-post .node__content .post-body-wrapper .field--name-body h4,
+      .page-node-type-post .node__content .post-body-wrapper .field--name-body h5,
+      .page-node-type-post .node__content .post-body-wrapper .field--name-body h6 {
+        font-family: Lato, Arial, Helvetica, sans-serif;
+        font-weight: 700; }
   .page-node-type-post .node__content .field--name-field-post-date {
     text-align: center;
     letter-spacing: 0.1em;
@@ -2945,6 +2951,16 @@ select {
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1; }
+
+@media (min-width: 1024px) {
+  .page-node-type-post .node__content .post-body-wrapper {
+    padding: 2rem 0; }
+    .page-node-type-post .node__content .post-body-wrapper .field--name-body {
+      max-width: 70%; }
+  .page-node-type-post .node__content .author-name {
+    max-width: 70%;
+    padding: 0 0 2rem;
+    margin: 0 auto; } }
 
 .page-node-type-restaurant .node__content {
   padding: 0;
