@@ -96,11 +96,26 @@
     }
   }
 
+  .field--name-body {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 1em 0 0;
+    }
+
+    p {
+      margin: 0 0 1em;
+    }
+  }
+
   .disclaimer-wrapper {
-    font-size: .75rem;
+    font-size: 0.75rem;
     line-height: 1.1;
     padding: 1px 0;
-    background: rgba(0,0,0,.05);
+    background: rgba(0, 0, 0, 0.05);
     margin: 1rem;
     border-radius: 5px;
     text-align: center;

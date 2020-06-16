@@ -2728,8 +2728,17 @@ select {
         margin-right: 0.5rem; }
       .node__content .flag-report-an-error a:hover {
         background: #9b4741; }
+  .node__content .field--name-body h1,
+  .node__content .field--name-body h2,
+  .node__content .field--name-body h3,
+  .node__content .field--name-body h4,
+  .node__content .field--name-body h5,
+  .node__content .field--name-body h6 {
+    margin: 1em 0 0; }
+  .node__content .field--name-body p {
+    margin: 0 0 1em; }
   .node__content .disclaimer-wrapper {
-    font-size: .75rem;
+    font-size: 0.75rem;
     line-height: 1.1;
     padding: 1px 0;
     background: rgba(0, 0, 0, 0.05);
