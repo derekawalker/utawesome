@@ -2734,13 +2734,14 @@ select {
   .node__content .field--name-body h4,
   .node__content .field--name-body h5,
   .node__content .field--name-body h6 {
-    margin: 1em 0 0; }
+    margin: 1em 0 0;
+    font-family: Lato, Arial, Helvetica, sans-serif; }
   .node__content .field--name-body p {
     margin: 0 0 1em; }
   .node__content .disclaimer-wrapper {
     font-size: 0.75rem;
     line-height: 1.1;
-    padding: 1px 0;
+    padding: 1rem 0 0;
     background: rgba(0, 0, 0, 0.05);
     margin: 1rem;
     border-radius: 5px;

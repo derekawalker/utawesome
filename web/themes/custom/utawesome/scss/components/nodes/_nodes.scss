@@ -104,6 +104,7 @@
     h5,
     h6 {
       margin: 1em 0 0;
+      font-family: $font-main;
     }
 
     p {
@@ -114,7 +115,7 @@
   .disclaimer-wrapper {
     font-size: 0.75rem;
     line-height: 1.1;
-    padding: 1px 0;
+    padding: 1rem 0 0;
     background: rgba(0, 0, 0, 0.05);
     margin: 1rem;
     border-radius: 5px;
