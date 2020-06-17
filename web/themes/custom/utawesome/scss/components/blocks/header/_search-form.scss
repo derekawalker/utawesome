@@ -1,0 +1,82 @@
+// Mobile (up to 567px) ---------------------------------
+// ------------------------------------------------------
+.region-header {
+  .search-block-form {
+    margin: 0 0.75rem 0 0;
+    max-width: 30%;
+
+    form {
+      position: relative;
+    }
+
+    input {
+      height: 30px;
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: 30px;
+      border-radius: 30px;
+      margin: 0;
+
+      &[type='search'] {
+        height: 28px;
+        max-width: calc(100% - 1em);
+      }
+
+      &[type='submit'] {
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        text-indent: 30px;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    .form-actions {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+
+      &:before {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f002';
+        font-weight: 900;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        line-height: 30px;
+        border-radius: 30px;
+        display: block;
+        text-align: center;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+// Phablet (568px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+}

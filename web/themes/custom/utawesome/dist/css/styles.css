@@ -62,13 +62,14 @@ h6 {
   color: #004a61; }
 
 input[type='text'], input[type='number'], input[type='password'], input[type='search'], input[type='email'] {
-  border: 1px solid #004a61;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   color: #004a61;
   border-radius: 5px;
   background: #fff;
-  padding: 0.25em 0.5em;
+  padding: 0 0.5em;
   font-weight: 400;
-  height: 30px;
+  height: 28px;
+  line-height: 28px;
   max-width: 100%; }
 
 input[type='submit'] {
@@ -76,7 +77,7 @@ input[type='submit'] {
   background: -webkit-gradient(linear, left top, left bottom, from(#5cd1db), to(#3aa1aa));
   background: -o-linear-gradient(top, #5cd1db, #3aa1aa);
   background: linear-gradient(to bottom, #5cd1db, #3aa1aa);
-  padding: 0.5em 1.25em;
+  padding: 0.25em 1.25em;
   text-align: center;
   border: 0;
   border-radius: 5px;
@@ -85,12 +86,16 @@ input[type='submit'] {
   font-weight: 700;
   margin: 0.5rem;
   -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
-          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25); }
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+  height: 30px; }
   input[type='submit']#edit-preview, input[type='submit']#edit-reset {
     background: rgba(0, 0, 0, 0.25); }
 
+input:focus {
+  outline: none; }
+
 select {
-  border: 1px solid #004a61;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   color: #004a61;
   border-radius: 5px;
   background: #fff;
@@ -99,7 +104,7 @@ select {
   height: 30px; }
 
 .form-textarea-wrapper {
-  border: 1px solid #004a61;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   color: #004a61;
   border-radius: 5px;
   background: #fff; }
@@ -801,7 +806,7 @@ select {
         height: 38px;
         display: block;
         position: absolute;
-        left: -33px;
+        left: -38px;
         top: 0;
         color: #003d51;
         font-size: 22px;
@@ -832,11 +837,22 @@ select {
         color: #003d51;
         font-size: 22px;
         line-height: 38px; }
+      #block-headernav ul.menu li.menu-item a[href='/tools/trip-planner']:before {
+        content: '\f5e4';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        width: 38px;
+        height: 38px;
+        display: block;
+        position: absolute;
+        left: -38px;
+        top: 0;
+        color: #003d51;
+        font-size: 22px;
+        line-height: 38px; }
 
-@media (min-width: 1024px) {
-  #block-headernav ul.menu li.menu-item a[href='/map'] {
-    display: none; }
-  #block-headernav ul.menu li.menu-item a[href='/places'] {
+@media (min-width: 768px) {
+  #block-headernav {
     display: none; } }
 
 #block-utawesome-horizontalmenu {
@@ -940,6 +956,53 @@ select {
 @media (min-width: 768px) {
   #block-utawesome-responsivemenumobileicon {
     display: none; } }
+
+.region-header .search-block-form {
+  margin: 0 0.75rem 0 0;
+  max-width: 30%; }
+  .region-header .search-block-form form {
+    position: relative; }
+  .region-header .search-block-form input {
+    height: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 30px;
+    border-radius: 30px;
+    margin: 0; }
+    .region-header .search-block-form input[type='search'] {
+      height: 28px;
+      max-width: calc(100% - 1em); }
+    .region-header .search-block-form input[type='submit'] {
+      width: 30px;
+      height: 30px;
+      overflow: hidden;
+      text-indent: 30px;
+      padding: 0;
+      background: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      position: relative;
+      z-index: 2; }
+  .region-header .search-block-form .form-actions {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0; }
+    .region-header .search-block-form .form-actions:before {
+      font-family: 'Font Awesome 5 Free';
+      content: '\f002';
+      font-weight: 900;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      overflow: hidden;
+      line-height: 30px;
+      border-radius: 30px;
+      display: block;
+      text-align: center;
+      z-index: 1; }
 
 #block-utawesome-subnav ul.menu {
   margin: 0;
