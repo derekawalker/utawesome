@@ -330,6 +330,8 @@ select {
             font-weight: 900;
             margin-right: 0.5em;
             color: #f2a900; }
+          .region-sidebar-first > .region-inner .block ul.menu li.menu-item a.is-active {
+            color: #fff; }
 
 .layout-sidebar-second {
   background: #004a61; }
@@ -631,6 +633,13 @@ select {
     padding: 2rem 0 1rem; }
     #block-utawesome-views-block-popular-block-1 > h2 {
       font-size: 2.5rem; } }
+
+#block-mainnavigation {
+  display: none; }
+
+@media (min-width: 768px) {
+  #block-mainnavigation {
+    display: block; } }
 
 #block-simpleinstagramfeed {
   padding: 1rem 0 0 0; }
@@ -2737,7 +2746,8 @@ select {
     margin: 1em 0 0;
     font-family: Lato, Arial, Helvetica, sans-serif;
     font-weight: 700; }
-  .node__content .field--name-body p {
+  .node__content .field--name-body p,
+  .node__content .field--name-body ul {
     margin: 0 0 1em; }
   .node__content .disclaimer-wrapper {
     font-size: 0.75rem;

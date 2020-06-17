@@ -37,6 +37,10 @@
               margin-right: 0.5em;
               color: $color-yellow-med;
             }
+
+            &.is-active {
+              color: $color-white;
+            }
           }
         }
       }
