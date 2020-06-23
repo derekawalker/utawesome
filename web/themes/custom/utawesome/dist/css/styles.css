@@ -2806,12 +2806,12 @@ select {
   .node__content .field--name-body h4,
   .node__content .field--name-body h5,
   .node__content .field--name-body h6 {
-    margin: 1em 0 0;
+    margin: 1em 0 0.5em;
     font-family: Lato, Arial, Helvetica, sans-serif;
     font-weight: 700; }
   .node__content .field--name-body p,
   .node__content .field--name-body ul {
-    margin: 0 0 1em; }
+    margin: 0.5em 0 1em; }
   .node__content .disclaimer-wrapper {
     font-size: 0.75rem;
     line-height: 1.1;
@@ -3529,7 +3529,7 @@ select {
 .paragraph--type--place-summary {
   margin: 1rem;
   background: #003d51;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   border-radius: 5px; }
   .paragraph--type--place-summary .field__item:nth-child(2) .field--name-field-place-title {
     color: #718a01; }
@@ -3549,11 +3549,24 @@ select {
     margin-bottom: 1rem; }
     .paragraph--type--place-summary .views-card > a {
       border: 0;
-      background: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.9);
       padding: 1rem;
       border-radius: 3px; }
     .paragraph--type--place-summary .views-card .card-flag {
-      left: -5px; }
+      left: -5px;
+      top: -5px; }
+  .paragraph--type--place-summary .views-infocard {
+    margin-bottom: 1rem; }
+    .paragraph--type--place-summary .views-infocard > a {
+      border: 1px solid transparent;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 1rem;
+      border-radius: 3px; }
+      .paragraph--type--place-summary .views-infocard > a:hover, .paragraph--type--place-summary .views-infocard > a:active, .paragraph--type--place-summary .views-infocard > a:focus {
+        border-color: #3aa1aa; }
+    .paragraph--type--place-summary .views-infocard .infocard-flag {
+      left: -5px;
+      top: -5px; }
 
 .view-id-taxonomy_term.view-display-id-page_1 .vocabulary-gear .gear-wrapper {
   color: #004a61;
@@ -4447,6 +4460,229 @@ select {
   .views-card > a .card-title {
     font-size: 1.75em; }
   .views-card > a .card-location {
+    font-size: 1.25em; } }
+
+.views-infocard {
+  position: relative; }
+  .views-infocard > a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 1rem;
+    margin: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #003d51; }
+    .views-infocard > a:after {
+      content: '\f105';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      display: block;
+      padding-left: 1rem;
+      margin-left: auto; }
+    .views-infocard > a:hover .infocard-title, .views-infocard > a:hover:after, .views-infocard > a:active .infocard-title, .views-infocard > a:active:after, .views-infocard > a:focus .infocard-title, .views-infocard > a:focus:after {
+      color: #3aa1aa; }
+    .views-infocard > a .infocard-image {
+      border-radius: 5px;
+      overflow: hidden;
+      margin-right: 1rem;
+      min-width: 30%;
+      max-width: 30%; }
+      .views-infocard > a .infocard-image img {
+        display: block;
+        border-radius: 5px;
+        width: 100%; }
+    .views-infocard > a .infocard-data {
+      max-width: calc(70% - 1rem); }
+    .views-infocard > a .infocard-title {
+      font-size: 1.2em;
+      margin: 0;
+      line-height: 1; }
+    .views-infocard > a .infocard-body .field--name-body {
+      padding: 0; }
+      .views-infocard > a .infocard-body .field--name-body > *:last-child {
+        margin-bottom: 0; }
+    .views-infocard > a .infocard-details {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      margin: 0.6em 0 0;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+      .views-infocard > a .infocard-details .infocard-detail {
+        font-size: 12px;
+        padding: 0.25em 1em;
+        border-radius: 20px;
+        margin: 0 0.25em 0.25em 0;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: #fff;
+        text-transform: uppercase; }
+        .views-infocard > a .infocard-details .infocard-detail .field--name-field-indoor-outdoor {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+          .views-infocard > a .infocard-details .infocard-detail .field--name-field-indoor-outdoor:before {
+            content: '\f6c4';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            display: inline-block;
+            margin-right: 0.5em;
+            color: #3aa1aa; }
+          .views-infocard > a .infocard-details .infocard-detail .field--name-field-indoor-outdoor .field__item:nth-child(2):before {
+            content: '/'; }
+        .views-infocard > a .infocard-details .infocard-detail .field--name-field-price:before {
+          content: '\f51e';
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          display: inline-block;
+          margin-right: 0.5em;
+          color: #3aa1aa; }
+        .views-infocard > a .infocard-details .infocard-detail .field--name-field-cuisine .field__item:before {
+          content: '\f2e7';
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          display: inline-block;
+          margin-right: 0.5em;
+          color: #3aa1aa; }
+        .views-infocard > a .infocard-details .infocard-detail .field--name-field-lodging-category:before {
+          content: '\f236';
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          display: inline-block;
+          margin-right: 0.5em;
+          color: #3aa1aa; }
+        .views-infocard > a .infocard-details .infocard-detail .field--name-field-distance:before {
+          content: '\f6ec';
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          display: inline-block;
+          margin-right: 0.5em;
+          color: #3aa1aa; }
+        .views-infocard > a .infocard-details .infocard-detail.Moderate .field--name-field-difficult:before {
+          content: '\f0c8';
+          color: #3aa1aa; }
+        .views-infocard > a .infocard-details .infocard-detail.Strenuous .field--name-field-difficult:before {
+          content: '\f0c8';
+          color: #003d51;
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg); }
+        .views-infocard > a .infocard-details .infocard-detail .field--name-field-difficult {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .views-infocard > a .infocard-details .infocard-detail .field--name-field-difficult:before {
+            content: '\f111';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            display: inline-block;
+            margin-right: 0.5em;
+            color: #b4d305;
+            font-size: 1em; }
+    .views-infocard > a .infocard-location {
+      color: #003d51;
+      font-size: 0.875em; }
+    .views-infocard > a .infocard-date {
+      color: #003d51;
+      font-size: 0.875em; }
+  .views-infocard .infocard-flag {
+    position: absolute;
+    top: 11px;
+    left: 11px; }
+    .views-infocard .infocard-flag a {
+      background: #bdbdbd;
+      border-radius: 20px;
+      height: 30px;
+      width: 30px;
+      display: block;
+      text-align: center;
+      overflow: hidden;
+      text-decoration: none;
+      -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+              box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.5); }
+      .views-infocard .infocard-flag a:before {
+        content: '\f5e4';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: rgba(255, 255, 255, 0.5);
+        width: 28px;
+        height: 28px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+    .views-infocard .infocard-flag .action-unflag a {
+      background: -webkit-gradient(linear, left top, left bottom, from(#5cd1db), to(#3aa1aa));
+      background: -o-linear-gradient(top, #5cd1db, #3aa1aa);
+      background: linear-gradient(to bottom, #5cd1db, #3aa1aa);
+      border-color: rgba(255, 255, 255, 0.5); }
+      .views-infocard .infocard-flag .action-unflag a:before {
+        color: rgba(255, 255, 255, 0.5); }
+
+@media (min-width: 768px) {
+  .views-infocard > a .infocard-image {
+    min-width: 25%;
+    max-width: 25%; }
+  .views-infocard > a .infocard-data {
+    max-width: calc(75% - 1rem); }
+  .views-infocard > a .infocard-title {
+    font-size: 1.35em; }
+  .views-infocard > a .infocard-location {
+    font-size: 1em; } }
+
+@media (min-width: 1024px) {
+  .views-infocard > a .infocard-image {
+    min-width: 20%;
+    max-width: 20%; }
+  .views-infocard > a .infocard-data {
+    max-width: calc(80% - 1rem); }
+  .views-infocard > a .infocard-title {
+    font-size: 1.5em; }
+  .views-infocard > a .infocard-location {
+    font-size: 1.15em; } }
+
+@media (min-width: 1340px) {
+  .views-infocard > a .infocard-image {
+    min-width: 15%;
+    max-width: 15%; }
+  .views-infocard > a .infocard-data {
+    max-width: calc(85% - 1rem); }
+  .views-infocard > a .infocard-title {
+    font-size: 1.75em; }
+  .views-infocard > a .infocard-location {
     font-size: 1.25em; } }
 
 .views-slide-square {

@@ -1,0 +1,326 @@
+// Mobile (up to 567px) ---------------------------------
+// ------------------------------------------------------
+.views-infocard {
+  position: relative;
+
+  > a {
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    padding: 1rem;
+    margin: 0;
+    border-top: 1px solid $color-black-05;
+    border-bottom: 1px solid $color-black-10;
+    color: $color-blue-dark;
+
+    &:after {
+      content: '\f105';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      display: block;
+      padding-left: 1rem;
+      margin-left: auto;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      .infocard-title,
+      &:after {
+        color: $color-blue-light;
+      }
+    }
+
+    .infocard-image {
+      border-radius: $rad;
+      overflow: hidden;
+      margin-right: 1rem;
+      min-width: 30%;
+      max-width: 30%;
+
+      img {
+        display: block;
+        border-radius: $rad;
+        width: 100%;
+      }
+    }
+
+    .infocard-data {
+      max-width: calc(70% - 1rem);
+    }
+
+    .infocard-title {
+      font-size: 1.2em;
+      margin: 0;
+      line-height: 1;
+    }
+
+    .infocard-body {
+      .field--name-body {
+        padding: 0;
+
+        > * {
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .infocard-details {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0.6em 0 0;
+      flex-flow: row wrap;
+
+      .infocard-detail {
+        font-size: 12px;
+        padding: 0.25em 1em;
+        border-radius: 20px;
+        margin: 0 0.25em 0.25em 0;
+        border: 1px solid $color-black-10;
+        background: $color-white;
+        text-transform: uppercase;
+
+        .field--name-field-indoor-outdoor {
+          display: flex;
+          justify-content: center;
+
+          &:before {
+            content: '\f6c4';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            display: inline-block;
+            margin-right: 0.5em;
+            color: $color-blue-light;
+          }
+
+          .field__item {
+            &:nth-child(2) {
+              &:before {
+                content: '/';
+              }
+            }
+          }
+        }
+
+        .field--name-field-price {
+          &:before {
+            content: '\f51e';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            display: inline-block;
+            margin-right: 0.5em;
+            color: $color-blue-light;
+          }
+        }
+
+        .field--name-field-cuisine {
+          .field__item {
+            &:before {
+              content: '\f2e7';
+              font-family: 'Font Awesome 5 Free';
+              font-weight: 900;
+              display: inline-block;
+              margin-right: 0.5em;
+              color: $color-blue-light;
+            }
+          }
+        }
+
+        .field--name-field-lodging-category {
+          &:before {
+            content: '\f236';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            display: inline-block;
+            margin-right: 0.5em;
+            color: $color-blue-light;
+          }
+        }
+
+        .field--name-field-distance {
+          &:before {
+            content: '\f6ec';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            display: inline-block;
+            margin-right: 0.5em;
+            color: $color-blue-light;
+          }
+        }
+
+        &.Moderate {
+          .field--name-field-difficult {
+            &:before {
+              content: '\f0c8';
+              color: $color-blue-light;
+            }
+          }
+        }
+
+        &.Strenuous {
+          .field--name-field-difficult {
+            &:before {
+              content: '\f0c8';
+              color: $color-blue-dark;
+              transform: rotate(45deg);
+            }
+          }
+        }
+
+        .field--name-field-difficult {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:before {
+            content: '\f111';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            display: inline-block;
+            margin-right: 0.5em;
+            color: $color-green-light;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+
+    .infocard-location {
+      color: $color-blue-dark;
+      font-size: 0.875em;
+    }
+
+    .infocard-date {
+      color: $color-blue-dark;
+      font-size: 0.875em;
+    }
+  }
+
+  .infocard-flag {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+
+    a {
+      background: $color-gray-bd;
+      border-radius: 20px;
+      height: 30px;
+      width: 30px;
+      display: block;
+      text-align: center;
+      overflow: hidden;
+      text-decoration: none;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+      border: 1px solid $color-white-50;
+
+      &:before {
+        content: '\f5e4';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        display: flex;
+        color: $color-white-50;
+        width: 28px;
+        height: 28px;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .action-unflag {
+      a {
+        background: $gradient-blue;
+        border-color: $color-white-50;
+
+        &:before {
+          color: $color-white-50;
+        }
+      }
+    }
+  }
+}
+
+// Phablet (568px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+  .views-infocard {
+    > a {
+      .infocard-image {
+        min-width: 25%;
+        max-width: 25%;
+      }
+
+      .infocard-data {
+        max-width: calc(75% - 1rem);
+      }
+
+      .infocard-title {
+        font-size: 1.35em;
+      }
+
+      .infocard-location {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+  .views-infocard {
+    > a {
+      .infocard-image {
+        min-width: 20%;
+        max-width: 20%;
+      }
+
+      .infocard-data {
+        max-width: calc(80% - 1rem);
+      }
+
+      .infocard-title {
+        font-size: 1.5em;
+      }
+
+      .infocard-location {
+        font-size: 1.15em;
+      }
+    }
+  }
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+  .views-infocard {
+    > a {
+      .infocard-image {
+        min-width: 15%;
+        max-width: 15%;
+      }
+
+      .infocard-data {
+        max-width: calc(85% - 1rem);
+      }
+
+      .infocard-title {
+        font-size: 1.75em;
+      }
+
+      .infocard-location {
+        font-size: 1.25em;
+      }
+    }
+  }
+}

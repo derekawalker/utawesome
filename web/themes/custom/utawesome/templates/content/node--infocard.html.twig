@@ -1,0 +1,105 @@
+{%
+  set classes = [
+    'views-infocard',
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+
+<article {{ attributes.addClass(classes) }} id='node--infocard-id-{{ node.id }}'>
+  <a href="{{ url }}" rel="bookmark">
+
+    <div class="infocard-image">
+      {{ content.field_image.0 }}
+    </div>
+
+    <div class="infocard-data">
+      <h3 class="infocard-title">
+        {{ label }}
+      </h3>
+
+      {% if content.field_location[0] is not empty %}
+      <div class="infocard-location">
+        {{ content.field_location.0 }}
+      </div>
+      {% endif %}
+
+      {% if content.field_post_date[0] is not empty %}
+      <div class="infocard-date">
+        {{ content.field_post_date }}
+      </div>
+      {% endif %}
+
+      {% if (content.field_distance[0] is not empty) or
+            (content.field_difficult[0] is not empty) or
+            (content.field_price[0] is not empty) or
+            (content.field_indoor_outdoor[0] is not empty) or
+            (content.field_cuisine[0] is not empty) or
+            (content.field_lodging_category[0] is not empty) or
+            (content.field_hotel_class[0] is not empty)
+      %}
+        <div class="infocard-details">
+          {% if content.field_distance[0] is not empty %}
+          <div class="infocard-date infocard-detail">
+            <span class="field--name-field-distance">{{ content.field_distance.0 }}</span> miles
+          </div>
+          {% endif %}
+
+          {% if content.field_difficult[0] is not empty %}
+          <div class="infocard-difficulty infocard-detail {{ content.field_difficult.0 }}">
+            {{ content.field_difficult }}
+          </div>
+          {% endif %}
+
+          {% if content.field_price[0] is not empty %}
+          <div class="infocard-price infocard-detail">
+            {{ content.field_price }}
+          </div>
+          {% endif %}
+
+          {% if content.field_indoor_outdoor[0] is not empty %}
+          <div class="infocard-indoor infocard-detail">
+            {{ content.field_indoor_outdoor }}
+          </div>
+          {% endif %}
+
+          {% if content.field_cuisine[0] is not empty %}
+          <div class="infocard-cuisine infocard-detail">
+            {{ content.field_cuisine }}
+          </div>
+          {% endif %}
+
+          {% if content.field_lodging_category[0] is not empty %}
+          <div class="infocard-lodging-category infocard-detail">
+            {{ content.field_lodging_category }}
+          </div>
+          {% endif %}
+
+          {% if content.field_hotel_class[0] is not empty %}
+          <div class="infocard-lodging-class infocard-detail">
+            {{ content.field_hotel_class }}
+          </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if content.body[0] is not empty %}
+      <div class="infocard-body">
+        {{ content.body }}
+      </div>
+      {% endif %}
+    </div>
+
+  </a>
+
+  {% if content.flag_add_to_trip is not empty %}
+  <div class="infocard-flag">
+    {{ content.flag_add_to_trip }}
+  </div>
+  {% endif %}
+</article>
+

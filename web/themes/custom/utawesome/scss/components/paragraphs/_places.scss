@@ -3,7 +3,7 @@
 .paragraph--type--place-summary {
   margin: 1rem;
   background: $color-blue-dark;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   border-radius: $rad;
 
   .field__item {
@@ -47,13 +47,35 @@
 
     > a {
       border: 0;
-      background: $color-white-85;
+      background: $color-white-90;
       padding: 1rem;
       border-radius: $rad-inner;
     }
 
     .card-flag {
       left: -5px;
+      top: -5px;
+    }
+  }
+  .views-infocard {
+    margin-bottom: 1rem;
+
+    > a {
+      border: 1px solid transparent;
+      background: $color-white-90;
+      padding: 1rem;
+      border-radius: $rad-inner;
+
+      &:hover,
+      &:active,
+      &:focus {
+        border-color: $color-blue-light;
+      }
+    }
+
+    .infocard-flag {
+      left: -5px;
+      top: -5px;
     }
   }
 }
