@@ -177,9 +177,13 @@
       </details>
       {% endif %}
 
-      <div class="hotel-book-button">
-        <a href="https://search.hotellook.com/hotels?destination={{ content.field_location.0 }}%2C+United+States+&marker=285822&language=en_us&currency=usd" target="_blank">Book Now</a>
-      </div>
+      {% if not (node.field_hotel_id.isEmpty == true) %}
+        <script src="//www.travelpayouts.com/chansey/iframe.js?v=1&marker=285822&host=search.hotellook.com&locale=en_us&currency=usd&nobooking=&powered_by=true&hotel_id={{ content.field_hotel_id[0] }}" charset="utf-8" async></script>
+      {% else %}
+        <div class="hotel-book-button">
+          <a href="https://search.hotellook.com/hotels?destination={{ content.field_location.0 }}%2C+United+States+&marker=285822&language=en_us&currency=usd" target="_blank">Book Now</a>
+        </div>
+      {% endif %}
 
       {% if not ((node.field_hotel_class.isEmpty == true) and (node.field_lodging_category.isEmpty == true)) %}
       <div class="node-lodging-pill-wrapper">
@@ -270,7 +274,6 @@
         </details>
       </div>
 
-
       {% if not (node.field_coupons.isEmpty == true) %}
       <span id="node--coupons" class="anchor"></span>
       <div class="node-lodging-section node-lodging-section-coupons">
@@ -279,7 +282,7 @@
       </div>
       {% endif %}
 
-    </div>
+    </>
 
 
   </div>

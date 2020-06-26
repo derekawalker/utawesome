@@ -380,21 +380,51 @@
     }
   }
 
-  .field--name-field-website {
-    border-top: 1px solid $color-black-15;
-    padding: 0.5em 0;
-
+  .hotel-website-button {
+    text-align: center;
     a {
-      color: $color-blue-dark;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+      display: inline-block;
+      padding: 0.5em 1.5em;
       text-decoration: none;
-      font-weight: 400;
-    }
+      margin: 1em auto;
+      border-radius: 2em;
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+      background: $gradient-green;
+      border: 1px solid $color-green-light;
 
-    &:before {
-      content: '\f35d';
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
-      margin-right: 0.5em;
+      &:hover,
+      &:active,
+      &:focus {
+        background: $color-green-med;
+      }
+    }
+  }
+
+  .airbnb-wrapper {
+    margin: 0 1rem 1rem;
+  }
+
+  .node-lodging-expand-wrapper {
+    .field--name-field-website {
+      border-top: 1px solid $color-black-15;
+      padding: 0.5em 0;
+
+      a {
+        color: $color-blue-dark;
+        text-decoration: none;
+        font-weight: 400;
+      }
+
+      &:before {
+        content: '\f35d';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        margin-right: 0.5em;
+      }
     }
   }
 
