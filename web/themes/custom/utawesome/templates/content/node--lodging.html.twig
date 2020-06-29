@@ -179,6 +179,10 @@
 
       {% if not (node.field_hotel_id.isEmpty == true) %}
         <script src="//www.travelpayouts.com/chansey/iframe.js?v=1&marker=285822&host=search.hotellook.com&locale=en_us&currency=usd&nobooking=&powered_by=true&hotel_id={{ content.field_hotel_id[0] }}" charset="utf-8" async></script>
+      {% elseif not (node.field_affiliate_link.isEmpty == true) %}
+        <div class="hotel-book-button">
+          <a href="{{ content.field_affiliate_link[0] }}">Book Now</a>
+        </div>
       {% else %}
         <div class="hotel-book-button">
           <a href="https://search.hotellook.com/hotels?destination={{ content.field_location.0 }}%2C+United+States+&marker=285822&language=en_us&currency=usd" target="_blank">Book Now</a>
