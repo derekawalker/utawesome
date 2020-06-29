@@ -58,6 +58,23 @@
           }
         }
 
+        &[href='/user'] {
+          &:before {
+            content: '\f007';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            width: 38px;
+            height: 38px;
+            display: block;
+            position: absolute;
+            left: -38px;
+            top: 0;
+            color: $color-blue-dark;
+            font-size: 22px;
+            line-height: 38px;
+          }
+        }
+
         &[href='/search'] {
           &:before {
             content: '\f002';
