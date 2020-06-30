@@ -18,94 +18,59 @@
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        width: 38px;
+        width: 28px;
         height: 38px;
         text-indent: 44px;
         overflow: hidden;
         position: relative;
 
+        &:before {
+          content: '\f5a0';
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          width: 28px;
+          height: 38px;
+          display: block;
+          position: absolute;
+          left: -34px;
+          top: 0;
+          color: $color-blue-dark;
+          font-size: 18px;
+          line-height: 38px;
+        }
+
         &[href='/map'] {
           &:before {
             content: '\f5a0';
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            width: 38px;
-            height: 38px;
-            display: block;
-            position: absolute;
-            left: -38px;
-            top: 0;
-            color: $color-blue-dark;
-            font-size: 22px;
-            line-height: 38px;
+            left: -40px;
           }
         }
 
         &[href='/places'] {
           &:before {
             content: '\f00b';
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            width: 38px;
-            height: 38px;
-            display: block;
-            position: absolute;
-            left: -33px;
-            top: 0;
-            color: $color-blue-dark;
-            font-size: 22px;
-            line-height: 38px;
+            left: -40px;
           }
         }
 
-        &[href='/user'] {
+        &[href='/user/login'] {
           &:before {
             content: '\f007';
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            width: 38px;
-            height: 38px;
-            display: block;
-            position: absolute;
-            left: -38px;
-            top: 0;
-            color: $color-blue-dark;
-            font-size: 22px;
-            line-height: 38px;
+            left: -40px;
           }
         }
 
         &[href='/search'] {
           &:before {
-            content: '\f002';
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            width: 38px;
-            height: 38px;
-            display: block;
-            position: absolute;
-            left: -38px;
-            top: 0;
-            color: $color-blue-dark;
-            font-size: 22px;
-            line-height: 38px;
+            content: '\f007';
+            left: -40px;
           }
         }
 
         &[href='/tools/trip-planner'] {
           &:before {
             content: '\f5e4';
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            width: 38px;
-            height: 38px;
-            display: block;
-            position: absolute;
-            left: -38px;
-            top: 0;
-            color: $color-blue-dark;
-            font-size: 22px;
-            line-height: 38px;
+            left: -40px;
           }
         }
       }
