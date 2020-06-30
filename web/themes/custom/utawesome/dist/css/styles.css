@@ -639,6 +639,10 @@ select {
     #block-utawesome-views-block-popular-block-1 > h2 {
       font-size: 2.5rem; } }
 
+#block-socialauthlogin {
+  margin: 0 1rem 1rem;
+  border-top: 3px double #ccc; }
+
 #block-mainnavigation {
   display: none; }
 
@@ -908,6 +912,9 @@ select {
           #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a.is-active:hover, #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a.is-active:focus, #block-utawesome-horizontalmenu ul.sub-nav li.menu-item a.is-active:active {
             color: #fff; }
 
+.user-logged-in #block-utawesome-horizontalmenu ul.sf-menu li.menu-item a[href='/user/login'] {
+  display: none; }
+
 @media (min-width: 768px) {
   #block-utawesome-horizontalmenu,
   .responsive-menu-block-wrapper,
@@ -920,7 +927,7 @@ select {
 
 @media (min-width: 1024px) {
   #block-utawesome-horizontalmenu ul.sf-menu {
-    font-size: 1.35rem; } }
+    font-size: 1.25rem; } }
 
 #block-utawesome-responsivemenumobileicon #toggle-icon .label {
   display: none; }
@@ -979,6 +986,10 @@ select {
       display: block;
       text-align: center;
       z-index: 1; }
+
+@media (min-width: 568px) {
+  .region-header .search-block-form {
+    max-width: 12%; } }
 
 #block-utawesome-subnav ul.menu {
   margin: 0;

@@ -122,6 +122,20 @@
   }
 }
 
+.user-logged-in {
+  #block-utawesome-horizontalmenu {
+    ul.sf-menu {
+      li.menu-item {
+        a {
+          &[href='/user/login'] {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 // Phablet (568px to 767px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $phab) {
@@ -156,7 +170,7 @@
 @media (min-width: $desk) {
   #block-utawesome-horizontalmenu {
     ul.sf-menu {
-      font-size: 1.35rem;
+      font-size: 1.25rem;
     }
   }
 }

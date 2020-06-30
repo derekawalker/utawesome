@@ -64,6 +64,11 @@
 // Phablet (568px to 767px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $phab) {
+  .region-header {
+    .search-block-form {
+      max-width: 12%;
+    }
+  }
 }
 
 // Tablet (768px to 1023px) -----------------------------
