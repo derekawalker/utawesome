@@ -87,6 +87,7 @@
         "drupal/views_bulk_edit": "^2.4",
         "drupal/views_bulk_operations": "^3.6",
         "drupal/views_data_export": "^1.0@beta",
+        "drupal/views_entity_form_field": "^1.0@beta",
         "drupal/webform": "^5.13",
         "drush/drush": "^9.0.0",
         "harvesthq/chosen": "^1.8",
